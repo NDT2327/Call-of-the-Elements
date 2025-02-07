@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      32bit-octopus-tentacle2_0: -1749191497874237176
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

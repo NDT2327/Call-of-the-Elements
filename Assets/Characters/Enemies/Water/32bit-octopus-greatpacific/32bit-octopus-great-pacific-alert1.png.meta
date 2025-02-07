@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      32bit-octopus-great-pacific-alert1_0: -6972426767129811986
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

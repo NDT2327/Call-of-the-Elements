@@ -447,7 +447,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fire-skull_0: -7129419709214212761
+      fire-skull_1: 6585926276625298806
+      fire-skull_10: -1108458465919169385
+      fire-skull_11: -7771260407943737555
+      fire-skull_12: 9019600590674608324
+      fire-skull_2: -1364200414502597865
+      fire-skull_3: -585822925407298799
+      fire-skull_4: 7574296966142716682
+      fire-skull_5: 4485134122274163535
+      fire-skull_6: -3408866496676386330
+      fire-skull_7: 4143527229045088481
+      fire-skull_8: 8204998694474518731
+      fire-skull_9: -2833898084586622726
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

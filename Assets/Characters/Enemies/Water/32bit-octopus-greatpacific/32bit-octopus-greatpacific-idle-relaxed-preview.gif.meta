@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      32bit-octopus-greatpacific-idle-relaxed-preview_0: 8763523115341116260
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

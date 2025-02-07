@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      32bit-octopus-great-pacific-floatpunch-Sheet_0: 3136722361784785950
+      32bit-octopus-great-pacific-floatpunch-Sheet_1: -2635632702446388898
+      32bit-octopus-great-pacific-floatpunch-Sheet_2: -1005171177219816366
+      32bit-octopus-great-pacific-floatpunch-Sheet_3: 7501774825379713631
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

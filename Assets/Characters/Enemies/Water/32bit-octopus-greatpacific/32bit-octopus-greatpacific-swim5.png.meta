@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      32bit-octopus-greatpacific-swim5_0: 8869817559132152066
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
