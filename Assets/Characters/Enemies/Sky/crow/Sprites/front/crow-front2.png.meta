@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      crow-front2_0: 2258429129302582046
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      32bit-octopus-greatpacific-idle-Sheet_0: -3248323955841175525
+      32bit-octopus-greatpacific-idle-Sheet_1: -7567344080953280153
+      32bit-octopus-greatpacific-idle-Sheet_2: -3858822294141685477
+      32bit-octopus-greatpacific-idle-Sheet_3: 209249456926956492
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      crow-idle_0: -9171083860689843103
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
