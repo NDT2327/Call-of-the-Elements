@@ -34,11 +34,17 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
+        
         anim.SetBool("run", horizontalInput != 0);
+        
         body.linearVelocity = new Vector2(horizontalInput * speed, body.linearVelocity.y);
+        
         //flip player left - right
-        if (horizontalInput > 0.01f) spriteRenderer.flipX = false;
-        else if (horizontalInput < -0.01f) spriteRenderer.flipX = true;
+        if (horizontalInput > 0.01f) 
+            spriteRenderer.flipX = false;
+        else if (horizontalInput < -0.01f) 
+            spriteRenderer.flipX = true;
+
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded())
         {
             Jump();
@@ -60,6 +66,6 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
-        return false;
+        return raycastHit.collider != null;
     }
 }

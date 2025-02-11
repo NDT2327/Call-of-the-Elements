@@ -155,7 +155,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -201,7 +201,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.15996392, y: 0.042586915}
+  m_Offset: {x: 0.15996392, y: 0.00412561}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -211,7 +211,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.28340754, y: 0.53766584}
+  m_Size: {x: 0.28340754, y: 0.44890884}
   m_EdgeRadius: 0
 --- !u!212 &189627412
 SpriteRenderer:
@@ -277,8 +277,8 @@ Transform:
   m_GameObject: {fileID: 189627409}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08, y: 3.14, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: -0.34, y: 3.71, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -295,10 +295,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a8a0ba7dcfa7c43935ed68b93598bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 5
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!95 &189627415
 Animator:
   serializedVersion: 7
@@ -469,7 +469,7 @@ GameObject:
   - component: {fileID: 2141004284}
   - component: {fileID: 2141004283}
   - component: {fileID: 2141004282}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -586,8 +586,8 @@ Transform:
   m_GameObject: {fileID: 2141004281}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.07, y: -4.26, z: 0}
-  m_LocalScale: {x: 24.67206, y: 1.998026, z: 1}
+  m_LocalPosition: {x: -0.05, y: -4.44, z: 0}
+  m_LocalScale: {x: 46.08494, y: 5.9255457, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
