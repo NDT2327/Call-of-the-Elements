@@ -396,6 +396,11 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!50 &942799322 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 8563019976693933568, guid: ad7bee9c046638440853e6df3f3808f7, type: 3}
+  m_PrefabInstance: {fileID: 6975912994354962801}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &942799324 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2219123463786518281, guid: ad7bee9c046638440853e6df3f3808f7, type: 3}
@@ -583,9 +588,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3838964883018515702, guid: ad7bee9c046638440853e6df3f3808f7, type: 3}
+      propertyPath: rb2d
+      value: 
+      objectReference: {fileID: 942799322}
+    - target: {fileID: 3838964883018515702, guid: ad7bee9c046638440853e6df3f3808f7, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3838964883018515702, guid: ad7bee9c046638440853e6df3f3808f7, type: 3}
+      propertyPath: jumpHeight
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8490920196310057571, guid: ad7bee9c046638440853e6df3f3808f7, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563019976693933568, guid: ad7bee9c046638440853e6df3f3808f7, type: 3}
+      propertyPath: m_GravityScale
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
