@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 782f45582b23a6c4a82659afb793696a
+=======
+guid: 23a1df4635daf4d42b10c6858a7e25cd
+>>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -69,7 +73,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 64
+>>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -114,6 +122,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -127,6 +136,8 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+>>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -297,7 +308,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<< HEAD
     nameFileIdTable: {}
+=======
+    nameFileIdTable:
+      singleattack_0: -7422626302859675177
+      singleattack_1: -6906140061086361611
+      singleattack_2: 7875214248694289509
+      singleattack_3: 5906540772811051466
+      singleattack_4: -3282210511596878115
+      singleattack_5: -4846947148224590303
+      singleattack_6: 5205479607724896783
+>>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

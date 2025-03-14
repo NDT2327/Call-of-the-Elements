@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 020e236b89d53cf4e93bbbda52903199
+=======
+guid: 6584de80cc50ddf46b68575295d06778
+>>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -75,7 +79,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 64
+>>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -120,6 +128,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -133,6 +142,8 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+>>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -347,7 +358,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<< HEAD
     nameFileIdTable: {}
+=======
+    nameFileIdTable:
+      roll_0: 3083036838099942475
+      roll_1: 7020422449882287015
+      roll_2: 4904745224428211008
+      roll_3: -8883362746367683638
+      roll_4: 3368263156373419212
+      roll_5: 8601325017491710851
+      roll_6: -5248456778479591328
+      roll_7: 3900071125500284896
+      roll_8: -621652423166530624
+>>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
