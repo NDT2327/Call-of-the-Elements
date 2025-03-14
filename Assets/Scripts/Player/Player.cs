@@ -1,9 +1,10 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Player : MonoBehaviour
 {
     public Rigidbody2D rb2d;
     public Animator animator;
+    public GameObject blockFlash; // Hiệu ứng flash khi block
 
     public float speed = 5f;
     public float jumpHeight = 5f;
@@ -11,10 +12,17 @@ public class Player : MonoBehaviour
 
     private float movement;
     private bool facingRight = true;
-    private bool isJumping = false;
     private int attackCount = 0;
     private float lastAttackTime;
     public float attackResetTime = 0.5f; // Time to reset attack count
+
+    void Start()
+    {
+        if (blockFlash != null)
+        {
+            blockFlash.SetActive(false); // Ẩn blockFlash ban đầu
+        }
+    }
 
     void Update()
     {
@@ -28,26 +36,16 @@ public class Player : MonoBehaviour
         }
 
         // Jump logic
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.K) && isGrounded)
         {
             Jump();
             isGrounded = false;
-            isJumping = true;
-            animator.SetBool("Jump", true);
-        }
-
-        // Check if player wants to do a jump attack
-        if (isJumping && Input.GetKey(KeyCode.Z))
-        {
-            animator.SetBool("JumpHit", true);
-        }
-        else
-        {
-            animator.SetBool("JumpHit", false);
+            animator.SetBool("Grounded", false);
+            animator.SetTrigger("Jump");
         }
 
         // Attack logic
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.J))
         {
             if (Time.time - lastAttackTime > attackResetTime)
             {
@@ -73,15 +71,16 @@ public class Player : MonoBehaviour
         }
 
         // Roll logic
-        if (Input.GetKeyDown(KeyCode.X) && isGrounded && !isJumping)
+        if (Input.GetKeyDown(KeyCode.L) && isGrounded)
         {
             animator.SetTrigger("Roll");
         }
 
         // Block logic
-        if (Input.GetKeyDown(KeyCode.V) && isGrounded && !isJumping)
+        if (Input.GetKeyDown(KeyCode.S) && isGrounded)
         {
             animator.SetTrigger("Block");
+            ShowBlockFlash(); // Hiển thị blockFlash khi Block
         }
 
         // Animator for running
@@ -105,9 +104,26 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
-            isJumping = false;
-            animator.SetBool("Jump", false);
-            animator.SetBool("JumpHit", false);
+            animator.SetBool("Grounded", true);
+        }
+    }
+
+    // Hiển thị blockFlash trong 0.3 giây
+    void ShowBlockFlash()
+    {
+        if (blockFlash != null)
+        {
+            blockFlash.SetActive(true);
+            Invoke("HideBlockFlash", 0.3f);
+        }
+    }
+
+    // Ẩn blockFlash
+    void HideBlockFlash()
+    {
+        if (blockFlash != null)
+        {
+            blockFlash.SetActive(false);
         }
     }
 }
