@@ -3,6 +3,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public Rigidbody2D rb2d;
+    public Animator animator;
 
     public float speed = 5f;
     public float jumpHeight = 5f;
@@ -10,52 +11,103 @@ public class Player : MonoBehaviour
 
     private float movement;
     private bool facingRight = true;
+    private bool isJumping = false;
+    private int attackCount = 0;
+    private float lastAttackTime;
+    public float attackResetTime = 0.5f; // Time to reset attack count
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         movement = Input.GetAxis("Horizontal");
 
-        //Flip condition
+        // Flip character
         if ((movement < 0f && facingRight) || (movement > 0f && !facingRight))
         {
             facingRight = !facingRight;
             transform.eulerAngles = new Vector3(0f, facingRight ? 0f : -180f, 0f);
         }
 
-        //Single Jump (Ground Condition)
-        if (Input.GetKey(KeyCode.Space) && isGrounded)
+        // Jump logic
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             Jump();
-            isGrounded = !isGrounded;
+            isGrounded = false;
+            isJumping = true;
+            animator.SetBool("Jump", true);
         }
+
+        // Check if player wants to do a jump attack
+        if (isJumping && Input.GetKey(KeyCode.Z))
+        {
+            animator.SetBool("JumpHit", true);
+        }
+        else
+        {
+            animator.SetBool("JumpHit", false);
+        }
+
+        // Attack logic
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            if (Time.time - lastAttackTime > attackResetTime)
+            {
+                attackCount = 0; // Reset combo if too much time has passed
+            }
+
+            attackCount++;
+            lastAttackTime = Time.time;
+
+            if (attackCount == 1)
+            {
+                animator.SetTrigger("Attack1");
+            }
+            else if (attackCount == 2)
+            {
+                animator.SetTrigger("Attack2");
+            }
+            else if (attackCount >= 3)
+            {
+                animator.SetTrigger("Attack3");
+                attackCount = 0; // Reset combo after third attack
+            }
+        }
+
+        // Roll logic
+        if (Input.GetKeyDown(KeyCode.X) && isGrounded && !isJumping)
+        {
+            animator.SetTrigger("Roll");
+        }
+
+        // Block logic
+        if (Input.GetKeyDown(KeyCode.V) && isGrounded && !isJumping)
+        {
+            animator.SetTrigger("Block");
+        }
+
+        // Animator for running
+        animator.SetInteger("AnimState", Mathf.Abs(movement) > 0f ? 1 : 0);
     }
 
     private void FixedUpdate()
     {
-        //Move
+        // Move character
         transform.position += new Vector3(movement, 0f, 0f) * speed * Time.fixedDeltaTime;
     }
 
-    //Control Jump
     void Jump()
     {
         rb2d.AddForce(new Vector2(0f, jumpHeight), ForceMode2D.Impulse);
     }
 
-    //Manage Collision
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //Jump Condition (Player collides ground)
-        if (collision.gameObject.tag == "Ground")
+        // Check if player lands on the ground
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            isGrounded = !isGrounded;
+            isGrounded = true;
+            isJumping = false;
+            animator.SetBool("Jump", false);
+            animator.SetBool("JumpHit", false);
         }
     }
 }
