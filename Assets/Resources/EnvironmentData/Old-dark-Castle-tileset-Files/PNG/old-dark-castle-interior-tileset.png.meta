@@ -4271,7 +4271,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: old-dark-castle-interior-tileset_189
+      name: stair_step
       rect:
         serializedVersion: 2
         x: 272
@@ -4293,7 +4293,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: old-dark-castle-interior-tileset_190
+      name: stair_top
       rect:
         serializedVersion: 2
         x: 288
@@ -5261,7 +5261,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: old-dark-castle-interior-tileset_234
+      name: stair_bottom
       rect:
         serializedVersion: 2
         x: 192
@@ -6219,9 +6219,7 @@ TextureImporter:
       old-dark-castle-interior-tileset_186: 1088466755
       old-dark-castle-interior-tileset_187: 2147136066
       old-dark-castle-interior-tileset_188: 1348912868
-      old-dark-castle-interior-tileset_189: 1656486087
       old-dark-castle-interior-tileset_19: -681860714
-      old-dark-castle-interior-tileset_190: 1811527553
       old-dark-castle-interior-tileset_191: 1650763454
       old-dark-castle-interior-tileset_192: -1569604
       old-dark-castle-interior-tileset_194: -1815665355
@@ -6264,7 +6262,6 @@ TextureImporter:
       old-dark-castle-interior-tileset_231: -430984475
       old-dark-castle-interior-tileset_232: -1382729831
       old-dark-castle-interior-tileset_233: 615734162
-      old-dark-castle-interior-tileset_234: 1600996426
       old-dark-castle-interior-tileset_235: 592807468
       old-dark-castle-interior-tileset_236: 596257414
       old-dark-castle-interior-tileset_237: -738072588
@@ -6382,6 +6379,9 @@ TextureImporter:
       old-dark-castle-interior-tileset_97: 1240520326
       old-dark-castle-interior-tileset_98: 490143520
       old-dark-castle-interior-tileset_99: -2106807790
+      stair_bottom: 1600996426
+      stair_step: 1656486087
+      stair_top: 1811527553
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
