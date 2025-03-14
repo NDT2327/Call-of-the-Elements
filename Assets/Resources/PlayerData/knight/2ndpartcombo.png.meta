@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 1fe91f7ed6e13484e8c909c55e4d2156
+=======
 guid: 0d7591e70fa923442b5b6c1d4dc8a635
+>>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -96,7 +100,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+  spritePixelsToUnits: 100
+=======
   spritePixelsToUnits: 64
+>>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -141,6 +149,22 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+>>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,6 +533,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<< HEAD
+    nameFileIdTable: {}
+=======
     nameFileIdTable:
       2ndpartcombo_0: -7116846530581027707
       2ndpartcombo_1: 6570650956061611785
@@ -526,6 +553,7 @@ TextureImporter:
       2ndpartcombo_7: 4112216992892957478
       2ndpartcombo_8: -1660141702352358080
       2ndpartcombo_9: 5716604017039374456
+>>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
