@@ -1,59 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: e4f5d90506615aa42a4bff72c781bac2
-=======
-guid: c1dead153761cff478e4c350123679ef
->>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 4396467672542827511
-    second: tauruswalk_0
-  - first:
-      213: 6516825944281261690
-    second: tauruswalk_1
-  - first:
-      213: 8786156095066076179
-    second: tauruswalk_2
-  - first:
-      213: -6042080465287696261
-    second: tauruswalk_3
-  - first:
-      213: -3379930264547254123
-    second: tauruswalk_4
-  - first:
-      213: -735010669374805228
-    second: tauruswalk_5
-  - first:
-      213: 6941870060593931141
-    second: tauruswalk_6
-  - first:
-      213: 6349587898746027484
-    second: tauruswalk_7
-  - first:
-      213: 10608900247497586
-    second: tauruswalk_8
-  - first:
-      213: 5269145111142300666
-    second: tauruswalk_9
-  - first:
-      213: 4689942245218339233
-    second: tauruswalk_10
-  - first:
-      213: -4417319613452911358
-    second: tauruswalk_11
-  - first:
-      213: -4507422295700572826
-    second: tauruswalk_12
-  - first:
-      213: -7421240228789229603
-    second: tauruswalk_13
-  - first:
-      213: -1142658400767818360
-    second: tauruswalk_14
-  - first:
-      213: 6240256840201912359
-    second: tauruswalk_15
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -86,12 +34,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -115,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -137,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -145,13 +93,12 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -159,8 +106,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -169,19 +114,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 185
-        y: 29
-        width: 480
-        height: 334
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 28
+        width: 481
+        height: 335
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7f357600e04630d30800000000000000
-      internalID: 4396467672542827511
+      spriteID: b6ec1394f573d1c4e99acb3ea2c32806
+      internalID: -1611991108
       vertices: []
       indices: 
       edges: []
@@ -190,20 +135,20 @@ TextureImporter:
       name: tauruswalk_1
       rect:
         serializedVersion: 2
-        x: 1073
-        y: 31
-        width: 468
-        height: 334
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1072
+        y: 30
+        width: 470
+        height: 336
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a762fef2baa607a50800000000000000
-      internalID: 6516825944281261690
+      spriteID: cc7ab535d042e35448833a7e8c31f654
+      internalID: 511873293
       vertices: []
       indices: 
       edges: []
@@ -212,20 +157,20 @@ TextureImporter:
       name: tauruswalk_2
       rect:
         serializedVersion: 2
-        x: 1973
+        x: 1972
         y: 35
-        width: 452
-        height: 332
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 454
+        height: 333
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 314fb8bda62bee970800000000000000
-      internalID: 8786156095066076179
+      spriteID: bad40f3af32b5eb4ebc7330fc1a68951
+      internalID: -416050038
       vertices: []
       indices: 
       edges: []
@@ -236,18 +181,18 @@ TextureImporter:
         serializedVersion: 2
         x: 2879
         y: 35
-        width: 446
-        height: 332
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 447
+        height: 333
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b70333244d7362ca0800000000000000
-      internalID: -6042080465287696261
+      spriteID: 7de5a3f2e7a39bd4bac4dfe55b893eaf
+      internalID: 673441351
       vertices: []
       indices: 
       edges: []
@@ -259,17 +204,17 @@ TextureImporter:
         x: 3795
         y: 37
         width: 424
-        height: 330
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 331
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 590a11005531811d0800000000000000
-      internalID: -3379930264547254123
+      spriteID: 2c3d9dfe6820e654ab4e0b24f370a56e
+      internalID: -1578946015
       vertices: []
       indices: 
       edges: []
@@ -279,19 +224,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4695
-        y: 31
+        y: 30
         width: 424
-        height: 336
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 338
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 41beac1c0b7bcc5f0800000000000000
-      internalID: -735010669374805228
+      spriteID: 8b99af662429cbf4c8795edb5e0223d6
+      internalID: -1942914141
       vertices: []
       indices: 
       edges: []
@@ -301,19 +246,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5595
-        y: 31
+        y: 30
         width: 418
-        height: 326
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 327
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 583ee9e5a0a765060800000000000000
-      internalID: 6941870060593931141
+      spriteID: 495a0ef76f0b40847b9e257074472cb7
+      internalID: 1366403230
       vertices: []
       indices: 
       edges: []
@@ -323,19 +268,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6495
-        y: 31
+        y: 30
         width: 418
-        height: 326
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 327
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cdd30e66d844e1850800000000000000
-      internalID: 6349587898746027484
+      spriteID: 97de8ba48ab7f044dab5207771fe2bc0
+      internalID: -244688989
       vertices: []
       indices: 
       edges: []
@@ -345,19 +290,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 7395
-        y: 31
+        y: 30
         width: 418
-        height: 326
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 327
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 27ba5b21db0b52000800000000000000
-      internalID: 10608900247497586
+      spriteID: 5df4be84762065742b13df3973f1f412
+      internalID: -767503701
       vertices: []
       indices: 
       edges: []
@@ -369,17 +314,17 @@ TextureImporter:
         x: 8295
         y: 33
         width: 424
-        height: 334
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 335
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: afb7f9bbf83cf1940800000000000000
-      internalID: 5269145111142300666
+      spriteID: 74a726416d401d543a89db0f9fec5c4a
+      internalID: 127641915
       vertices: []
       indices: 
       edges: []
@@ -388,20 +333,20 @@ TextureImporter:
       name: tauruswalk_10
       rect:
         serializedVersion: 2
-        x: 9173
-        y: 31
-        width: 450
-        height: 336
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 9172
+        y: 30
+        width: 452
+        height: 338
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1a94657af95061140800000000000000
-      internalID: 4689942245218339233
+      spriteID: 994a57f4c7fa9114fbd47a7e11b23ad4
+      internalID: 830976515
       vertices: []
       indices: 
       edges: []
@@ -410,20 +355,20 @@ TextureImporter:
       name: tauruswalk_11
       rect:
         serializedVersion: 2
-        x: 10073
-        y: 31
-        width: 468
-        height: 334
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 10072
+        y: 30
+        width: 470
+        height: 336
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 20df5cc273782b2c0800000000000000
-      internalID: -4417319613452911358
+      spriteID: 7b5970dd667788048a53766da11d202c
+      internalID: -995937289
       vertices: []
       indices: 
       edges: []
@@ -432,20 +377,20 @@ TextureImporter:
       name: tauruswalk_12
       rect:
         serializedVersion: 2
-        x: 10987
-        y: 29
-        width: 474
-        height: 328
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 10986
+        y: 28
+        width: 475
+        height: 329
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 665771cad4b6271c0800000000000000
-      internalID: -4507422295700572826
+      spriteID: ff3a562b43e3ef940b9500920fcd9da7
+      internalID: -1362920225
       vertices: []
       indices: 
       edges: []
@@ -455,19 +400,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 11893
-        y: 29
+        y: 28
         width: 468
-        height: 322
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 324
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dd7ed22d455720990800000000000000
-      internalID: -7421240228789229603
+      spriteID: 4741000aee8b808489bece67be0de003
+      internalID: 1903943097
       vertices: []
       indices: 
       edges: []
@@ -477,19 +422,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 12793
-        y: 29
+        y: 28
         width: 468
-        height: 322
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 324
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8854e921d367420f0800000000000000
-      internalID: -1142658400767818360
+      spriteID: 691401f7eed027e4e98b770acd2604ff
+      internalID: -1336212854
       vertices: []
       indices: 
       edges: []
@@ -499,19 +444,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 13693
-        y: 29
+        y: 28
         width: 468
-        height: 322
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 324
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 720cf6ba888d99650800000000000000
-      internalID: 6240256840201912359
+      spriteID: a5c90c06fd0edbf45bb0d561b0d67eb8
+      internalID: 2052065063
       vertices: []
       indices: 
       edges: []
@@ -520,7 +465,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d07233d234da0b848b10e1e2ee2ba817
     internalID: 0
     vertices: []
     indices: 
@@ -529,7 +474,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tauruswalk_0: -1611991108
+      tauruswalk_1: 511873293
+      tauruswalk_10: 830976515
+      tauruswalk_11: -995937289
+      tauruswalk_12: -1362920225
+      tauruswalk_13: 1903943097
+      tauruswalk_14: -1336212854
+      tauruswalk_15: 2052065063
+      tauruswalk_2: -416050038
+      tauruswalk_3: 673441351
+      tauruswalk_4: -1578946015
+      tauruswalk_5: -1942914141
+      tauruswalk_6: 1366403230
+      tauruswalk_7: -244688989
+      tauruswalk_8: -767503701
+      tauruswalk_9: 127641915
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
