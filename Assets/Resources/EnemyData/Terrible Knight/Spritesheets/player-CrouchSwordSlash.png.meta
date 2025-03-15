@@ -229,7 +229,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      player-CrouchSwordSlash_0: -298411183515856775
+      player-CrouchSwordSlash_1: -3481662055370376538
+      player-CrouchSwordSlash_2: -191776118503923577
+      player-CrouchSwordSlash_3: -8701623441482085290
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
