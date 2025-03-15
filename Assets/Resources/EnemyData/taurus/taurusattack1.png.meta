@@ -584,7 +584,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      taurusattack1_0: 4590048045599520078
+      taurusattack1_1: 4532445946322014274
+      taurusattack1_10: -900437039752364549
+      taurusattack1_11: 8609741729434633969
+      taurusattack1_12: 5647872441154824733
+      taurusattack1_13: 9074527311587357233
+      taurusattack1_14: 1908723344433805017
+      taurusattack1_15: 4577996227976130398
+      taurusattack1_16: 6349591337350141196
+      taurusattack1_17: -3244934785256186852
+      taurusattack1_18: 4569779047351001274
+      taurusattack1_2: -4358726497892726599
+      taurusattack1_3: -4716326080677125422
+      taurusattack1_4: -4079385735217489177
+      taurusattack1_5: 7859877426952129453
+      taurusattack1_6: 1957002123500944895
+      taurusattack1_7: 2909358271768416516
+      taurusattack1_8: 7195007307695750115
+      taurusattack1_9: 2135242320395195378
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

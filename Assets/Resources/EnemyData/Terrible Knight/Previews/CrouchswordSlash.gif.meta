@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CrouchswordSlash_0: 4760366734809902644
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

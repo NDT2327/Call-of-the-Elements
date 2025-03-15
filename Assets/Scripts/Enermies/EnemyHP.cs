@@ -1,0 +1,45 @@
+﻿using UnityEngine;
+
+public class EnemyHP : MonoBehaviour
+{
+	[Header("Health Settings")]
+	public float maxHP = 100f;
+	private float currentHP;
+
+	void Start()
+	{
+		currentHP = maxHP;
+	}
+
+	// Gây sát thương cho quái
+	public void TakeDamage(float damage)
+	{
+		currentHP -= damage;
+		currentHP = Mathf.Clamp(currentHP, 0, maxHP); // Đảm bảo HP không nhỏ hơn 0
+
+		if (currentHP <= 0)
+		{
+			Die();
+		}
+	}
+
+	// Hồi máu cho quái
+	public void Heal(float amount)
+	{
+		currentHP += amount;
+		currentHP = Mathf.Clamp(currentHP, 0, maxHP); // Đảm bảo HP không vượt quá maxHP
+	}
+
+	// Xử lý khi quái chết
+	private void Die()
+	{
+		Debug.Log(gameObject.name + " has died!");
+		Destroy(gameObject); // Hoặc có thể trigger animation chết
+	}
+
+	// Lấy HP hiện tại
+	public float GetCurrentHP()
+	{
+		return currentHP;
+	}
+}

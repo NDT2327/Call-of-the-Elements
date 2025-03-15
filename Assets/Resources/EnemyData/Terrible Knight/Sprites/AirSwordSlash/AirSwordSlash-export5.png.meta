@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AirSwordSlash-export5_0: -4962447466620582869
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

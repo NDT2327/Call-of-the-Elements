@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      player-Sword Slash_0: 6466815616684635286
+      player-Sword Slash_1: 1544459247598437772
+      player-Sword Slash_2: -1148027527635588232
+      player-Sword Slash_3: 4309599203127743448
+      player-Sword Slash_4: 7432550719280588193
+      player-Sword Slash_5: 7193205558387076020
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
