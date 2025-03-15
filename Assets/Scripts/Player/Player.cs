@@ -5,7 +5,11 @@ public class Player : MonoBehaviour
     public Rigidbody2D rb2d;
     public Animator animator;
     public GameObject blockFlash; // Hiệu ứng flash khi block
+    public GameObject dust;  // Hiệu ứng bụi khi nhảy
+    public GameObject dust2; // Hiệu ứng bụi khi tiếp đất
 
+
+    public int maxHealth = 3;
     public float speed = 5f;
     public float jumpHeight = 5f;
     public bool isGrounded = false;
@@ -22,10 +26,23 @@ public class Player : MonoBehaviour
         {
             blockFlash.SetActive(false); // Ẩn blockFlash ban đầu
         }
+        if (dust != null)
+        {
+            dust.SetActive(false); // Ẩn hiệu ứng bụi khi nhảy
+        }
+
+        if (dust2 != null)
+        {
+            dust2.SetActive(false); // Ẩn hiệu ứng bụi khi tiếp đất
+        }
     }
 
     void Update()
     {
+        if (maxHealth <= 0)
+        {
+            Die();
+        }
         movement = Input.GetAxis("Horizontal");
 
         // Flip character
@@ -42,6 +59,7 @@ public class Player : MonoBehaviour
             isGrounded = false;
             animator.SetBool("Grounded", false);
             animator.SetTrigger("Jump");
+
         }
 
         // Attack logic
@@ -96,6 +114,8 @@ public class Player : MonoBehaviour
     void Jump()
     {
         rb2d.AddForce(new Vector2(0f, jumpHeight), ForceMode2D.Impulse);
+        CreateDustEffects(dust);
+        CreateDustEffects(dust2);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -105,6 +125,8 @@ public class Player : MonoBehaviour
         {
             isGrounded = true;
             animator.SetBool("Grounded", true);
+            CreateDustEffects(dust);
+            CreateDustEffects(dust2);
         }
     }
 
@@ -126,4 +148,29 @@ public class Player : MonoBehaviour
             blockFlash.SetActive(false);
         }
     }
+
+    public void TakeDamage(int damage)
+    {
+        if (maxHealth <= 0)
+        {
+            return;
+        }
+        maxHealth -= damage;
+    }
+
+    void Die()
+    {
+        Debug.Log("Player Died!");
+    }
+
+    void CreateDustEffects(GameObject dustEffect)
+    {
+        if (dustEffect != null)
+        {
+            GameObject dustInstance = Instantiate(dustEffect, transform.position - new Vector3(0f, 0.5f, 0f), Quaternion.identity);
+            dustInstance.SetActive(true); // Bật hiệu ứng bụi
+            Destroy(dustInstance, 0.5f);  // Xóa sau 0.5 giây
+        }
+    }
+
 }
