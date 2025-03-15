@@ -529,7 +529,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tauruswalk_0: 4396467672542827511
+      tauruswalk_1: 6516825944281261690
+      tauruswalk_10: 4689942245218339233
+      tauruswalk_11: -4417319613452911358
+      tauruswalk_12: -4507422295700572826
+      tauruswalk_13: -7421240228789229603
+      tauruswalk_14: -1142658400767818360
+      tauruswalk_15: 6240256840201912359
+      tauruswalk_2: 8786156095066076179
+      tauruswalk_3: -6042080465287696261
+      tauruswalk_4: -3379930264547254123
+      tauruswalk_5: -735010669374805228
+      tauruswalk_6: 6941870060593931141
+      tauruswalk_7: 6349587898746027484
+      tauruswalk_8: 10608900247497586
+      tauruswalk_9: 5269145111142300666
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

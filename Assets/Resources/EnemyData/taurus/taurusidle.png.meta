@@ -579,7 +579,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      taurusidle_0: 8405130380887337312
+      taurusidle_1: -2192833858933590058
+      taurusidle_10: -6570125817514630501
+      taurusidle_11: -6909189715124963834
+      taurusidle_12: 466754679653559601
+      taurusidle_13: 767740657352527555
+      taurusidle_14: -6310819246016316582
+      taurusidle_15: -521910870771357986
+      taurusidle_16: -7193884480054319345
+      taurusidle_17: -849384449817432723
+      taurusidle_2: -8597413206160749580
+      taurusidle_3: 8206588455705486672
+      taurusidle_4: 5039708677445338888
+      taurusidle_5: 3681518778727566384
+      taurusidle_6: 8141263004535446892
+      taurusidle_7: -400774405138566455
+      taurusidle_8: -6650341759722867174
+      taurusidle_9: 1379740473378841575
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

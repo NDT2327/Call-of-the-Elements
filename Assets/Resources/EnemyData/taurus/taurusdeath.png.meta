@@ -579,7 +579,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      taurusdeath_0: 1898683718385484944
+      taurusdeath_1: 2567530927022382124
+      taurusdeath_10: -6949002265997022487
+      taurusdeath_11: 7447758469361624595
+      taurusdeath_12: -4198244263270301230
+      taurusdeath_13: 1152968771613137802
+      taurusdeath_14: -3229587628648694932
+      taurusdeath_15: -6261045321806365925
+      taurusdeath_16: -8470669471329208370
+      taurusdeath_17: 8736322346096774827
+      taurusdeath_2: 4990700505054465431
+      taurusdeath_3: -1717443424421415068
+      taurusdeath_4: -8368158294792700443
+      taurusdeath_5: 6956587566366370769
+      taurusdeath_6: 7990856742554077113
+      taurusdeath_7: 1632278564026086778
+      taurusdeath_8: 2363056090585550586
+      taurusdeath_9: -7746170374311684488
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
