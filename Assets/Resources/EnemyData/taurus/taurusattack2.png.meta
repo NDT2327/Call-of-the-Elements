@@ -1,68 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 7fa7e5a57d338e5448824438ffa3e5e4
-=======
-guid: 48634063f99df6b41ab8f8ca8e6cc0d9
->>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -4942953961690246948
-    second: taurusattack2_0
-  - first:
-      213: 4442613682941623512
-    second: taurusattack2_1
-  - first:
-      213: -5350935416004347217
-    second: taurusattack2_2
-  - first:
-      213: 57419547809646519
-    second: taurusattack2_3
-  - first:
-      213: 4194245315368729229
-    second: taurusattack2_4
-  - first:
-      213: 4193731920235096736
-    second: taurusattack2_5
-  - first:
-      213: -9198675009343154547
-    second: taurusattack2_6
-  - first:
-      213: -1505921981268082837
-    second: taurusattack2_7
-  - first:
-      213: 5452278303393378814
-    second: taurusattack2_8
-  - first:
-      213: -6336126481029483919
-    second: taurusattack2_9
-  - first:
-      213: 7305874662757057172
-    second: taurusattack2_10
-  - first:
-      213: 5783331393129002547
-    second: taurusattack2_11
-  - first:
-      213: -2963010140365458626
-    second: taurusattack2_12
-  - first:
-      213: 2321472066885639170
-    second: taurusattack2_13
-  - first:
-      213: 8726201018813085572
-    second: taurusattack2_14
-  - first:
-      213: 4348547739650671740
-    second: taurusattack2_15
-  - first:
-      213: -5553153148633871976
-    second: taurusattack2_16
-  - first:
-      213: 6839212219085736090
-    second: taurusattack2_17
-  - first:
-      213: 5222197311470075842
-    second: taurusattack2_18
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -124,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -146,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -154,13 +93,12 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -168,8 +106,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -177,20 +113,20 @@ TextureImporter:
       name: taurusattack2_0
       rect:
         serializedVersion: 2
-        x: 215
-        y: 27
-        width: 480
-        height: 334
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 214
+        y: 25
+        width: 482
+        height: 338
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cd0d75c8f89176bb0800000000000000
-      internalID: -4942953961690246948
+      spriteID: f13248ff5a9b31642b2695ad4a196b4b
+      internalID: 473084600
       vertices: []
       indices: 
       edges: []
@@ -199,20 +135,20 @@ TextureImporter:
       name: taurusattack2_1
       rect:
         serializedVersion: 2
-        x: 1115
-        y: 27
-        width: 480
-        height: 334
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1114
+        y: 25
+        width: 482
+        height: 338
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8dc760e4b9557ad30800000000000000
-      internalID: 4442613682941623512
+      spriteID: b5dc71d99a184e948bba6b3a76c0b1d7
+      internalID: 535497129
       vertices: []
       indices: 
       edges: []
@@ -221,20 +157,20 @@ TextureImporter:
       name: taurusattack2_2
       rect:
         serializedVersion: 2
-        x: 2015
-        y: 27
-        width: 480
-        height: 334
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2014
+        y: 25
+        width: 482
+        height: 338
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: faaf001f698adb5b0800000000000000
-      internalID: -5350935416004347217
+      spriteID: ff18d061dc0e4dd43a2f57d3850784d4
+      internalID: -2145381479
       vertices: []
       indices: 
       edges: []
@@ -244,19 +180,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2915
-        y: 27
-        width: 480
-        height: 334
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 25
+        width: 481
+        height: 338
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7b78b5646cefbc000800000000000000
-      internalID: 57419547809646519
+      spriteID: 8ed694546dd90d14ea4524a5bb9eb8c2
+      internalID: -904155981
       vertices: []
       indices: 
       edges: []
@@ -265,20 +201,20 @@ TextureImporter:
       name: taurusattack2_4
       rect:
         serializedVersion: 2
-        x: 3815
-        y: 27
-        width: 480
-        height: 334
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3813
+        y: 25
+        width: 484
+        height: 338
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d8a366b64e3f43a30800000000000000
-      internalID: 4194245315368729229
+      spriteID: 87b50c93a13c8554e90b5c5cd953ca23
+      internalID: -1912350679
       vertices: []
       indices: 
       edges: []
@@ -287,20 +223,20 @@ TextureImporter:
       name: taurusattack2_5
       rect:
         serializedVersion: 2
-        x: 4715
-        y: 27
-        width: 480
-        height: 334
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4713
+        y: 25
+        width: 484
+        height: 338
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0aa64dc46f0233a30800000000000000
-      internalID: 4193731920235096736
+      spriteID: b9c9cb328070b4244b0430b31ee1f982
+      internalID: 804530866
       vertices: []
       indices: 
       edges: []
@@ -309,20 +245,20 @@ TextureImporter:
       name: taurusattack2_6
       rect:
         serializedVersion: 2
-        x: 5615
-        y: 27
-        width: 480
-        height: 340
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5613
+        y: 25
+        width: 484
+        height: 343
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d8696dfc0ddb75080800000000000000
-      internalID: -9198675009343154547
+      spriteID: 784aaa8ac27520841a2bd31ca1dc5455
+      internalID: 1510898744
       vertices: []
       indices: 
       edges: []
@@ -331,20 +267,20 @@ TextureImporter:
       name: taurusattack2_7
       rect:
         serializedVersion: 2
-        x: 6515
-        y: 27
-        width: 480
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6514
+        y: 25
+        width: 483
+        height: 347
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b6f301fcfe3e91be0800000000000000
-      internalID: -1505921981268082837
+      spriteID: 0e75e98df10ec4b4b9b53581ad6af8ee
+      internalID: -336998254
       vertices: []
       indices: 
       edges: []
@@ -353,20 +289,20 @@ TextureImporter:
       name: taurusattack2_8
       rect:
         serializedVersion: 2
-        x: 7415
-        y: 29
-        width: 476
-        height: 342
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 7414
+        y: 27
+        width: 478
+        height: 345
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ef1f452ca326aab40800000000000000
-      internalID: 5452278303393378814
+      spriteID: 2389d0311f265d74c950ffdf204c6e62
+      internalID: 229983813
       vertices: []
       indices: 
       edges: []
@@ -375,20 +311,20 @@ TextureImporter:
       name: taurusattack2_9
       rect:
         serializedVersion: 2
-        x: 8315
-        y: 29
-        width: 476
-        height: 342
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 8314
+        y: 27
+        width: 478
+        height: 345
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 172ba46298e8118a0800000000000000
-      internalID: -6336126481029483919
+      spriteID: b0bdcd43395fc2146a69e561a0d4a5cb
+      internalID: -490878008
       vertices: []
       indices: 
       edges: []
@@ -397,20 +333,20 @@ TextureImporter:
       name: taurusattack2_10
       rect:
         serializedVersion: 2
-        x: 9215
-        y: 29
-        width: 476
-        height: 342
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 9214
+        y: 27
+        width: 478
+        height: 345
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 492492f2c4ea36560800000000000000
-      internalID: 7305874662757057172
+      spriteID: 4efd24d7026f125499584325169a1263
+      internalID: -1982357384
       vertices: []
       indices: 
       edges: []
@@ -419,20 +355,20 @@ TextureImporter:
       name: taurusattack2_11
       rect:
         serializedVersion: 2
-        x: 10215
-        y: 29
-        width: 384
-        height: 316
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 10213
+        y: 27
+        width: 387
+        height: 319
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 336b1d9b245824050800000000000000
-      internalID: 5783331393129002547
+      spriteID: 85c61f18ec211054f912b74bcedaef27
+      internalID: 503124801
       vertices: []
       indices: 
       edges: []
@@ -441,20 +377,20 @@ TextureImporter:
       name: taurusattack2_12
       rect:
         serializedVersion: 2
-        x: 11115
-        y: 29
-        width: 394
-        height: 306
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 11114
+        y: 27
+        width: 396
+        height: 310
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e33f2add9f541e6d0800000000000000
-      internalID: -2963010140365458626
+      spriteID: c8fe560e2700da04b8f11fb791db194c
+      internalID: -314819360
       vertices: []
       indices: 
       edges: []
@@ -463,20 +399,20 @@ TextureImporter:
       name: taurusattack2_13
       rect:
         serializedVersion: 2
-        x: 12015
-        y: 29
-        width: 384
-        height: 316
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 12014
+        y: 27
+        width: 386
+        height: 319
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 20cd5be8b86873020800000000000000
-      internalID: 2321472066885639170
+      spriteID: fa158bbed62c18c4fa5400afd033e040
+      internalID: 93065160
       vertices: []
       indices: 
       edges: []
@@ -485,20 +421,20 @@ TextureImporter:
       name: taurusattack2_14
       rect:
         serializedVersion: 2
-        x: 12625
-        y: 27
-        width: 636
-        height: 473
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 12624
+        y: 0
+        width: 638
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 487710dd791b91970800000000000000
-      internalID: 8726201018813085572
+      spriteID: b6b110385dcd15a4fb8e720c1ff07a56
+      internalID: -938290280
       vertices: []
       indices: 
       edges: []
@@ -507,20 +443,20 @@ TextureImporter:
       name: taurusattack2_15
       rect:
         serializedVersion: 2
-        x: 13525
-        y: 153
-        width: 234
-        height: 347
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 13523
+        y: 152
+        width: 237
+        height: 348
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c74c4be2125295c30800000000000000
-      internalID: 4348547739650671740
+      spriteID: d6d6ed2aa935844499aeb6873f7de4a8
+      internalID: -1421915291
       vertices: []
       indices: 
       edges: []
@@ -529,20 +465,20 @@ TextureImporter:
       name: taurusattack2_16
       rect:
         serializedVersion: 2
-        x: 13799
-        y: 31
-        width: 358
-        height: 469
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 13519
+        y: 20
+        width: 639
+        height: 480
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 899065812ac3fe2b0800000000000000
-      internalID: -5553153148633871976
+      spriteID: 64e8c8508efba104e9fa31b7dbcd50aa
+      internalID: -1937886131
       vertices: []
       indices: 
       edges: []
@@ -551,20 +487,20 @@ TextureImporter:
       name: taurusattack2_17
       rect:
         serializedVersion: 2
-        x: 14425
-        y: 225
-        width: 18
-        height: 154
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 14423
+        y: 223
+        width: 21
+        height: 157
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a98cd1e0743c9ee50800000000000000
-      internalID: 6839212219085736090
+      spriteID: fe23ad1c3579b9640aacad2dbf3d034f
+      internalID: -1574819925
       vertices: []
       indices: 
       edges: []
@@ -573,20 +509,20 @@ TextureImporter:
       name: taurusattack2_18
       rect:
         serializedVersion: 2
-        x: 14579
-        y: 27
-        width: 482
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 14421
+        y: 22
+        width: 649
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2cf7c2159c8f87840800000000000000
-      internalID: 5222197311470075842
+      spriteID: 33736b6516605584d829ff63095a9741
+      internalID: -507017273
       vertices: []
       indices: 
       edges: []
@@ -595,7 +531,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: da81dc9fb58591b4982d4f9d84c2105e
     internalID: 0
     vertices: []
     indices: 
@@ -605,25 +541,25 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      taurusattack2_0: -4942953961690246948
-      taurusattack2_1: 4442613682941623512
-      taurusattack2_10: 7305874662757057172
-      taurusattack2_11: 5783331393129002547
-      taurusattack2_12: -2963010140365458626
-      taurusattack2_13: 2321472066885639170
-      taurusattack2_14: 8726201018813085572
-      taurusattack2_15: 4348547739650671740
-      taurusattack2_16: -5553153148633871976
-      taurusattack2_17: 6839212219085736090
-      taurusattack2_18: 5222197311470075842
-      taurusattack2_2: -5350935416004347217
-      taurusattack2_3: 57419547809646519
-      taurusattack2_4: 4194245315368729229
-      taurusattack2_5: 4193731920235096736
-      taurusattack2_6: -9198675009343154547
-      taurusattack2_7: -1505921981268082837
-      taurusattack2_8: 5452278303393378814
-      taurusattack2_9: -6336126481029483919
+      taurusattack2_0: 473084600
+      taurusattack2_1: 535497129
+      taurusattack2_10: -1982357384
+      taurusattack2_11: 503124801
+      taurusattack2_12: -314819360
+      taurusattack2_13: 93065160
+      taurusattack2_14: -938290280
+      taurusattack2_15: -1421915291
+      taurusattack2_16: -1937886131
+      taurusattack2_17: -1574819925
+      taurusattack2_18: -507017273
+      taurusattack2_2: -2145381479
+      taurusattack2_3: -904155981
+      taurusattack2_4: -1912350679
+      taurusattack2_5: 804530866
+      taurusattack2_6: 1510898744
+      taurusattack2_7: -336998254
+      taurusattack2_8: 229983813
+      taurusattack2_9: -490878008
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

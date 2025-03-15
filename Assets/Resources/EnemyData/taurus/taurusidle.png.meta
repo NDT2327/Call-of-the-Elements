@@ -1,65 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: d687bc4e426f9704f8532e53c451f23f
-=======
-guid: 71e88120d7c6aff4e86133019013933b
->>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 8405130380887337312
-    second: taurusidle_0
-  - first:
-      213: -2192833858933590058
-    second: taurusidle_1
-  - first:
-      213: -8597413206160749580
-    second: taurusidle_2
-  - first:
-      213: 8206588455705486672
-    second: taurusidle_3
-  - first:
-      213: 5039708677445338888
-    second: taurusidle_4
-  - first:
-      213: 3681518778727566384
-    second: taurusidle_5
-  - first:
-      213: 8141263004535446892
-    second: taurusidle_6
-  - first:
-      213: -400774405138566455
-    second: taurusidle_7
-  - first:
-      213: -6650341759722867174
-    second: taurusidle_8
-  - first:
-      213: 1379740473378841575
-    second: taurusidle_9
-  - first:
-      213: -6570125817514630501
-    second: taurusidle_10
-  - first:
-      213: -6909189715124963834
-    second: taurusidle_11
-  - first:
-      213: 466754679653559601
-    second: taurusidle_12
-  - first:
-      213: 767740657352527555
-    second: taurusidle_13
-  - first:
-      213: -6310819246016316582
-    second: taurusidle_14
-  - first:
-      213: -521910870771357986
-    second: taurusidle_15
-  - first:
-      213: -7193884480054319345
-    second: taurusidle_16
-  - first:
-      213: -849384449817432723
-    second: taurusidle_17
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -92,12 +34,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -121,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -143,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -151,13 +93,12 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -165,8 +106,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -174,20 +113,20 @@ TextureImporter:
       name: taurusidle_0
       rect:
         serializedVersion: 2
-        x: 185
-        y: 29
-        width: 480
-        height: 334
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 184
+        y: 28
+        width: 482
+        height: 336
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 06922a39c8505a470800000000000000
-      internalID: 8405130380887337312
+      spriteID: b50e3b52b4508454bb9ab62bb2e22a2e
+      internalID: 981253208
       vertices: []
       indices: 
       edges: []
@@ -196,20 +135,20 @@ TextureImporter:
       name: taurusidle_1
       rect:
         serializedVersion: 2
-        x: 1085
-        y: 29
-        width: 480
-        height: 334
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1084
+        y: 28
+        width: 482
+        height: 336
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6d770d2393d7191e0800000000000000
-      internalID: -2192833858933590058
+      spriteID: 27ab71efc1226df4ebc1794c28e992b9
+      internalID: 575856994
       vertices: []
       indices: 
       edges: []
@@ -218,20 +157,20 @@ TextureImporter:
       name: taurusidle_2
       rect:
         serializedVersion: 2
-        x: 1985
-        y: 29
-        width: 480
-        height: 334
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1983
+        y: 28
+        width: 483
+        height: 336
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4fb49837d3adfa880800000000000000
-      internalID: -8597413206160749580
+      spriteID: 920dc792146795646bf39c70d54b50ab
+      internalID: -1854722409
       vertices: []
       indices: 
       edges: []
@@ -241,19 +180,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2885
-        y: 29
-        width: 480
-        height: 334
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 28
+        width: 481
+        height: 336
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 055a52858b8a3e170800000000000000
-      internalID: 8206588455705486672
+      spriteID: cbd7bee825994ce4e895ff1d82b31c97
+      internalID: 234319104
       vertices: []
       indices: 
       edges: []
@@ -263,19 +202,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3785
-        y: 29
-        width: 480
-        height: 334
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 28
+        width: 481
+        height: 336
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 80745923754a0f540800000000000000
-      internalID: 5039708677445338888
+      spriteID: 6e2a8510c2e58da45b2015e2f9728ec8
+      internalID: -313855876
       vertices: []
       indices: 
       edges: []
@@ -285,19 +224,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4685
-        y: 29
+        y: 28
         width: 480
-        height: 334
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 336
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 03c8cffd2d1671330800000000000000
-      internalID: 3681518778727566384
+      spriteID: 0b37967ab49ef9b4dac49bf8d84ad5b8
+      internalID: 1970993831
       vertices: []
       indices: 
       edges: []
@@ -307,19 +246,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5585
-        y: 29
+        y: 28
         width: 480
-        height: 340
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 342
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c6d5d5081939bf070800000000000000
-      internalID: 8141263004535446892
+      spriteID: d06b19f374c54ef418c242f082d89477
+      internalID: -356289917
       vertices: []
       indices: 
       edges: []
@@ -328,20 +267,20 @@ TextureImporter:
       name: taurusidle_7
       rect:
         serializedVersion: 2
-        x: 6485
-        y: 29
-        width: 480
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6484
+        y: 28
+        width: 481
+        height: 346
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9c2b5aa4dc9207af0800000000000000
-      internalID: -400774405138566455
+      spriteID: 26f22c5140778124a97b4250a6371f7f
+      internalID: 1024061990
       vertices: []
       indices: 
       edges: []
@@ -350,20 +289,20 @@ TextureImporter:
       name: taurusidle_8
       rect:
         serializedVersion: 2
-        x: 7385
-        y: 29
-        width: 480
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 7384
+        y: 28
+        width: 481
+        height: 346
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a16b5c0976d35b3a0800000000000000
-      internalID: -6650341759722867174
+      spriteID: a7dacf9e0188ca5488b41a422387c44a
+      internalID: -446496072
       vertices: []
       indices: 
       edges: []
@@ -372,20 +311,20 @@ TextureImporter:
       name: taurusidle_9
       rect:
         serializedVersion: 2
-        x: 8285
-        y: 29
-        width: 480
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 8284
+        y: 28
+        width: 482
+        height: 346
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7e3a9fd76a2d52310800000000000000
-      internalID: 1379740473378841575
+      spriteID: a1435fd2061a720439b08ee4b04e2fac
+      internalID: 1974582222
       vertices: []
       indices: 
       edges: []
@@ -394,20 +333,20 @@ TextureImporter:
       name: taurusidle_10
       rect:
         serializedVersion: 2
-        x: 9185
-        y: 29
-        width: 480
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 9184
+        y: 28
+        width: 482
+        height: 346
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b92ea65016932d4a0800000000000000
-      internalID: -6570125817514630501
+      spriteID: a9ee1a26f9df1d546a0bdc6fcb503c18
+      internalID: -508200769
       vertices: []
       indices: 
       edges: []
@@ -416,20 +355,20 @@ TextureImporter:
       name: taurusidle_11
       rect:
         serializedVersion: 2
-        x: 10085
-        y: 29
-        width: 480
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 10083
+        y: 28
+        width: 483
+        height: 346
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 606b1308f80ad10a0800000000000000
-      internalID: -6909189715124963834
+      spriteID: a6d18baa68598d84d9debed9d633e7b2
+      internalID: 1912525464
       vertices: []
       indices: 
       edges: []
@@ -439,19 +378,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 10985
-        y: 29
-        width: 480
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 28
+        width: 481
+        height: 346
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 13d600e78ee3a7600800000000000000
-      internalID: 466754679653559601
+      spriteID: d0364c1d3d5ba9d4fa3caf23dc9201ad
+      internalID: -1324525772
       vertices: []
       indices: 
       edges: []
@@ -461,19 +400,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 11885
-        y: 29
-        width: 480
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 28
+        width: 481
+        height: 346
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3ce4f196f0097aa00800000000000000
-      internalID: 767740657352527555
+      spriteID: 87ce39e95eb20c349b2e1b0f3e2b067d
+      internalID: 1853673603
       vertices: []
       indices: 
       edges: []
@@ -483,19 +422,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 12785
-        y: 29
+        y: 28
         width: 480
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 346
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a5bbf77f4577b68a0800000000000000
-      internalID: -6310819246016316582
+      spriteID: 8bee426b64384444dac27015e546a623
+      internalID: 887335153
       vertices: []
       indices: 
       edges: []
@@ -505,19 +444,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 13685
-        y: 29
+        y: 28
         width: 480
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 346
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ed6224704dcc1c8f0800000000000000
-      internalID: -521910870771357986
+      spriteID: e5ecc888ea2b569439c7e558b50bbd32
+      internalID: 422779332
       vertices: []
       indices: 
       edges: []
@@ -526,20 +465,20 @@ TextureImporter:
       name: taurusidle_16
       rect:
         serializedVersion: 2
-        x: 14585
-        y: 29
-        width: 480
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 14584
+        y: 28
+        width: 481
+        height: 346
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f07aa232e203a2c90800000000000000
-      internalID: -7193884480054319345
+      spriteID: a3f7f27040cb43546b5b8561d11bc76d
+      internalID: -2131239115
       vertices: []
       indices: 
       edges: []
@@ -548,20 +487,20 @@ TextureImporter:
       name: taurusidle_17
       rect:
         serializedVersion: 2
-        x: 15485
-        y: 29
-        width: 480
-        height: 340
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 15484
+        y: 28
+        width: 481
+        height: 342
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d6d24e6d7516634f0800000000000000
-      internalID: -849384449817432723
+      spriteID: 12df91d85b513704493eb7b8daae7e83
+      internalID: 1720553873
       vertices: []
       indices: 
       edges: []
@@ -570,7 +509,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 51a5266107de7154a8fcb382850c4b7c
     internalID: 0
     vertices: []
     indices: 
@@ -580,24 +519,24 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      taurusidle_0: 8405130380887337312
-      taurusidle_1: -2192833858933590058
-      taurusidle_10: -6570125817514630501
-      taurusidle_11: -6909189715124963834
-      taurusidle_12: 466754679653559601
-      taurusidle_13: 767740657352527555
-      taurusidle_14: -6310819246016316582
-      taurusidle_15: -521910870771357986
-      taurusidle_16: -7193884480054319345
-      taurusidle_17: -849384449817432723
-      taurusidle_2: -8597413206160749580
-      taurusidle_3: 8206588455705486672
-      taurusidle_4: 5039708677445338888
-      taurusidle_5: 3681518778727566384
-      taurusidle_6: 8141263004535446892
-      taurusidle_7: -400774405138566455
-      taurusidle_8: -6650341759722867174
-      taurusidle_9: 1379740473378841575
+      taurusidle_0: 981253208
+      taurusidle_1: 575856994
+      taurusidle_10: -508200769
+      taurusidle_11: 1912525464
+      taurusidle_12: -1324525772
+      taurusidle_13: 1853673603
+      taurusidle_14: 887335153
+      taurusidle_15: 422779332
+      taurusidle_16: -2131239115
+      taurusidle_17: 1720553873
+      taurusidle_2: -1854722409
+      taurusidle_3: 234319104
+      taurusidle_4: -313855876
+      taurusidle_5: 1970993831
+      taurusidle_6: -356289917
+      taurusidle_7: 1024061990
+      taurusidle_8: -446496072
+      taurusidle_9: 1974582222
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
