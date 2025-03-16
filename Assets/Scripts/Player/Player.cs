@@ -123,8 +123,6 @@ public class Player : MonoBehaviour
             CreateDustEffects(dust2);
         }
     }
-
-    // Hiển thị blockFlash trong 0.3 giây
     void ShowBlockFlash()
     {
         if (blockFlash != null)
@@ -134,7 +132,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    // Ẩn blockFlash
     void HideBlockFlash()
     {
         if (blockFlash != null)
@@ -142,7 +139,6 @@ public class Player : MonoBehaviour
             blockFlash.SetActive(false);
         }
     }
-
 
     void CreateDustEffects(GameObject dustEffect)
     {
