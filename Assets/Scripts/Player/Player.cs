@@ -8,8 +8,6 @@ public class Player : MonoBehaviour
     public GameObject dust;  // Hiệu ứng bụi khi nhảy
     public GameObject dust2; // Hiệu ứng bụi khi tiếp đất
 
-
-    public int maxHealth = 3;
     public float speed = 5f;
     public float jumpHeight = 5f;
     public bool isGrounded = false;
@@ -39,10 +37,6 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (maxHealth <= 0)
-        {
-            Die();
-        }
         movement = Input.GetAxis("Horizontal");
 
         // Flip character
@@ -149,19 +143,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage)
-    {
-        if (maxHealth <= 0)
-        {
-            return;
-        }
-        maxHealth -= damage;
-    }
-
-    void Die()
-    {
-        Debug.Log("Player Died!");
-    }
 
     void CreateDustEffects(GameObject dustEffect)
     {
