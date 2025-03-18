@@ -4,64 +4,79 @@ public class Player : MonoBehaviour
 {
     public Rigidbody2D rb2d;
     public Animator animator;
-    public GameObject blockFlash; // Hiệu ứng flash khi block
-    public GameObject dust;  // Hiệu ứng bụi khi nhảy
-    public GameObject dust2; // Hiệu ứng bụi khi tiếp đất
+    public GameObject blockFlash;
+    public GameObject dust;
+    public GameObject dust2;
 
     public float speed = 5f;
     public float jumpHeight = 5f;
     public bool isGrounded = false;
+    private bool canDoubleJump = false;
 
     private float movement;
     private bool facingRight = true;
     private int attackCount = 0;
     private float lastAttackTime;
-    public float attackResetTime = 0.5f; // Time to reset attack count
+    public float attackResetTime = 0.5f;
+    private float coolDownTime = Mathf.Infinity;
 
     void Start()
     {
-        if (blockFlash != null)
-        {
-            blockFlash.SetActive(false); // Ẩn blockFlash ban đầu
-        }
-        if (dust != null)
-        {
-            dust.SetActive(false); // Ẩn hiệu ứng bụi khi nhảy
-        }
-
-        if (dust2 != null)
-        {
-            dust2.SetActive(false); // Ẩn hiệu ứng bụi khi tiếp đất
-        }
+        if (blockFlash != null) blockFlash.SetActive(false);
+        if (dust != null) dust.SetActive(false);
+        if (dust2 != null) dust2.SetActive(false);
     }
 
     void Update()
     {
         movement = Input.GetAxis("Horizontal");
+        Move();
+        HandleJump();
+        HandleAttack();
+        HandleBlock();
+        HandleRoll();
+    }
 
-        // Flip character
+    private void Move()
+    {
         if ((movement < 0f && facingRight) || (movement > 0f && !facingRight))
         {
-            facingRight = !facingRight;
-            transform.eulerAngles = new Vector3(0f, facingRight ? 0f : -180f, 0f);
+            Flip();
         }
+        animator.SetInteger("AnimState", Mathf.Abs(movement) > 0f ? 1 : 0);
+    }
 
-        // Jump logic
-        if (Input.GetKeyDown(KeyCode.K) && isGrounded)
+    private void Flip()
+    {
+        facingRight = !facingRight;
+        transform.eulerAngles = new Vector3(0f, facingRight ? 0f : 180f, 0f);
+    }
+
+    private void HandleJump()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
         {
-            Jump();
-            isGrounded = false;
-            animator.SetBool("Grounded", false);
-            animator.SetTrigger("Jump");
-
+            if (isGrounded)
+            {
+                Jump();
+                isGrounded = false;
+                canDoubleJump = true;
+            }
+            else if (canDoubleJump)
+            {
+                Jump();
+                canDoubleJump = false;
+            }
         }
+    }
 
-        // Attack logic
+    private void HandleAttack()
+    {
         if (Input.GetKeyDown(KeyCode.J))
         {
             if (Time.time - lastAttackTime > attackResetTime)
             {
-                attackCount = 0; // Reset combo if too much time has passed
+                attackCount = 0;
             }
 
             attackCount++;
@@ -78,51 +93,61 @@ public class Player : MonoBehaviour
             else if (attackCount >= 3)
             {
                 animator.SetTrigger("Attack3");
-                attackCount = 0; // Reset combo after third attack
+                attackCount = 0;
             }
         }
+    }
 
-        // Roll logic
+    //private void SpAttack()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.U) && coolDownTime > )
+    //    {
+    //        animator.SetTrigger("Attack1");
+    //    }
+    //}
+
+    private void HandleBlock()
+    {
+        if (Input.GetKeyDown(KeyCode.S) && isGrounded)
+        {
+            animator.SetTrigger("Block");
+            ShowBlockFlash();
+        }
+    }
+
+    private void HandleRoll()
+    {
         if (Input.GetKeyDown(KeyCode.L) && isGrounded)
         {
             animator.SetTrigger("Roll");
         }
-
-        // Block logic
-        if (Input.GetKeyDown(KeyCode.S) && isGrounded)
-        {
-            animator.SetTrigger("Block");
-            ShowBlockFlash(); // Hiển thị blockFlash khi Block
-        }
-
-        // Animator for running
-        animator.SetInteger("AnimState", Mathf.Abs(movement) > 0f ? 1 : 0);
     }
 
     private void FixedUpdate()
     {
-        // Move character
         transform.position += new Vector3(movement, 0f, 0f) * speed * Time.fixedDeltaTime;
     }
 
     void Jump()
     {
-        rb2d.AddForce(new Vector2(0f, jumpHeight), ForceMode2D.Impulse);
+        rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, jumpHeight);
+        animator.SetBool("Grounded", false);
+        animator.SetTrigger("Jump");
+
         CreateDustEffects(dust);
-        CreateDustEffects(dust2);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Check if player lands on the ground
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
             animator.SetBool("Grounded", true);
-            CreateDustEffects(dust);
+            canDoubleJump = false;
             CreateDustEffects(dust2);
         }
     }
+
     void ShowBlockFlash()
     {
         if (blockFlash != null)
@@ -145,21 +170,18 @@ public class Player : MonoBehaviour
         if (dustEffect != null)
         {
             GameObject dustInstance = Instantiate(dustEffect, transform.position - new Vector3(0f, 0.5f, 0f), Quaternion.identity);
-            dustInstance.SetActive(true); // Bật hiệu ứng bụi
-            Destroy(dustInstance, 0.5f);  // Xóa sau 0.5 giây
+            dustInstance.SetActive(true);
+            Destroy(dustInstance, 0.5f);
         }
     }
 
     void DealDamage()
     {
-        float attackRange = 1.5f; // Phạm vi tấn công
-        float attackDamage = 20f; // Lượng sát thương gây ra
-
+        float attackRange = 1.5f;
+        float attackDamage = 20f;
         Vector2 attackPosition = transform.position + new Vector3(facingRight ? attackRange : -attackRange, 0, 0);
 
-        // Kiểm tra va chạm với quái vật trong phạm vi
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPosition, 0.5f);
-
         foreach (Collider2D enemy in hitEnemies)
         {
             if (enemy.CompareTag("Enemy"))
@@ -169,6 +191,4 @@ public class Player : MonoBehaviour
             }
         }
     }
-
-
 }

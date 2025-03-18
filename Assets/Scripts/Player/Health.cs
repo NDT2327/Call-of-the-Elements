@@ -10,6 +10,7 @@ public class Health : MonoBehaviour
     private void Awake()
     {
         CurrentHealth = startingHealth;
+        anim = GetComponent<Animator>();
     }
 
     public void TakeDamage(float _damage)
