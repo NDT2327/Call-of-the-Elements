@@ -434,7 +434,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Earth Wall_0: -7911635434537477331
+      Earth Wall_1: 1053986983518939067
+      Earth Wall_10: -7735641526604516353
+      Earth Wall_11: -1725925774383673220
+      Earth Wall_12: 4604716118159208514
+      Earth Wall_2: 4713143438434661176
+      Earth Wall_3: -7875206268925348625
+      Earth Wall_4: -617020599534969254
+      Earth Wall_5: 7530178004654486919
+      Earth Wall_6: -2536780024774260998
+      Earth Wall_7: 7690793032384184664
+      Earth Wall_8: 1380538651347782211
+      Earth Wall_9: 2458143314670701040
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

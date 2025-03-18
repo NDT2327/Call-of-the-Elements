@@ -384,7 +384,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Earth Bump_0: 1217533121002368722
+      Earth Bump_1: 7168428102837373340
+      Earth Bump_10: 8241768649272917904
+      Earth Bump_2: -1573007658316422362
+      Earth Bump_3: -7193673393844121521
+      Earth Bump_4: -2996970699350514518
+      Earth Bump_5: -3347056752313925452
+      Earth Bump_6: -1359812761662771845
+      Earth Bump_7: 1511593363263318103
+      Earth Bump_8: 4305754585019645140
+      Earth Bump_9: -2093304030354767873
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
