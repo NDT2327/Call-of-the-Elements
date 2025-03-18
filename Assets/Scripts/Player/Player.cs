@@ -7,6 +7,9 @@ public class Player : MonoBehaviour
     public GameObject blockFlash;
     public GameObject dust;
     public GameObject dust2;
+    public GameObject spellEarthPrefab;
+    public GameObject spellEarth2Prefab;
+    public GameObject spellEarth3Prefab;
 
     public float speed = 5f;
     public float jumpHeight = 5f;
@@ -18,7 +21,9 @@ public class Player : MonoBehaviour
     private int attackCount = 0;
     private float lastAttackTime;
     public float attackResetTime = 0.5f;
-    private float coolDownTime = Mathf.Infinity;
+    private float specialAttackCooldown = 3f; // Thời gian chờ giữa mỗi lần dùng SpAttack
+    private float lastSpecialAttackTime = -Mathf.Infinity;
+
 
     void Start()
     {
@@ -35,6 +40,7 @@ public class Player : MonoBehaviour
         HandleAttack();
         HandleBlock();
         HandleRoll();
+        SpAttack();
     }
 
     private void Move()
@@ -98,13 +104,60 @@ public class Player : MonoBehaviour
         }
     }
 
-    //private void SpAttack()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.U) && coolDownTime > )
-    //    {
-    //        animator.SetTrigger("Attack1");
-    //    }
-    //}
+    private void SpAttack()
+    {
+        if (Input.GetKeyDown(KeyCode.U) && Time.time - lastSpecialAttackTime >= specialAttackCooldown)
+        {
+            animator.SetTrigger("Attack3"); // Chạy animation Attack3
+
+            // Tìm kẻ địch gần nhất
+            GameObject nearestEnemy = FindNearestEnemy();
+            if (nearestEnemy != null)
+            {
+                // Gọi spell ngay dưới chân kẻ địch
+                SpawnSpell(spellEarthPrefab, nearestEnemy.transform.position);
+                SpawnSpell(spellEarth2Prefab, nearestEnemy.transform.position);
+                SpawnSpell(spellEarth3Prefab, nearestEnemy.transform.position);
+
+                // Gây damage cho kẻ địch
+                nearestEnemy.GetComponent<EnemyHP>().TakeDamage(50f); // Gây 50 sát thương (tùy chỉnh)
+
+                lastSpecialAttackTime = Time.time; // Cập nhật thời gian sử dụng skill
+            }
+        }
+    }
+
+    private GameObject FindNearestEnemy()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject nearestEnemy = null;
+        float minDistance = Mathf.Infinity;
+
+        foreach (GameObject enemy in enemies)
+        {
+            float distance = Vector2.Distance(transform.position, enemy.transform.position);
+            if (distance < minDistance)
+            {
+                minDistance = distance;
+                nearestEnemy = enemy;
+            }
+        }
+
+        return nearestEnemy;
+    }
+
+
+    private void SpawnSpell(GameObject spellPrefab, Vector3 position)
+    {
+        if (spellPrefab != null)
+        {
+            GameObject spell = Instantiate(spellPrefab, position, Quaternion.identity);
+            spell.SetActive(true);
+
+            // Xóa spell sau 1 giây
+            Destroy(spell, 1f);
+        }
+    }
 
     private void HandleBlock()
     {
