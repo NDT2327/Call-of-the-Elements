@@ -165,7 +165,7 @@ public class HellBeastScript : MonoBehaviour
             if (playerHP != null)
             {
                 Debug.Log("HellBeast gây sát thương Burn cận chiến!");
-                playerHP.TakeDamage(1); // Gây 1 damage
+                playerHP.TakeDamage(100); // Gây 1 damage
             }
         }
 	}
