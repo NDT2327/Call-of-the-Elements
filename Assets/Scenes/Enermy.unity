@@ -242,6 +242,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1127212823}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &755533439 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2219123463786518281, guid: ad7bee9c046638440853e6df3f3808f7, type: 3}
+  m_PrefabInstance: {fileID: 1301209178}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &795461507
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &795461508
 Transform:
   m_ObjectHideFlags: 0
@@ -1127,7 +1132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f309409fee94d3549bfea7d6313019b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 755533439}
   detectionRange: 20
   chaseSpeed: 2
   obstacleMask:
@@ -1225,6 +1230,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8490920196310057571, guid: ad7bee9c046638440853e6df3f3808f7, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490920196310057571, guid: ad7bee9c046638440853e6df3f3808f7, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1365,7 +1374,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1059958391}
   - {fileID: 595214325}
+  - {fileID: 1301209178}
   - {fileID: 1367210528}
   - {fileID: 795461508}
   - {fileID: 1240107729}
-  - {fileID: 1301209178}
