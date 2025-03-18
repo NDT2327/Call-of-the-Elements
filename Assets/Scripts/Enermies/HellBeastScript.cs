@@ -21,8 +21,8 @@ public class HellBeastScript : MonoBehaviour
 
 	private Animator anim;
 	private Rigidbody2D rb;
-
-	private enum State { Idle, Chase, Attack }
+    private Health playerHP;
+    private enum State { Idle, Chase, Attack }
 	private State currentState = State.Idle;
 
 	void Start()
@@ -30,6 +30,7 @@ public class HellBeastScript : MonoBehaviour
 		Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("EnermyLayer"), LayerMask.NameToLayer("EnermyLayer"));
 		anim = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
+		playerHP = GetComponent<Health>();
 	}
 
 	void Update()
@@ -89,10 +90,10 @@ public class HellBeastScript : MonoBehaviour
 	{
 		// Tính hướng và di chuyển
 		Vector2 direction = (target.position - transform.position).normalized;
-		rb.linearVelocity = direction * chaseSpeed;
+        rb.linearVelocity = new Vector2(direction.x * chaseSpeed, rb.linearVelocity.y);
 
-		// Flip sprite nếu cần
-		if ((direction.x > 0 && transform.localScale.x < 0) ||
+        // Flip sprite nếu cần
+        if ((direction.x > 0 && transform.localScale.x < 0) ||
 			(direction.x < 0 && transform.localScale.x > 0))
 		{
 			Flip();
@@ -159,9 +160,14 @@ public class HellBeastScript : MonoBehaviour
 		Collider2D hit = Physics2D.OverlapCircle(transform.position, closeAttackRange, targetMask);
 		if (hit != null)
 		{
-			Debug.Log("HellBeast gây sát thương Burn cận chiến!");
-			// Tại đây bạn có thể gọi các hàm để gây sát thương lên đối tượng
-		}
+            // Tại đây bạn có thể gọi các hàm để gây sát thương lên đối tượng
+            playerHP = hit.GetComponent<Health>();
+            if (playerHP != null)
+            {
+                Debug.Log("HellBeast gây sát thương Burn cận chiến!");
+                playerHP.TakeDamage(1); // Gây 1 damage
+            }
+        }
 	}
 
 	// Gây sát thương tầm xa (hoặc bắn projectile)

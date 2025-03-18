@@ -132,7 +132,7 @@ public class GolemEnemyScript : MonoBehaviour
     private void ChaseTarget()
     {
         Vector2 direction = (target.position - transform.position).normalized;
-        rb.linearVelocity = new Vector2(direction.x * chaseSpeed, rb.linearVelocity.y); ;
+        rb.linearVelocity = new Vector2(direction.x * chaseSpeed, rb.linearVelocity.y);
 
         // Flip dựa theo hướng target
         FlipChase(-direction.x);

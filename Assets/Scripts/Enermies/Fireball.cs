@@ -4,15 +4,16 @@ public class Fireball : MonoBehaviour
 {
 	[Header("Fireball Settings")]
 	public float speed = 5f;       // Tốc độ bay của fireball
-	public float damage = 20f;     // Lượng sát thương gây ra
+	public float damage = 2f;     // Lượng sát thương gây ra
 	public float lifetime = 5f;    // Thời gian tồn tại của fireball
-
-	private Vector2 moveDirection;
+    private Health playerHP;
+    private Vector2 moveDirection;
 
 	void Start()
 	{
 		// Tự hủy fireball sau một khoảng thời gian
 		Destroy(gameObject, lifetime);
+		playerHP = GetComponent<Health>();
 	}
 
 	void Update()
@@ -36,11 +37,12 @@ public class Fireball : MonoBehaviour
 	{
 		if (collision.gameObject.CompareTag("Player"))
 		{
-			// var playerHP = collision.gameObject.GetComponent<PlayerHP>();
-			// if (playerHP != null)
-			// {
-			//     playerHP.TakeDamage(damage);
-			// }
+			var playerHP = collision.gameObject.GetComponent<Health>();
+			if (playerHP != null)
+			{
+                Debug.Log("Gây " + damage);
+				playerHP.TakeDamage(damage);
+            }
 
 			Destroy(gameObject); // Hủy fireball sau khi va chạm
 		}
