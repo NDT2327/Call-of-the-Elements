@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2957606544101756365}
   - component: {fileID: 5253313836525784319}
   m_Layer: 0
-  m_Name: FireBall
+  m_Name: EarthSpell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_Size: {x: 1.34, y: 5.78}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &5253313836525784319
@@ -98,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 1924489652091434290}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76a966ec29d92464f96bd3df3045596f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9e8e9826eb4e3ab4d9a46ad040f45326, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
