@@ -23,6 +23,9 @@ public class Player : MonoBehaviour
     public float attackResetTime = 0.5f;
     private float specialAttackCooldown = 3f; // Thời gian chờ giữa mỗi lần dùng SpAttack
     private float lastSpecialAttackTime = -Mathf.Infinity;
+    private bool isBlocking = false;
+    private bool isRolling = false;
+
 
 
     void Start()
@@ -108,24 +111,23 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.U) && Time.time - lastSpecialAttackTime >= specialAttackCooldown)
         {
-            animator.SetTrigger("Attack3"); // Chạy animation Attack3
+            animator.SetTrigger("Attack3");
 
-            // Tìm kẻ địch gần nhất
+            // Tìm enemy gần nhất
             GameObject nearestEnemy = FindNearestEnemy();
             if (nearestEnemy != null)
             {
-                // Gọi spell ngay dưới chân kẻ địch
-                SpawnSpell(spellEarthPrefab, nearestEnemy.transform.position);
-                SpawnSpell(spellEarth2Prefab, nearestEnemy.transform.position);
-                SpawnSpell(spellEarth3Prefab, nearestEnemy.transform.position);
-
-                // Gây damage cho kẻ địch
-                nearestEnemy.GetComponent<EnemyHP>().TakeDamage(50f); // Gây 50 sát thương (tùy chỉnh)
-
-                lastSpecialAttackTime = Time.time; // Cập nhật thời gian sử dụng skill
+                Vector3 spawnPosition = nearestEnemy.transform.position - new Vector3(0, 1f, 0); // Dưới chân enemy
+                SpawnSpell(spellEarthPrefab, spawnPosition);
+                SpawnSpell(spellEarth2Prefab, spawnPosition);
+                SpawnSpell(spellEarth3Prefab, spawnPosition);
             }
+
+            lastSpecialAttackTime = Time.time;
         }
     }
+
+
 
     private GameObject FindNearestEnemy()
     {
@@ -151,10 +153,10 @@ public class Player : MonoBehaviour
     {
         if (spellPrefab != null)
         {
-            GameObject spell = Instantiate(spellPrefab, position, Quaternion.identity);
-            spell.SetActive(true);
+            Quaternion rotation = facingRight ? Quaternion.identity : Quaternion.Euler(0, 180, 0);
+            GameObject spell = Instantiate(spellPrefab, position, rotation);
 
-            // Xóa spell sau 1 giây
+            spell.SetActive(true);
             Destroy(spell, 1f);
         }
     }
@@ -163,10 +165,16 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.S) && isGrounded)
         {
+            isBlocking = true;
             animator.SetTrigger("Block");
             ShowBlockFlash();
         }
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            isBlocking = false;
+        }
     }
+
 
     private void HandleRoll()
     {
