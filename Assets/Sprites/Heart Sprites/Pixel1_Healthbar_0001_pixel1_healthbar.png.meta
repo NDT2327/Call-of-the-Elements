@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: c7f3a33f9df3e4645b83f308163da6dc
+guid: 32fa2619b5f6478429b772dc1e8ab975
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -726503049170350462
-    second: Pixel2_Healthbar_0003_pixel2_HealthBars_0
-  - first:
-      213: 7399991790791689299
-    second: Pixel2_Healthbar_0003_pixel2_HealthBars_1
+      213: -6288102705319367130
+    second: Pixel1_Healthbar_0001_pixel1_healthbar_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pixel2_Healthbar_0003_pixel2_HealthBars_0
+      name: Pixel1_Healthbar_0001_pixel1_healthbar_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 72
-        width: 107
-        height: 9
+        x: 7
+        y: 28
+        width: 81
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28e86f17351fae5f0800000000000000
-      internalID: -726503049170350462
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pixel2_Healthbar_0003_pixel2_HealthBars_1
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 61
-        width: 107
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 35402fea35d02b660800000000000000
-      internalID: 7399991790791689299
+      spriteID: 62e2442c7eb2cb8a0800000000000000
+      internalID: -6288102705319367130
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pixel2_Healthbar_0003_pixel2_HealthBars_0: -726503049170350462
-      Pixel2_Healthbar_0003_pixel2_HealthBars_1: 7399991790791689299
+      Pixel1_Healthbar_0001_pixel1_healthbar_0: -6288102705319367130
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
