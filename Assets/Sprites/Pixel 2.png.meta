@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: 04429e757fc10d540bf3a5aaa62ee089
+guid: 763c76e955ff7364aaad26ac7eb37c10
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8227546954408941770
-    second: HealthBar_0
+      213: -6355978112876748854
+    second: Pixel 2_0
   - first:
-      213: -3178617384780871938
-    second: HealthBar_1
+      213: -7877207444102080527
+    second: Pixel 2_1
   - first:
-      213: 5032351099696674128
-    second: HealthBar_2
+      213: -4759318028524846365
+    second: Pixel 2_2
   - first:
-      213: 5856585005746452560
-    second: HealthBar_3
+      213: 5072683463299706632
+    second: Pixel 2_3
   - first:
-      213: -6503669339106013020
-    second: HealthBar_4
+      213: 2343923472509035969
+    second: Pixel 2_4
   - first:
-      213: -7959300830350487195
-    second: HealthBar_5
+      213: -6268624891656627738
+    second: Pixel 2_5
   - first:
-      213: 4778905902034280743
-    second: HealthBar_6
+      213: 7618314805740542229
+    second: Pixel 2_6
   - first:
-      213: -5794802862350705069
-    second: HealthBar_7
-  - first:
-      213: 742694783190739037
-    second: HealthBar_8
-  - first:
-      213: -8435055190330730327
-    second: HealthBar_9
+      213: 916378889779630576
+    second: Pixel 2_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -78,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HealthBar_0
+      name: Pixel 2_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 10
-        width: 114
-        height: 114
+        x: 23
+        y: 76
+        width: 10
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 637ab99e2a1e1dd80800000000000000
-      internalID: -8227546954408941770
+      spriteID: acfd2dde4970bc7a0800000000000000
+      internalID: -6355978112876748854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_1
+      name: Pixel 2_1
       rect:
         serializedVersion: 2
-        x: 126
-        y: 10
-        width: 115
-        height: 114
+        x: 39
+        y: 76
+        width: 10
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef6414f545843e3d0800000000000000
-      internalID: -3178617384780871938
+      spriteID: 1f79b3890998ea290800000000000000
+      internalID: -7877207444102080527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_2
+      name: Pixel 2_2
       rect:
         serializedVersion: 2
-        x: 249
-        y: 10
-        width: 114
-        height: 114
+        x: 48
+        y: 77
+        width: 8
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0557772a9a086d540800000000000000
-      internalID: 5032351099696674128
+      spriteID: 3e20aa0187183fdb0800000000000000
+      internalID: -4759318028524846365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_3
+      name: Pixel 2_3
       rect:
         serializedVersion: 2
-        x: 371
-        y: 10
-        width: 115
-        height: 114
+        x: 56
+        y: 76
+        width: 10
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 05875608805c64150800000000000000
-      internalID: 5856585005746452560
+      spriteID: 80f2affcbbac56640800000000000000
+      internalID: 5072683463299706632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_4
+      name: Pixel 2_4
       rect:
         serializedVersion: 2
-        x: 494
-        y: 10
-        width: 114
-        height: 114
+        x: 75
+        y: 77
+        width: 8
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a09cf9a1335eb5a0800000000000000
-      internalID: -6503669339106013020
+      spriteID: 1c5e997caf9478020800000000000000
+      internalID: 2343923472509035969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_5
+      name: Pixel 2_5
       rect:
         serializedVersion: 2
-        x: 616
-        y: 10
-        width: 115
-        height: 114
+        x: 82
+        y: 77
+        width: 8
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,20 +246,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 561dc72a012ea8190800000000000000
-      internalID: -7959300830350487195
+      spriteID: 6e992a6afde5109a0800000000000000
+      internalID: -6268624891656627738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_6
+      name: Pixel 2_6
       rect:
         serializedVersion: 2
-        x: 739
-        y: 10
-        width: 114
-        height: 114
+        x: 89
+        y: 77
+        width: 8
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,20 +268,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 72165c12995125240800000000000000
-      internalID: 4778905902034280743
+      spriteID: 5199347c3f0b9b960800000000000000
+      internalID: 7618314805740542229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_7
+      name: Pixel 2_7
       rect:
         serializedVersion: 2
-        x: 861
-        y: 10
-        width: 115
-        height: 114
+        x: 98
+        y: 77
+        width: 8
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,52 +290,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35e5b26bf79b49fa0800000000000000
-      internalID: -5794802862350705069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HealthBar_8
-      rect:
-        serializedVersion: 2
-        x: 984
-        y: 10
-        width: 114
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d58ae9868f49e4a00800000000000000
-      internalID: 742694783190739037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HealthBar_9
-      rect:
-        serializedVersion: 2
-        x: 1106
-        y: 10
-        width: 115
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9a89587cef9a0fa80800000000000000
-      internalID: -8435055190330730327
+      spriteID: 0f15bfcbeb1a7bc00800000000000000
+      internalID: 916378889779630576
       vertices: []
       indices: 
       edges: []
@@ -360,16 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      HealthBar_0: -8227546954408941770
-      HealthBar_1: -3178617384780871938
-      HealthBar_2: 5032351099696674128
-      HealthBar_3: 5856585005746452560
-      HealthBar_4: -6503669339106013020
-      HealthBar_5: -7959300830350487195
-      HealthBar_6: 4778905902034280743
-      HealthBar_7: -5794802862350705069
-      HealthBar_8: 742694783190739037
-      HealthBar_9: -8435055190330730327
+      Pixel 2_0: -6355978112876748854
+      Pixel 2_1: -7877207444102080527
+      Pixel 2_2: -4759318028524846365
+      Pixel 2_3: 5072683463299706632
+      Pixel 2_4: 2343923472509035969
+      Pixel 2_5: -6268624891656627738
+      Pixel 2_6: 7618314805740542229
+      Pixel 2_7: 916378889779630576
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

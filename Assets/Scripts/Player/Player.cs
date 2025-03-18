@@ -150,4 +150,25 @@ public class Player : MonoBehaviour
         }
     }
 
+    void DealDamage()
+    {
+        float attackRange = 1.5f; // Phạm vi tấn công
+        float attackDamage = 20f; // Lượng sát thương gây ra
+
+        Vector2 attackPosition = transform.position + new Vector3(facingRight ? attackRange : -attackRange, 0, 0);
+
+        // Kiểm tra va chạm với quái vật trong phạm vi
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPosition, 0.5f);
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            if (enemy.CompareTag("Enemy"))
+            {
+                enemy.GetComponent<EnemyHP>().TakeDamage(attackDamage);
+                Debug.Log("Gây " + attackDamage + " sát thương lên " + enemy.gameObject.name);
+            }
+        }
+    }
+
+
 }

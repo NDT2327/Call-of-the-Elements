@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: c1fa38fee57579444b9e00b60eb7b770
+guid: c7f3a33f9df3e4645b83f308163da6dc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4606908045521496030
-    second: Heart_0
+      213: -726503049170350462
+    second: Pixel2_Healthbar_0003_pixel2_HealthBars_0
+  - first:
+      213: 7399991790791689299
+    second: Pixel2_Healthbar_0003_pixel2_HealthBars_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Heart_0
+      name: Pixel2_Healthbar_0003_pixel2_HealthBars_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 120
-        height: 120
+        x: 41
+        y: 72
+        width: 107
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed7a23e75760fef30800000000000000
-      internalID: 4606908045521496030
+      spriteID: 28e86f17351fae5f0800000000000000
+      internalID: -726503049170350462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel2_Healthbar_0003_pixel2_HealthBars_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 61
+        width: 107
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35402fea35d02b660800000000000000
+      internalID: 7399991790791689299
       vertices: []
       indices: 
       edges: []
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Heart_0: 4606908045521496030
+      Pixel2_Healthbar_0003_pixel2_HealthBars_0: -726503049170350462
+      Pixel2_Healthbar_0003_pixel2_HealthBars_1: 7399991790791689299
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

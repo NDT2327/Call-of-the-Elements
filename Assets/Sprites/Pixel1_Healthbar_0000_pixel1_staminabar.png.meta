@@ -1,37 +1,34 @@
 fileFormatVersion: 2
-guid: 061f8e5a8cc6c8547a2f725dd5db3e17
+guid: 4beba4a91abfdb04b96b8b293f4b38f0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8227546954408941770
-    second: HealthBar_0
+      213: -650377292173869679
+    second: Pixel1_Healthbar_0000_pixel1_staminabar_0
   - first:
-      213: -3178617384780871938
-    second: HealthBar_1
+      213: -4739020072751693151
+    second: Pixel1_Healthbar_0000_pixel1_staminabar_1
   - first:
-      213: 5032351099696674128
-    second: HealthBar_2
+      213: -1714075887090686413
+    second: Pixel1_Healthbar_0000_pixel1_staminabar_2
   - first:
-      213: 5856585005746452560
-    second: HealthBar_3
+      213: -2267629636594353829
+    second: Pixel1_Healthbar_0000_pixel1_staminabar_3
   - first:
-      213: -6503669339106013020
-    second: HealthBar_4
+      213: 7192403350202489986
+    second: Pixel1_Healthbar_0000_pixel1_staminabar_4
   - first:
-      213: -7959300830350487195
-    second: HealthBar_5
+      213: -8722532060359236795
+    second: Pixel1_Healthbar_0000_pixel1_staminabar_5
   - first:
-      213: 4778905902034280743
-    second: HealthBar_6
+      213: 5520792816688851725
+    second: Pixel1_Healthbar_0000_pixel1_staminabar_6
   - first:
-      213: -5794802862350705069
-    second: HealthBar_7
+      213: 8850179559230409846
+    second: Pixel1_Healthbar_0000_pixel1_staminabar_7
   - first:
-      213: 742694783190739037
-    second: HealthBar_8
-  - first:
-      213: -8435055190330730327
-    second: HealthBar_9
+      213: 3099871843243591214
+    second: Pixel1_Healthbar_0000_pixel1_staminabar_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -73,12 +70,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,13 +124,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HealthBar_0
+      name: Pixel1_Healthbar_0000_pixel1_staminabar_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 10
-        width: 114
-        height: 114
+        x: 94
+        y: 65
+        width: 6
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 637ab99e2a1e1dd80800000000000000
-      internalID: -8227546954408941770
+      spriteID: 19dfef17c4569f6f0800000000000000
+      internalID: -650377292173869679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_1
+      name: Pixel1_Healthbar_0000_pixel1_staminabar_1
       rect:
         serializedVersion: 2
-        x: 126
-        y: 10
-        width: 115
-        height: 114
+        x: 99
+        y: 65
+        width: 7
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef6414f545843e3d0800000000000000
-      internalID: -3178617384780871938
+      spriteID: 1a2803c2a5e9b3eb0800000000000000
+      internalID: -4739020072751693151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_2
+      name: Pixel1_Healthbar_0000_pixel1_staminabar_2
       rect:
         serializedVersion: 2
-        x: 249
-        y: 10
-        width: 114
-        height: 114
+        x: 7
+        y: 50
+        width: 81
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0557772a9a086d540800000000000000
-      internalID: 5032351099696674128
+      spriteID: 336a5efef016638e0800000000000000
+      internalID: -1714075887090686413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_3
+      name: Pixel1_Healthbar_0000_pixel1_staminabar_3
       rect:
         serializedVersion: 2
-        x: 371
-        y: 10
-        width: 115
-        height: 114
+        x: 92
+        y: 48
+        width: 6
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 05875608805c64150800000000000000
-      internalID: 5856585005746452560
+      spriteID: b5935a42cd2c780e0800000000000000
+      internalID: -2267629636594353829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_4
+      name: Pixel1_Healthbar_0000_pixel1_staminabar_4
       rect:
         serializedVersion: 2
-        x: 494
-        y: 10
-        width: 114
-        height: 114
+        x: 98
+        y: 49
+        width: 6
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +227,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a09cf9a1335eb5a0800000000000000
-      internalID: -6503669339106013020
+      spriteID: 28c16227dbc80d360800000000000000
+      internalID: 7192403350202489986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_5
+      name: Pixel1_Healthbar_0000_pixel1_staminabar_5
       rect:
         serializedVersion: 2
-        x: 616
-        y: 10
-        width: 115
-        height: 114
+        x: 103
+        y: 49
+        width: 6
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 561dc72a012ea8190800000000000000
-      internalID: -7959300830350487195
+      spriteID: 543e4581e4753f680800000000000000
+      internalID: -8722532060359236795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_6
+      name: Pixel1_Healthbar_0000_pixel1_staminabar_6
       rect:
         serializedVersion: 2
-        x: 739
-        y: 10
-        width: 114
-        height: 114
+        x: 108
+        y: 49
+        width: 9
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 72165c12995125240800000000000000
-      internalID: 4778905902034280743
+      spriteID: d0b644df0dbcd9c40800000000000000
+      internalID: 5520792816688851725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_7
+      name: Pixel1_Healthbar_0000_pixel1_staminabar_7
       rect:
         serializedVersion: 2
-        x: 861
-        y: 10
-        width: 115
-        height: 114
+        x: 116
+        y: 50
+        width: 6
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,20 +293,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35e5b26bf79b49fa0800000000000000
-      internalID: -5794802862350705069
+      spriteID: 67c0a5a3b6722da70800000000000000
+      internalID: 8850179559230409846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar_8
+      name: Pixel1_Healthbar_0000_pixel1_staminabar_8
       rect:
         serializedVersion: 2
-        x: 984
-        y: 10
-        width: 114
-        height: 114
+        x: 121
+        y: 51
+        width: 6
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,30 +315,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d58ae9868f49e4a00800000000000000
-      internalID: 742694783190739037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HealthBar_9
-      rect:
-        serializedVersion: 2
-        x: 1106
-        y: 10
-        width: 115
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9a89587cef9a0fa80800000000000000
-      internalID: -8435055190330730327
+      spriteID: e2605c18405f40b20800000000000000
+      internalID: 3099871843243591214
       vertices: []
       indices: 
       edges: []
@@ -350,7 +325,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -360,16 +335,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      HealthBar_0: -8227546954408941770
-      HealthBar_1: -3178617384780871938
-      HealthBar_2: 5032351099696674128
-      HealthBar_3: 5856585005746452560
-      HealthBar_4: -6503669339106013020
-      HealthBar_5: -7959300830350487195
-      HealthBar_6: 4778905902034280743
-      HealthBar_7: -5794802862350705069
-      HealthBar_8: 742694783190739037
-      HealthBar_9: -8435055190330730327
+      Pixel1_Healthbar_0000_pixel1_staminabar_0: -650377292173869679
+      Pixel1_Healthbar_0000_pixel1_staminabar_1: -4739020072751693151
+      Pixel1_Healthbar_0000_pixel1_staminabar_2: -1714075887090686413
+      Pixel1_Healthbar_0000_pixel1_staminabar_3: -2267629636594353829
+      Pixel1_Healthbar_0000_pixel1_staminabar_4: 7192403350202489986
+      Pixel1_Healthbar_0000_pixel1_staminabar_5: -8722532060359236795
+      Pixel1_Healthbar_0000_pixel1_staminabar_6: 5520792816688851725
+      Pixel1_Healthbar_0000_pixel1_staminabar_7: 8850179559230409846
+      Pixel1_Healthbar_0000_pixel1_staminabar_8: 3099871843243591214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
