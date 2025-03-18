@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ec72bfb56bac7f546bdf411291b2f73a
+guid: 647620f564363b042bfd6141a7e6ebd2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4284943268938878351
-    second: Pixel1_Healthbar_0004_Background_0
+      213: 8162747990940449219
+    second: Pixel1_Healthbar_0003_pixel1_healthbarcomplete_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pixel1_Healthbar_0004_Background_0
+      name: Pixel1_Healthbar_0003_pixel1_healthbarcomplete_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 130
-        height: 89
+        x: 5
+        y: 63
+        width: 85
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 172723cacc2d884c0800000000000000
-      internalID: -4284943268938878351
+      spriteID: 3c9f907bc08e74170800000000000000
+      internalID: 8162747990940449219
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pixel1_Healthbar_0004_Background_0: -4284943268938878351
+      Pixel1_Healthbar_0003_pixel1_healthbarcomplete_0: 8162747990940449219
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
