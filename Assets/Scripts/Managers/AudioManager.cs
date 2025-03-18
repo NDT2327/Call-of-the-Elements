@@ -2,15 +2,29 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public AudioSource backgroundMusic;
+    public AudioClip earthMusic;
+    public AudioClip fireMusic;
+    public AudioClip castleMusic;
+    public AudioClip victoryMusic;
+
+    public void PlayBackgroundMusic(GameManager.Map map)
     {
-        
+        backgroundMusic.Stop();
+        backgroundMusic.clip = map switch
+        {
+            GameManager.Map.Earth => earthMusic,
+            GameManager.Map.Lava => fireMusic,
+            GameManager.Map.Castle => castleMusic,
+            _ => null
+        };
+        backgroundMusic.Play();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlayVictoryMusic()
     {
-        
+        backgroundMusic.Stop();
+        backgroundMusic.clip = victoryMusic;
+        backgroundMusic.Play();
     }
 }
