@@ -23,6 +23,7 @@ public class GolemEnemyScript : MonoBehaviour
     private Rigidbody2D rb;
     private EnemyHP enemyHP;
     private bool isDead = false;
+    private Health playerHP;
 
     // Thay Idle thành Patrol
     private enum State { Patrol, Chase, Attack, Hurt, Die }
@@ -34,6 +35,8 @@ public class GolemEnemyScript : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        enemyHP = GetComponent<EnemyHP>();
+        playerHP = GetComponent<Health>();
 
         // Bắt đầu tuần tra từ pointA
         currentPatrolTarget = pointA;
@@ -166,39 +169,45 @@ public class GolemEnemyScript : MonoBehaviour
         if (hit != null)
         {
             Debug.Log("Golem gây sát thương cận chiến!");
-            // Tại đây bạn có thể gọi các hàm để gây sát thương lên đối tượng
+            // Kiểm tra xem đối tượng có component Health không
+            playerHP = hit.GetComponent<Health>();
+            if (playerHP != null)
+            {
+                playerHP.TakeDamage(1); // Gây 1 damage
+            }
         }
     }
 
     // Gọi từ Animation Event hoặc khi Golem bị tấn công
-    public void TakeDamage(float damage)
-    {
-        if (isDead) return;
+    //public void TakeDamage(float damage)
+    //{
+    //    if (isDead) return;
 
-        enemyHP.TakeDamage(damage); // Gọi từ EnemyHP
+    //    enemyHP.TakeDamage(damage); // Gọi từ EnemyHP
 
-        if (enemyHP.GetCurrentHP() <= 0)
-        {
-            Die();
-            return;
-        }
+    //    if (enemyHP.GetCurrentHP() <= 0)
+    //    {
+    //        Die();
+    //        return;
+    //    }
 
-        currentState = State.Hurt;
-        anim.SetTrigger("hurt");
+    //    currentState = State.Hurt;
+    //    anim.SetTrigger("hurt");
 
-        // Ví dụ: Sau khi bị thương 1s thì quay lại Chase (hoặc Patrol)
-        Invoke("ResetToChase", 1f);
-    }
+    //    // Ví dụ: Sau khi bị thương 1s thì quay lại Chase (hoặc Patrol)
+    //    Invoke("ResetToChase", 1f);
+    //}
 
-    // Khi chết
-    public void Die()
-    {
-        if (isDead) return;
-        isDead = true;
-        currentState = State.Die;
-        anim.SetTrigger("die");
-        rb.linearVelocity = Vector2.zero;
-    }
+    //// Khi chết
+    //public void Die()
+    //{
+    //    if (isDead) return;
+    //    isDead = true;
+    //    currentState = State.Die;
+    //    anim.SetTrigger("die");
+    //    rb.linearVelocity = Vector2.zero;
+    //    Destroy(gameObject,1f);
+    //}
 
     private void ResetToChase()
     {
@@ -226,7 +235,9 @@ public class GolemEnemyScript : MonoBehaviour
 
         if (pointA != null && pointB != null)
         {
+            Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(pointA.position, 0.2f);
+            Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(pointB.position, 0.2f);
             Gizmos.DrawLine(pointA.position, pointB.position);
         }

@@ -6,10 +6,16 @@ public class EnemyHP : MonoBehaviour
 	public float maxHP = 100f;
 	private float currentHP;
 
-	void Start()
+    private Animator anim;
+    private Rigidbody2D rb;
+
+
+    void Start()
 	{
 		currentHP = maxHP;
-	}
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+    }
 
 	// Gây sát thương cho quái
 	public void TakeDamage(float damage)
@@ -21,7 +27,8 @@ public class EnemyHP : MonoBehaviour
 		{
 			Die();
 		}
-	}
+        anim.SetTrigger("hurt");
+    }
 
 	// Hồi máu cho quái
 	public void Heal(float amount)
@@ -34,8 +41,11 @@ public class EnemyHP : MonoBehaviour
 	private void Die()
 	{
 		Debug.Log(gameObject.name + " has died!");
-		Destroy(gameObject); // Hoặc có thể trigger animation chết
-	}
+        // Hoặc có thể trigger animation chết
+        anim.SetTrigger("die");
+        rb.linearVelocity = Vector2.zero;
+        Destroy(gameObject, 1f);
+    }
 
 	// Lấy HP hiện tại
 	public float GetCurrentHP()
