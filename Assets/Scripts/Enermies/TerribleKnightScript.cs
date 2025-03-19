@@ -15,6 +15,12 @@ public class TerribleKnightScript : MonoBehaviour
     public float attackCooldown = 2f;
     private float lastAttackTime = 0f;
 
+    [Header("Enraged Settings")]
+    [Tooltip("Multiplier applied when HP below 50%")]
+    public float enragedMultiplier = 1.5f;
+
+    private float currentMultiplier = 1f;
+
     private Animator anim;
     private Rigidbody2D rb;
     private bool isJumping = false;
@@ -23,6 +29,7 @@ public class TerribleKnightScript : MonoBehaviour
     private int currentAttackType = 0;
 
     private Health playerHP; // Dùng để gây sát thương cho player
+    private EnemyHP enemyHP; // Component quản lý HP của enemy
 
     private enum State { Idle, Run, Attack, Jump }
     private State currentState = State.Idle;
@@ -31,7 +38,9 @@ public class TerribleKnightScript : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        enemyHP = GetComponent<EnemyHP>(); // Giả sử EnemyHP được gắn trên cùng GameObject
 
+        // Loại bỏ va chạm giữa enemy và player nếu có
         Collider2D enemyCollider = GetComponent<Collider2D>();
         Collider2D playerCollider = target.GetComponent<Collider2D>();
         if (enemyCollider != null && playerCollider != null)
@@ -42,17 +51,28 @@ public class TerribleKnightScript : MonoBehaviour
 
     void Update()
     {
+        // Cập nhật multiplier dựa trên HP hiện tại
+        if (enemyHP != null && enemyHP.GetCurrentHP() < enemyHP.maxHP * 0.5f)
+        {
+            currentMultiplier = enragedMultiplier;
+        }
+        else
+        {
+            currentMultiplier = 1f;
+        }
+
         if (isJumping) return; // Nếu đang nhảy, không đổi trạng thái
 
         float distanceToTarget = target ? Vector2.Distance(transform.position, target.position) : Mathf.Infinity;
         bool canAttack = (Time.time - lastAttackTime) >= attackCooldown;
 
-        if (canAttack && distanceToTarget <= attackRange)
+        // So sánh sử dụng tầm tấn công và tầm phát hiện đã được nhân với multiplier
+        if (canAttack && distanceToTarget <= attackRange * currentMultiplier)
         {
             currentState = State.Attack;
             PerformAttack();
         }
-        else if (distanceToTarget <= detectionRange)
+        else if (distanceToTarget <= detectionRange * currentMultiplier)
         {
             currentState = State.Run;
         }
@@ -72,6 +92,7 @@ public class TerribleKnightScript : MonoBehaviour
                 MoveTowardsTarget();
                 break;
             case State.Jump:
+                // Giữ nguyên vận tốc khi nhảy
                 break;
             case State.Idle:
             case State.Attack:
@@ -85,15 +106,14 @@ public class TerribleKnightScript : MonoBehaviour
         if (target == null) return;
 
         Vector2 direction = (target.position - transform.position).normalized;
-        rb.linearVelocity = new Vector2(direction.x * moveSpeed, rb.linearVelocity.y);
-
+        rb.linearVelocity = new Vector2(direction.x * moveSpeed * currentMultiplier, rb.linearVelocity.y);
         FlipSprite(direction.x);
     }
 
     void PerformAttack()
     {
         lastAttackTime = Time.time;
-        // Lưu lại kiểu tấn công được chọn (1 đến 5)
+        // Chọn kiểu tấn công từ 1 đến 5
         currentAttackType = Random.Range(1, 6);
         anim.SetTrigger($"attack{currentAttackType}");
 
@@ -108,12 +128,13 @@ public class TerribleKnightScript : MonoBehaviour
     private void UpdateAnimations()
     {
         anim.SetBool("isRunning", currentState == State.Run);
-        anim.SetBool("isJumping", currentState == State.Jump);
+        //anim.SetBool("isJumping", currentState == State.Jump);
     }
 
     private void FlipSprite(float moveX)
     {
-        if ((moveX > 0 && transform.localScale.x < 0) || (moveX < 0 && transform.localScale.x > 0))
+        if ((moveX > 0 && transform.localScale.x < 0) ||
+            (moveX < 0 && transform.localScale.x > 0))
         {
             Vector3 scale = transform.localScale;
             scale.x *= -1;
@@ -164,11 +185,11 @@ public class TerribleKnightScript : MonoBehaviour
         }
     }
 
-    // Hàm này được gọi qua Animation Event tại thời điểm gây sát thương trong animation tấn công
+    // Hàm được gọi qua Animation Event tại thời điểm gây sát thương trong animation tấn công
     public void DoDamageCloseRange()
     {
-        // Kiểm tra xem có collider nào nằm trong phạm vi attackRange và thuộc targetMask không
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, attackRange, targetMask);
+        // Kiểm tra collider trong phạm vi attackRange (có nhân multiplier)
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, attackRange * currentMultiplier, targetMask);
         if (hit != null)
         {
             // Lấy component Health của đối tượng bị tấn công
@@ -190,12 +211,16 @@ public class TerribleKnightScript : MonoBehaviour
                     damage = 30;
                 }
 
+                // Áp dụng multiplier nếu enemy đang trong trạng thái Enraged
+                damage = Mathf.RoundToInt(damage * currentMultiplier);
+
                 playerHP.TakeDamage(damage);
                 Debug.Log($"TerribleKnight sử dụng attack{currentAttackType} gây {damage} damage!");
             }
         }
     }
 
+    // Vẽ Gizmos cho detection và attack range (cho mục đích Debug trong Editor)
     void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
