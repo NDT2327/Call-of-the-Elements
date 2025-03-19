@@ -1,17 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: cf923465d5bf5cb419949ae28be11bf2
-=======
-guid: 0b0075d0913a880408ce5009d5779f97
->>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -4738750093904542054
-    second: player-Crouch_0
-  - first:
-      213: -4926886189830838097
-    second: player-Crouch_1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -73,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,22 +93,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -126,20 +100,20 @@ TextureImporter:
       name: player-Crouch_0
       rect:
         serializedVersion: 2
-        x: 47
+        x: 48
         y: 0
-        width: 33
-        height: 33
+        width: 31
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a96887585e39c3eb0800000000000000
-      internalID: -4738750093904542054
+      spriteID: 050e21158ae5fa74abda74ded5ec8cf1
+      internalID: 508591655
       vertices: []
       indices: 
       edges: []
@@ -148,20 +122,20 @@ TextureImporter:
       name: player-Crouch_1
       rect:
         serializedVersion: 2
-        x: 174
+        x: 175
         y: 0
-        width: 35
-        height: 30
+        width: 33
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fa8ea563d1f20abb0800000000000000
-      internalID: -4926886189830838097
+      spriteID: 27c58d29149a960438485148615ca821
+      internalID: 1515858826
       vertices: []
       indices: 
       edges: []
@@ -170,7 +144,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 83d700c73ed168a4ca00229c4fb8604d
     internalID: 0
     vertices: []
     indices: 
@@ -180,8 +154,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      player-Crouch_0: -4738750093904542054
-      player-Crouch_1: -4926886189830838097
+      player-Crouch_0: 508591655
+      player-Crouch_1: 1515858826
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
