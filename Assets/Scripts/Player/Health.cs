@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Health : MonoBehaviour
 {
@@ -44,4 +44,14 @@ public class Health : MonoBehaviour
             TakeDamage(1);
         }
     }
+
+    public void Heal(float amount)
+    {
+        if (!dead)
+        {
+            CurrentHealth = Mathf.Clamp(CurrentHealth + amount, 0, MaxHealth);
+            Debug.Log("❤️ Hồi " + amount + " máu. Máu hiện tại: " + CurrentHealth);
+        }
+    }
+
 }
