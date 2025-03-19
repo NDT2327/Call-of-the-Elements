@@ -40,6 +40,13 @@ public class GolemEnemyScript : MonoBehaviour
 
         // Bắt đầu tuần tra từ pointA
         currentPatrolTarget = pointA;
+        // Bỏ qua va chạm giữa enemy và player
+        Collider2D enemyCollider = GetComponent<Collider2D>();
+        Collider2D playerCollider = target.GetComponent<Collider2D>();
+        if (enemyCollider != null && playerCollider != null)
+        {
+            Physics2D.IgnoreCollision(enemyCollider, playerCollider);
+        }
     }
 
     void Update()
@@ -168,15 +175,24 @@ public class GolemEnemyScript : MonoBehaviour
         Collider2D hit = Physics2D.OverlapCircle(transform.position, attackRange, targetMask);
         if (hit != null)
         {
-            Debug.Log("Golem gây sát thương cận chiến!");
+            
             // Kiểm tra xem đối tượng có component Health không
             playerHP = hit.GetComponent<Health>();
             if (playerHP != null)
             {
-                playerHP.TakeDamage(1); // Gây 1 damage
+                playerHP.TakeDamage(10); // Gây 10 damage
+                Debug.Log("Golem gây sát thương cận chiến!");
             }
         }
     }
+
+    public void OnHurtAnimationEnd()
+    {
+        // Chuyển enemy sang trạng thái tấn công ngay sau khi kết thúc hurt
+        currentState = State.Attack;
+        PerformAttack();
+    }
+
 
     // Gọi từ Animation Event hoặc khi Golem bị tấn công
     //public void TakeDamage(float damage)

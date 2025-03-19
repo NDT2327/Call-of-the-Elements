@@ -150,6 +150,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1240107729}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &492664110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 492664111}
+  m_Layer: 0
+  m_Name: TerribleKnightEnermy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &492664111
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492664110}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.4220617, y: -0.8538254, z: -0.054706354}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &595214325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -435,7 +466,7 @@ MonoBehaviour:
   pointA: {fileID: 425857892}
   pointB: {fileID: 1661128609}
   patrolSpeed: 1.5
-  target: {fileID: 0}
+  target: {fileID: 755533439}
   detectionRange: 10
   chaseSpeed: 3
   obstacleMask:
@@ -445,7 +476,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   attackRange: 3.5
-  attackCooldown: 3
+  attackCooldown: 2
 --- !u!61 &887790248
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -505,6 +536,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 100
+  hitLimit: 3
+  invincibleDuration: 3
 --- !u!1 &932983232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,7 +1152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fa41cbd3982fda46895bebda5c93f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 100
+  maxHP: 1000
+  hitLimit: 5
+  invincibleDuration: 3
 --- !u!114 &1127212829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1143,7 +1178,7 @@ MonoBehaviour:
     m_Bits: 1
   closeAttackRange: 5
   breathAttackRange: 14
-  attackCooldown: 4
+  attackCooldown: 3
   fireballPrefab: {fileID: 8191482916236993757, guid: d14034e0c4234c0438953ec3f6bfee87, type: 3}
   fireballSpawnPoint: {fileID: 623918187}
 --- !u!1 &1240107728
@@ -1378,3 +1413,4 @@ SceneRoots:
   - {fileID: 1367210528}
   - {fileID: 795461508}
   - {fileID: 1240107729}
+  - {fileID: 492664111}

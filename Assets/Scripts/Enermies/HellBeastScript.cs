@@ -31,7 +31,15 @@ public class HellBeastScript : MonoBehaviour
 		anim = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
 		playerHP = GetComponent<Health>();
-	}
+
+        // Bỏ qua va chạm giữa enemy và player
+        Collider2D enemyCollider = GetComponent<Collider2D>();
+        Collider2D playerCollider = target.GetComponent<Collider2D>();
+        if (enemyCollider != null && playerCollider != null)
+        {
+            Physics2D.IgnoreCollision(enemyCollider, playerCollider);
+        }
+    }
 
 	void Update()
 	{
@@ -163,11 +171,12 @@ public class HellBeastScript : MonoBehaviour
             // Tại đây bạn có thể gọi các hàm để gây sát thương lên đối tượng
             playerHP = hit.GetComponent<Health>();
             if (playerHP != null)
-            {
+			{
+
+				playerHP.TakeDamage(30); // Gây 1 damage
                 Debug.Log("HellBeast gây sát thương Burn cận chiến!");
-                playerHP.TakeDamage(30); // Gây 1 damage
             }
-        }
+		}
 	}
 
 	// Gây sát thương tầm xa (hoặc bắn projectile)
