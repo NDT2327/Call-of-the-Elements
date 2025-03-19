@@ -39,6 +39,7 @@ public class TerribleKnightScript : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         enemyHP = GetComponent<EnemyHP>(); // Giả sử EnemyHP được gắn trên cùng GameObject
+        playerHP = GetComponent<Health>();
 
         // Loại bỏ va chạm giữa enemy và player nếu có
         Collider2D enemyCollider = GetComponent<Collider2D>();
