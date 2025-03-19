@@ -30,6 +30,8 @@ public class BlackWolfScript : MonoBehaviour
     private Rigidbody2D rb;
     private bool isDead = false;
     private bool isIdling = false; // Kiểm soát Idle tạm thời
+    private Health playerHP;
+
 
     private enum State { Idle, Walk, Run, Attack, Hurt, Die }
     private State currentState = State.Idle;
@@ -40,6 +42,8 @@ public class BlackWolfScript : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        playerHP = GetComponent<Health>();
+
 
         // Bắt đầu tuần tra từ pointA
         if (pointA != null) currentPatrolTarget = pointA;
@@ -174,11 +178,28 @@ public class BlackWolfScript : MonoBehaviour
     void PerformAttack()
     {
         lastAttackTime = Time.time;
-        int attackType = Random.Range(1, 4);
+        int attackType = Random.Range(1, 5);
         anim.SetTrigger($"attack{attackType}");
 
         // Sau 1 giây, quay lại chạy
         Invoke(nameof(ResetToRun), 1f);
+    }
+
+    public void DoDamageCloseRange()
+    {
+        // Kiểm tra xem có collider nào nằm trong phạm vi closeAttackRange và thuộc targetMask không
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, attackRange, targetMask);
+        if (hit != null)
+        {
+
+            // Kiểm tra xem đối tượng có component Health không
+            playerHP = hit.GetComponent<Health>();
+            if (playerHP != null)
+            {
+                playerHP.TakeDamage(10); // Gây 10 damage
+                Debug.Log("Golem gây sát thương cận chiến!");
+            }
+        }
     }
 
     private void ResetToRun()
