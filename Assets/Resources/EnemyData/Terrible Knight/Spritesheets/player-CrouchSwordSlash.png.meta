@@ -1,23 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: dfdd7bf15f215d845b39edafff0605f0
-=======
-guid: 17f28162471479740be2088864b11454
->>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -298411183515856775
-    second: player-CrouchSwordSlash_0
-  - first:
-      213: -3481662055370376538
-    second: player-CrouchSwordSlash_1
-  - first:
-      213: -191776118503923577
-    second: player-CrouchSwordSlash_2
-  - first:
-      213: -8701623441482085290
-    second: player-CrouchSwordSlash_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -50,12 +34,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -79,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,13 +93,12 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,8 +106,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -132,20 +113,20 @@ TextureImporter:
       name: player-CrouchSwordSlash_0
       rect:
         serializedVersion: 2
-        x: 46
+        x: 47
         y: 0
-        width: 35
-        height: 30
+        width: 33
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 97098811c94dbdbf0800000000000000
-      internalID: -298411183515856775
+      spriteID: 1c855f94fa2aeec4ab85c539026d6838
+      internalID: 531502816
       vertices: []
       indices: 
       edges: []
@@ -154,20 +135,20 @@ TextureImporter:
       name: player-CrouchSwordSlash_1
       rect:
         serializedVersion: 2
-        x: 178
+        x: 179
         y: 0
-        width: 66
-        height: 30
+        width: 64
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6aa31b9aec6aeafc0800000000000000
-      internalID: -3481662055370376538
+      spriteID: b55f7a3d0208e7c4d9b0a7c3c179941a
+      internalID: -679562166
       vertices: []
       indices: 
       edges: []
@@ -176,20 +157,20 @@ TextureImporter:
       name: player-CrouchSwordSlash_2
       rect:
         serializedVersion: 2
-        x: 308
+        x: 309
         y: 0
-        width: 33
-        height: 30
+        width: 31
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 780ab24e2aca65df0800000000000000
-      internalID: -191776118503923577
+      spriteID: 4cfe8fb093c37ec4ca350b80e4a240af
+      internalID: 37896527
       vertices: []
       indices: 
       edges: []
@@ -198,20 +179,20 @@ TextureImporter:
       name: player-CrouchSwordSlash_3
       rect:
         serializedVersion: 2
-        x: 438
+        x: 439
         y: 0
-        width: 29
-        height: 30
+        width: 27
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 65c8f39459f9d3780800000000000000
-      internalID: -8701623441482085290
+      spriteID: 538461a2eaaee684eaeb0a27ec39e6d4
+      internalID: -1336613545
       vertices: []
       indices: 
       edges: []
@@ -220,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6eb1131eed6790c48bf2b447e99277d8
     internalID: 0
     vertices: []
     indices: 
@@ -230,10 +211,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      player-CrouchSwordSlash_0: -298411183515856775
-      player-CrouchSwordSlash_1: -3481662055370376538
-      player-CrouchSwordSlash_2: -191776118503923577
-      player-CrouchSwordSlash_3: -8701623441482085290
+      player-CrouchSwordSlash_0: 531502816
+      player-CrouchSwordSlash_1: -679562166
+      player-CrouchSwordSlash_2: 37896527
+      player-CrouchSwordSlash_3: -1336613545
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
