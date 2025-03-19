@@ -26,8 +26,9 @@ public class Player : MonoBehaviour
 
     private int currentElementIndex = 1; // Mặc định là Lửa (1)
     private string[] elements = { "Wind", "Fire", "Earth", "Water" };
-
-
+    public GameObject spellFirePrefab;
+    public GameObject spellWindPrefab;
+    public GameObject spellWaterPrefab;
 
     void Start()
     {
@@ -125,16 +126,42 @@ public class Player : MonoBehaviour
             animator.SetTrigger("Attack3");
 
             GameObject spellPrefab = GetSpellByElement();
-            if (spellPrefab != null)
+            if (spellPrefab == null) return;
+
+            Vector3 spawnPosition = transform.position; // Mặc định đặt phép ở người chơi
+
+            switch (elements[currentElementIndex])
             {
-                GameObject nearestEnemy = FindNearestEnemy();
-                if (nearestEnemy != null)
-                {
-                    Vector3 spawnPosition = nearestEnemy.transform.position - new Vector3(0, 1f, 0);
+                case "Fire":
+                    SpawnSpell(spellFirePrefab, transform.position);
+                    break;
+
+                case "Earth":
+                    GameObject nearestEnemy = FindNearestEnemy();
+                    if (nearestEnemy != null)
+                    {
+                        spawnPosition = nearestEnemy.transform.position - new Vector3(0, 1f, 0);
+                    }
                     SpawnSpell(spellEarthPrefab, spawnPosition);
                     SpawnSpell(spellEarth2Prefab, spawnPosition);
                     SpawnSpell(spellEarth3Prefab, spawnPosition);
-                }
+                    break;
+
+                case "Water":
+                    // Cầu nước xuất hiện trước mặt người chơi
+                    spawnPosition += facingRight ? Vector3.right * 1.5f : Vector3.left * 1.5f;
+                    SpawnSpell(spellWaterPrefab, spawnPosition);
+                    break;
+
+                case "Wind":
+                    // Kiếm khí gió xuất hiện trước mặt người chơi
+                    spawnPosition += facingRight ? Vector3.right * 1.5f : Vector3.left * 1.5f;
+                    SpawnSpell(spellWindPrefab, spawnPosition);
+                    break;
+
+                default:
+                    Debug.Log("Không có phép cho hệ này.");
+                    return;
             }
 
             lastSpecialAttackTime = Time.time;
@@ -145,10 +172,10 @@ public class Player : MonoBehaviour
     {
         switch (elements[currentElementIndex])
         {
-            //case "Wind": return spellWindPrefab;
-            //case "Fire": return spellFirePrefab;
+            case "Wind": return spellWindPrefab;
+            case "Fire": return spellFirePrefab;
             case "Earth": return spellEarthPrefab;
-            //case "Water": return spellWaterPrefab;
+            case "Water": return spellWaterPrefab;
             default: return null;
         }
     }
