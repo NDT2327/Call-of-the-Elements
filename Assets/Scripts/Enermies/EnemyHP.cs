@@ -6,8 +6,8 @@ public class EnemyHP : MonoBehaviour
 {
 	[Header("Health Settings")]
 	public float maxHP = 100f;
-	private float currentHP;
-
+    public float currentHP;
+    public float MaxHealth { get; private set; }
     private Animator anim;
     private Rigidbody2D rb;
 
@@ -18,9 +18,19 @@ public class EnemyHP : MonoBehaviour
     public float invincibleDuration = 3f; // Thời gian không nhận sát thương
     void Start()
 	{
-		currentHP = maxHP;
+        currentHP = maxHP;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+    }
+    void Awake()
+    {
+        if (maxHP <= 0)
+        {
+            Debug.LogError("❌ maxHP của Boss phải lớn hơn 0! Kiểm tra giá trị trong Inspector.");
+            maxHP = 100f; // Đặt giá trị mặc định nếu chưa có
+        }
+        MaxHealth = maxHP;
+        currentHP = maxHP;
     }
 
     // Gây sát thương cho quái

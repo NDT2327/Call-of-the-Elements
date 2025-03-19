@@ -24,17 +24,17 @@ public class Player : MonoBehaviour
     private float specialAttackCooldown = 3f; // Thời gian chờ giữa mỗi lần dùng SpAttack
     private float lastSpecialAttackTime = -Mathf.Infinity;
 
-    private int currentElementIndex = 1; // Mặc định là Lửa (1)
-    private string[] elements = { "Wind", "Fire", "Earth", "Water" };
+    private int currentElementIndex = 0; // Mặc định là Lửa (1)
+    private string[] elements = { "Fire", "Earth" };
     public GameObject spellFirePrefab;
-    public GameObject spellWindPrefab;
-    public GameObject spellWaterPrefab;
+    private TerribleKnightScript terribleKnightScript;
 
     void Start()
     {
         if (blockFlash != null) blockFlash.SetActive(false);
         if (dust != null) dust.SetActive(false);
         if (dust2 != null) dust2.SetActive(false);
+        terribleKnightScript = FindObjectOfType<TerribleKnightScript>();
     }
 
     void Update()
@@ -73,6 +73,7 @@ public class Player : MonoBehaviour
                 Jump();
                 isGrounded = false;
                 canDoubleJump = true;
+                terribleKnightScript.OnPlayerJump();
             }
             else if (canDoubleJump)
             {
@@ -146,19 +147,6 @@ public class Player : MonoBehaviour
                     SpawnSpell(spellEarth2Prefab, spawnPosition);
                     SpawnSpell(spellEarth3Prefab, spawnPosition);
                     break;
-
-                case "Water":
-                    // Cầu nước xuất hiện trước mặt người chơi
-                    spawnPosition += facingRight ? Vector3.right * 1.5f : Vector3.left * 1.5f;
-                    SpawnSpell(spellWaterPrefab, spawnPosition);
-                    break;
-
-                case "Wind":
-                    // Kiếm khí gió xuất hiện trước mặt người chơi
-                    spawnPosition += facingRight ? Vector3.right * 1.5f : Vector3.left * 1.5f;
-                    SpawnSpell(spellWindPrefab, spawnPosition);
-                    break;
-
                 default:
                     Debug.Log("Không có phép cho hệ này.");
                     return;
@@ -172,10 +160,8 @@ public class Player : MonoBehaviour
     {
         switch (elements[currentElementIndex])
         {
-            case "Wind": return spellWindPrefab;
             case "Fire": return spellFirePrefab;
             case "Earth": return spellEarthPrefab;
-            case "Water": return spellWaterPrefab;
             default: return null;
         }
     }

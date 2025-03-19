@@ -1,15 +1,17 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] private float startingHealth;
     public float CurrentHealth { get; private set; }
+    public float MaxHealth { get; private set; }
     private Animator anim;
     private bool dead;
 
     private void Awake()
     {
         CurrentHealth = startingHealth;
+        MaxHealth = startingHealth;
         anim = GetComponent<Animator>();
     }
 
@@ -42,4 +44,14 @@ public class Health : MonoBehaviour
             TakeDamage(1);
         }
     }
+
+    public void Heal(float amount)
+    {
+        if (!dead)
+        {
+            CurrentHealth = Mathf.Clamp(CurrentHealth + amount, 0, MaxHealth);
+            Debug.Log("❤️ Hồi " + amount + " máu. Máu hiện tại: " + CurrentHealth);
+        }
+    }
+
 }

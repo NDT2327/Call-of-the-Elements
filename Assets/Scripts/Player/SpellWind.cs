@@ -2,9 +2,9 @@
 
 public class SpellWind : MonoBehaviour
 {
-    public float speed = 10f;
+    public float speed = 15f;
     public float damage = 15f;
-    public float lifeTime = 2f;
+    public float lifeTime = 5f;
 
     private bool hasExploded = false;
     private Rigidbody2D rb;
