@@ -1,20 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 1349ca6aa454abd45a8f14d75777fd09
-=======
-guid: e90d07e8fa2bfa54884e77c77d48e62f
->>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -5034627490145232904
-    second: player-Hurt_0
-  - first:
-      213: -7079857931214113187
-    second: player-Hurt_1
-  - first:
-      213: 6279915803130458734
-    second: player-Hurt_2
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -47,12 +34,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -76,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,13 +93,12 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -120,8 +106,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -129,20 +113,20 @@ TextureImporter:
       name: player-Hurt_0
       rect:
         serializedVersion: 2
-        x: 49
+        x: 50
         y: 0
-        width: 30
-        height: 40
+        width: 28
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8f71a79e8f8612ab0800000000000000
-      internalID: -5034627490145232904
+      spriteID: 9d74aa382a5f1e4448a00d27e32be0f7
+      internalID: -445873843
       vertices: []
       indices: 
       edges: []
@@ -151,20 +135,20 @@ TextureImporter:
       name: player-Hurt_1
       rect:
         serializedVersion: 2
-        x: 174
+        x: 175
         y: 0
-        width: 34
-        height: 28
+        width: 32
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d5630c5e8ba4fbd90800000000000000
-      internalID: -7079857931214113187
+      spriteID: be8b07b24d5c90d44b580ffb55c59c02
+      internalID: -2004517094
       vertices: []
       indices: 
       edges: []
@@ -173,20 +157,20 @@ TextureImporter:
       name: player-Hurt_2
       rect:
         serializedVersion: 2
-        x: 299
+        x: 300
         y: 0
-        width: 32
-        height: 35
+        width: 30
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e62f3f8862eb62750800000000000000
-      internalID: 6279915803130458734
+      spriteID: 3ae5d73b1e3bdd8498a2e8bd3fc41846
+      internalID: 848729160
       vertices: []
       indices: 
       edges: []
@@ -195,7 +179,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d13444918a8cacf478c17ef4e67eef42
     internalID: 0
     vertices: []
     indices: 
@@ -205,9 +189,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      player-Hurt_0: -5034627490145232904
-      player-Hurt_1: -7079857931214113187
-      player-Hurt_2: 6279915803130458734
+      player-Hurt_0: -445873843
+      player-Hurt_1: -2004517094
+      player-Hurt_2: 848729160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
