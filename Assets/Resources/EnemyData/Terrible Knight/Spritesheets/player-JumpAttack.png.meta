@@ -1,20 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 3b25e6cd181d5ce4dae47472395b04b1
-=======
-guid: cc8c27369563cbe4681a3b433e1d6bad
->>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -5662232771418996524
-    second: player-JumpAttack_0
-  - first:
-      213: -1879483933948165275
-    second: player-JumpAttack_1
-  - first:
-      213: 6309244115725055724
-    second: player-JumpAttack_2
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -76,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,22 +93,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -129,20 +100,20 @@ TextureImporter:
       name: player-JumpAttack_0
       rect:
         serializedVersion: 2
-        x: 43
-        y: 2
-        width: 40
-        height: 35
+        x: 44
+        y: 3
+        width: 38
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4d0ceff4b45bb61b0800000000000000
-      internalID: -5662232771418996524
+      spriteID: 99282b69c9f69394f861d0996f6af25a
+      internalID: -324574348
       vertices: []
       indices: 
       edges: []
@@ -151,20 +122,20 @@ TextureImporter:
       name: player-JumpAttack_1
       rect:
         serializedVersion: 2
-        x: 171
-        y: 3
-        width: 40
-        height: 37
+        x: 172
+        y: 4
+        width: 38
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 56347fbe15bbae5e0800000000000000
-      internalID: -1879483933948165275
+      spriteID: 575b76e5ab849f54cb26d3b6e4d000c8
+      internalID: 2142499097
       vertices: []
       indices: 
       edges: []
@@ -173,20 +144,20 @@ TextureImporter:
       name: player-JumpAttack_2
       rect:
         serializedVersion: 2
-        x: 299
-        y: 1
-        width: 45
-        height: 33
+        x: 300
+        y: 2
+        width: 43
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ce6f30f6810fe8750800000000000000
-      internalID: 6309244115725055724
+      spriteID: d6e9afca7e13a074589316315da48943
+      internalID: -442002654
       vertices: []
       indices: 
       edges: []
@@ -195,7 +166,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ee3acd3ec0870174b81dbb971bd1c1b7
     internalID: 0
     vertices: []
     indices: 
@@ -205,9 +176,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      player-JumpAttack_0: -5662232771418996524
-      player-JumpAttack_1: -1879483933948165275
-      player-JumpAttack_2: 6309244115725055724
+      player-JumpAttack_0: -324574348
+      player-JumpAttack_1: 2142499097
+      player-JumpAttack_2: -442002654
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

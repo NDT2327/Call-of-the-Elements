@@ -1,23 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 851e70de3a19a0e45b74e682da8d26c2
-=======
-guid: 1be8e0998fd24804fb17120d15644629
->>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 4993670006919007064
-    second: player-Jump_0
-  - first:
-      213: 6816260747882125227
-    second: player-Jump_1
-  - first:
-      213: 1667294304938989931
-    second: player-Jump_2
-  - first:
-      213: -5448458071041818017
-    second: player-Jump_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -79,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,22 +93,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -132,20 +100,20 @@ TextureImporter:
       name: player-Jump_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 0
-        width: 45
-        height: 43
+        x: 42
+        y: 1
+        width: 43
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 85b0ee7e9641d4540800000000000000
-      internalID: 4993670006919007064
+      spriteID: 23cb664a680996741b2dc936a0442b36
+      internalID: -527822141
       vertices: []
       indices: 
       edges: []
@@ -154,20 +122,20 @@ TextureImporter:
       name: player-Jump_1
       rect:
         serializedVersion: 2
-        x: 171
-        y: 2
-        width: 40
-        height: 35
+        x: 172
+        y: 3
+        width: 38
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ba7d3fd3909389e50800000000000000
-      internalID: 6816260747882125227
+      spriteID: ef39911e0d88fbb418d5e2eafcda4801
+      internalID: -545742212
       vertices: []
       indices: 
       edges: []
@@ -176,20 +144,20 @@ TextureImporter:
       name: player-Jump_2
       rect:
         serializedVersion: 2
-        x: 296
-        y: 3
-        width: 44
-        height: 36
+        x: 297
+        y: 4
+        width: 42
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b699bed265b632710800000000000000
-      internalID: 1667294304938989931
+      spriteID: f2467d3720d58d5479c1ab5ef482ebb2
+      internalID: -1703377283
       vertices: []
       indices: 
       edges: []
@@ -198,20 +166,20 @@ TextureImporter:
       name: player-Jump_3
       rect:
         serializedVersion: 2
-        x: 419
-        y: 0
-        width: 52
-        height: 58
+        x: 420
+        y: 1
+        width: 50
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f5241f560403364b0800000000000000
-      internalID: -5448458071041818017
+      spriteID: 7a1cf87b03865b4499fdd577e8e57781
+      internalID: 1920580048
       vertices: []
       indices: 
       edges: []
@@ -220,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2cf71edff822f6e4e80794c9cf2d24ca
     internalID: 0
     vertices: []
     indices: 
@@ -230,10 +198,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      player-Jump_0: 4993670006919007064
-      player-Jump_1: 6816260747882125227
-      player-Jump_2: 1667294304938989931
-      player-Jump_3: -5448458071041818017
+      player-Jump_0: -527822141
+      player-Jump_1: -545742212
+      player-Jump_2: -1703377283
+      player-Jump_3: 1920580048
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

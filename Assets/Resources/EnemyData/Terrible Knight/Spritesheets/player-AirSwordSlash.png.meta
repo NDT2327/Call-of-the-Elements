@@ -1,29 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 17323d86c1332134f95940119d0b8139
-=======
-guid: 0d099f48ce557274eae63d10af4ec455
->>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 3926627179884300844
-    second: player-AirSwordSlash_0
-  - first:
-      213: 7763176262682574235
-    second: player-AirSwordSlash_1
-  - first:
-      213: 6430312991418576457
-    second: player-AirSwordSlash_2
-  - first:
-      213: -9059762727592474823
-    second: player-AirSwordSlash_3
-  - first:
-      213: 6329501968625249427
-    second: player-AirSwordSlash_4
-  - first:
-      213: -7322775619608281461
-    second: player-AirSwordSlash_5
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -85,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,22 +93,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> ff68177747a2bdbe0723018094d3f4168d863d3e
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -138,20 +100,20 @@ TextureImporter:
       name: player-AirSwordSlash_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 0
-        width: 49
-        height: 41
+        x: 34
+        y: 1
+        width: 47
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c2ac56ead9e2e7630800000000000000
-      internalID: 3926627179884300844
+      spriteID: 2939e537cc9ce5e4ebb8ee6045b08838
+      internalID: -1207181372
       vertices: []
       indices: 
       edges: []
@@ -160,20 +122,20 @@ TextureImporter:
       name: player-AirSwordSlash_1
       rect:
         serializedVersion: 2
-        x: 168
+        x: 169
         y: 0
-        width: 45
-        height: 42
+        width: 43
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b9d70f90ea75cbb60800000000000000
-      internalID: 7763176262682574235
+      spriteID: 429365d69ae38174ca48ef812f3f4f64
+      internalID: -1369678973
       vertices: []
       indices: 
       edges: []
@@ -182,20 +144,20 @@ TextureImporter:
       name: player-AirSwordSlash_2
       rect:
         serializedVersion: 2
-        x: 299
-        y: 2
-        width: 40
-        height: 35
+        x: 300
+        y: 3
+        width: 38
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 94e6510b89f0d3950800000000000000
-      internalID: 6430312991418576457
+      spriteID: c6336b4b4f884b044ad8b0ee8103c6ec
+      internalID: -363110716
       vertices: []
       indices: 
       edges: []
@@ -204,20 +166,20 @@ TextureImporter:
       name: player-AirSwordSlash_3
       rect:
         serializedVersion: 2
-        x: 423
-        y: 2
-        width: 39
-        height: 36
+        x: 424
+        y: 3
+        width: 37
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 937c688ccc1454280800000000000000
-      internalID: -9059762727592474823
+      spriteID: 5aa99ff20bbfb234ca63e2bd831f21ee
+      internalID: -167079483
       vertices: []
       indices: 
       edges: []
@@ -226,20 +188,20 @@ TextureImporter:
       name: player-AirSwordSlash_4
       rect:
         serializedVersion: 2
-        x: 551
-        y: 1
-        width: 66
-        height: 48
+        x: 552
+        y: 2
+        width: 64
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 39c2b0d5188e6d750800000000000000
-      internalID: 6329501968625249427
+      spriteID: 8f50d98034722c144961e19cb9f0f615
+      internalID: 693646228
       vertices: []
       indices: 
       edges: []
@@ -248,20 +210,20 @@ TextureImporter:
       name: player-AirSwordSlash_5
       rect:
         serializedVersion: 2
-        x: 684
-        y: 0
-        width: 32
-        height: 40
+        x: 685
+        y: 1
+        width: 30
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b8e7b572f56406a90800000000000000
-      internalID: -7322775619608281461
+      spriteID: 0115b3ed945145547a74e58ddd7e8abd
+      internalID: -51394649
       vertices: []
       indices: 
       edges: []
@@ -270,7 +232,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f88e8bc3237832f4696c7fb45853fa45
     internalID: 0
     vertices: []
     indices: 
@@ -280,12 +242,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      player-AirSwordSlash_0: 3926627179884300844
-      player-AirSwordSlash_1: 7763176262682574235
-      player-AirSwordSlash_2: 6430312991418576457
-      player-AirSwordSlash_3: -9059762727592474823
-      player-AirSwordSlash_4: 6329501968625249427
-      player-AirSwordSlash_5: -7322775619608281461
+      player-AirSwordSlash_0: -1207181372
+      player-AirSwordSlash_1: -1369678973
+      player-AirSwordSlash_2: -363110716
+      player-AirSwordSlash_3: -167079483
+      player-AirSwordSlash_4: 693646228
+      player-AirSwordSlash_5: -51394649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
