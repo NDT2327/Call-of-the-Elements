@@ -1253,7 +1253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fa41cbd3982fda46895bebda5c93f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 1000
+  maxHP: 100
   hitLimit: 5
   invincibleDuration: 3
 --- !u!114 &1127212829
@@ -1279,7 +1279,7 @@ MonoBehaviour:
     m_Bits: 1
   closeAttackRange: 5
   breathAttackRange: 14
-  attackCooldown: 3
+  attackCooldown: 5
   fireballPrefab: {fileID: 8191482916236993757, guid: d14034e0c4234c0438953ec3f6bfee87, type: 3}
   fireballSpawnPoint: {fileID: 623918187}
 --- !u!114 &1234974760 stripped
@@ -1375,6 +1375,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3838964883018515702, guid: ad7bee9c046638440853e6df3f3808f7, type: 3}
+      propertyPath: spellFirePrefab
+      value: 
+      objectReference: {fileID: 1656160270309967972, guid: 1cd3057c5b13c6b4d8b62628b84981fa, type: 3}
+    - target: {fileID: 3838964883018515702, guid: ad7bee9c046638440853e6df3f3808f7, type: 3}
+      propertyPath: spellWindPrefab
+      value: 
+      objectReference: {fileID: 3240662124554436099, guid: eab474b2f63904e4aa9fb07fbc35571a, type: 3}
+    - target: {fileID: 3838964883018515702, guid: ad7bee9c046638440853e6df3f3808f7, type: 3}
+      propertyPath: spellWaterPrefab
+      value: 
+      objectReference: {fileID: 2719825532106407590, guid: 3800aded26faee64680824d9e3f7e6e4, type: 3}
     - target: {fileID: 8490920196310057571, guid: ad7bee9c046638440853e6df3f3808f7, type: 3}
       propertyPath: m_Name
       value: Player

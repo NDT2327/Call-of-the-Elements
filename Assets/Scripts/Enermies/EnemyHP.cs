@@ -44,6 +44,7 @@ public class EnemyHP : MonoBehaviour
         if (hitCount >= hitLimit)
         {
             anim.SetTrigger("hurt");
+            Debug.Log("stun");
             // Kích hoạt trạng thái invincible cho thời gian cho enemy phục hồi
             //StartCoroutine(ActivateInvincibility());
             hitCount = 0; // Reset biến đếm sau khi kích hoạt hurt
