@@ -4,12 +4,14 @@ public class Health : MonoBehaviour
 {
     [SerializeField] private float startingHealth;
     public float CurrentHealth { get; private set; }
+    public float MaxHealth { get; private set; }
     private Animator anim;
     private bool dead;
 
     private void Awake()
     {
         CurrentHealth = startingHealth;
+        MaxHealth = startingHealth;
         anim = GetComponent<Animator>();
     }
 
