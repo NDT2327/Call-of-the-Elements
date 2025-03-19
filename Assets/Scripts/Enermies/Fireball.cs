@@ -39,15 +39,16 @@ public class Fireball : MonoBehaviour
 	{
 		if (collision.gameObject.CompareTag("Player"))
 		{
-			animator.SetTrigger("Explore");
-			var playerHP = collision.gameObject.GetComponent<Health>();
+            animator.SetTrigger("Explore");
+
+            var playerHP = collision.gameObject.GetComponent<Health>();
 			if (playerHP != null)
 			{
                 Debug.Log("Gây " + damage);
 				playerHP.TakeDamage(damage);
             }
 
-			Destroy(gameObject); // Hủy fireball sau khi va chạm
+            Destroy(gameObject, 0.2f); // Hủy fireball sau khi va chạm
 		}
 		//else if (collision.gameObject.CompareTag("Obstacle")) // Nếu va vào vật cản, cũng hủy
 		//{
