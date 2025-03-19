@@ -218,7 +218,7 @@ PrefabInstance:
     - target: {fileID: 1925805693999600679, guid: 9948b841128974e4caeef85b85d6ebe8, type: 3}
       propertyPath: bossHealth
       value: 
-      objectReference: {fileID: 1127212828}
+      objectReference: {fileID: 2028728781}
     - target: {fileID: 1925805693999600679, guid: 9948b841128974e4caeef85b85d6ebe8, type: 3}
       propertyPath: playerHealth
       value: 
@@ -305,7 +305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &492664111
 Transform:
   m_ObjectHideFlags: 0
@@ -468,7 +468,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &795461508
 Transform:
   m_ObjectHideFlags: 0
@@ -1653,6 +1653,7 @@ GameObject:
   - component: {fileID: 2028728776}
   - component: {fileID: 2028728775}
   - component: {fileID: 2028728780}
+  - component: {fileID: 2028728781}
   m_Layer: 3
   m_Name: terrible_knight
   m_TagString: Enemy
@@ -1854,6 +1855,22 @@ MonoBehaviour:
   jumpForce: 7
   attackCooldown: 2
   enragedMultiplier: 1.5
+--- !u!114 &2028728781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028728773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa41cbd3982fda46895bebda5c93f2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 100
+  currentHP: 0
+  hitLimit: 5
+  invincibleDuration: 3
 --- !u!1 &2073483221
 GameObject:
   m_ObjectHideFlags: 0

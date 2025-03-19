@@ -19,9 +19,18 @@ public class EnemyHP : MonoBehaviour
     void Start()
 	{
         currentHP = maxHP;
-        MaxHealth = maxHP;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+    }
+    void Awake()
+    {
+        if (maxHP <= 0)
+        {
+            Debug.LogError("❌ maxHP của Boss phải lớn hơn 0! Kiểm tra giá trị trong Inspector.");
+            maxHP = 100f; // Đặt giá trị mặc định nếu chưa có
+        }
+        MaxHealth = maxHP;
+        currentHP = maxHP;
     }
 
     // Gây sát thương cho quái

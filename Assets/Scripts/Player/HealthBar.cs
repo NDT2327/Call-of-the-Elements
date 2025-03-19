@@ -49,19 +49,22 @@ public class HealthBar : MonoBehaviour
         totalHealthBar.fillAmount = playerHealth.CurrentHealth / playerHealth.MaxHealth;
 
         totalEnemyHealthBar.fillAmount = bossHealth.GetCurrentHP() / bossHealth.MaxHealth;
+        Debug.Log($"🛠️ Boss HP: {bossHealth.GetCurrentHP()} / {bossHealth.MaxHealth}");
+
 
         // Khởi tạo nguyên tố
         elementSprites = new Sprite[] { fireSprite, earthSprite };
         element.sprite = elementSprites[currentElementIndex];
     }
 
-    void Update()
+    void Update()   
     {
         // Cập nhật thanh máu Player
         currentHealthBar.fillAmount = playerHealth.CurrentHealth / playerHealth.MaxHealth;
 
         // Cập nhật thanh máu Boss
         currentEnemyHealthBar.fillAmount = bossHealth.GetCurrentHP() / bossHealth.MaxHealth;
+        Debug.Log($"🛠️ Boss HP: {bossHealth.GetCurrentHP()} / {bossHealth.MaxHealth}");
 
         if (Input.GetKeyDown(KeyCode.O))
         {

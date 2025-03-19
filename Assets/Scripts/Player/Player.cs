@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
         if (blockFlash != null) blockFlash.SetActive(false);
         if (dust != null) dust.SetActive(false);
         if (dust2 != null) dust2.SetActive(false);
-        terribleKnightScript = GetComponent<TerribleKnightScript>();
+        terribleKnightScript = FindObjectOfType<TerribleKnightScript>();
     }
 
     void Update()
