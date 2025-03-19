@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 17f28162471479740be2088864b11454
 TextureImporter:
   internalIDToNameTable:
@@ -14,6 +15,11 @@ TextureImporter:
   - first:
       213: -8701623441482085290
     second: player-CrouchSwordSlash_3
+=======
+guid: dfdd7bf15f215d845b39edafff0605f0
+TextureImporter:
+  internalIDToNameTable: []
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +52,20 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 1
+=======
+    filterMode: 0
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
+<<<<<<< HEAD
     wrapW: 1
+=======
+    wrapW: 0
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -75,6 +89,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
+<<<<<<< HEAD
   applyGammaDecoding: 0
   swizzle: 50462976
   cookieLightType: 0
@@ -85,6 +100,18 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
+=======
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 2
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,7 +124,24 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 1
+=======
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -112,20 +156,34 @@ TextureImporter:
       name: player-CrouchSwordSlash_0
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 46
         y: 0
         width: 35
         height: 30
+=======
+        x: 47
+        y: 0
+        width: 33
+        height: 29
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 97098811c94dbdbf0800000000000000
       internalID: -298411183515856775
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c855f94fa2aeec4ab85c539026d6838
+      internalID: 531502816
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       vertices: []
       indices: 
       edges: []
@@ -134,20 +192,34 @@ TextureImporter:
       name: player-CrouchSwordSlash_1
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 178
         y: 0
         width: 66
         height: 30
+=======
+        x: 179
+        y: 0
+        width: 64
+        height: 29
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 6aa31b9aec6aeafc0800000000000000
       internalID: -3481662055370376538
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55f7a3d0208e7c4d9b0a7c3c179941a
+      internalID: -679562166
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       vertices: []
       indices: 
       edges: []
@@ -156,20 +228,34 @@ TextureImporter:
       name: player-CrouchSwordSlash_2
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 308
         y: 0
         width: 33
         height: 30
+=======
+        x: 309
+        y: 0
+        width: 31
+        height: 29
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 780ab24e2aca65df0800000000000000
       internalID: -191776118503923577
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cfe8fb093c37ec4ca350b80e4a240af
+      internalID: 37896527
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       vertices: []
       indices: 
       edges: []
@@ -178,20 +264,34 @@ TextureImporter:
       name: player-CrouchSwordSlash_3
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 438
         y: 0
         width: 29
         height: 30
+=======
+        x: 439
+        y: 0
+        width: 27
+        height: 29
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 65c8f39459f9d3780800000000000000
       internalID: -8701623441482085290
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538461a2eaaee684eaeb0a27ec39e6d4
+      internalID: -1336613545
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       vertices: []
       indices: 
       edges: []
@@ -200,7 +300,11 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: 
+=======
+    spriteID: 6eb1131eed6790c48bf2b447e99277d8
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +314,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< HEAD
       player-CrouchSwordSlash_0: -298411183515856775
       player-CrouchSwordSlash_1: -3481662055370376538
       player-CrouchSwordSlash_2: -191776118503923577
       player-CrouchSwordSlash_3: -8701623441482085290
+=======
+      player-CrouchSwordSlash_0: 531502816
+      player-CrouchSwordSlash_1: -679562166
+      player-CrouchSwordSlash_2: 37896527
+      player-CrouchSwordSlash_3: -1336613545
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

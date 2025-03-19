@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: fa90f10c41afe7244bedf411165dfd49
 TextureImporter:
   internalIDToNameTable:
@@ -8,6 +9,11 @@ TextureImporter:
   - first:
       213: -7893533558708391377
     second: player-AttackSide_1
+=======
+guid: 91988053590a1584aacedc855a318af6
+TextureImporter:
+  internalIDToNameTable: []
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,12 +46,20 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 1
+=======
+    filterMode: 0
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
+<<<<<<< HEAD
     wrapW: 1
+=======
+    wrapW: 0
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -54,7 +68,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 64
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,6 +87,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
+<<<<<<< HEAD
   applyGammaDecoding: 0
   swizzle: 50462976
   cookieLightType: 0
@@ -79,6 +98,18 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
+=======
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 2
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -91,7 +122,24 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 1
+=======
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,20 +154,34 @@ TextureImporter:
       name: player-AttackSide_0
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 49
         y: 0
         width: 30
         height: 41
+=======
+        x: 50
+        y: 0
+        width: 28
+        height: 40
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: ba1dd7352ce53f170800000000000000
       internalID: 8211010734343967147
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc9e71194dbc6948bdf27735c3bd902
+      internalID: 1674490159
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       vertices: []
       indices: 
       edges: []
@@ -128,20 +190,34 @@ TextureImporter:
       name: player-AttackSide_1
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 175
         y: 0
         width: 39
         height: 36
+=======
+        x: 176
+        y: 0
+        width: 37
+        height: 35
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: f22bf82dc09847290800000000000000
       internalID: -7893533558708391377
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616fb7b41584f384897ff734c2671431
+      internalID: -1148605197
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       vertices: []
       indices: 
       edges: []
@@ -150,7 +226,11 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: 
+=======
+    spriteID: e17dd08038e1f5347be8371bb4dc1ae0
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +240,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< HEAD
       player-AttackSide_0: 8211010734343967147
       player-AttackSide_1: -7893533558708391377
+=======
+      player-AttackSide_0: 1674490159
+      player-AttackSide_1: -1148605197
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

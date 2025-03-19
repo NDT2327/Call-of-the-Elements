@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 6a3958b01d46f834ba16800cf5532896
 TextureImporter:
   internalIDToNameTable:
@@ -17,6 +18,11 @@ TextureImporter:
   - first:
       213: -8082806620294155846
     second: player-ClimbLedge_4
+=======
+guid: 48be394a41d254e42a8bf3397791121b
+TextureImporter:
+  internalIDToNameTable: []
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,12 +55,20 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 1
+=======
+    filterMode: 0
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
+<<<<<<< HEAD
     wrapW: 1
+=======
+    wrapW: 0
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -63,7 +77,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 100
+=======
+  spritePixelsToUnits: 64
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,6 +96,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
+<<<<<<< HEAD
   applyGammaDecoding: 0
   swizzle: 50462976
   cookieLightType: 0
@@ -88,6 +107,18 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
+=======
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 2
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,7 +131,24 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 1
+=======
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,20 +163,34 @@ TextureImporter:
       name: player-ClimbLedge_0
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 41
         y: 1
         width: 40
         height: 41
+=======
+        x: 42
+        y: 2
+        width: 38
+        height: 39
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 246ec6e49fcce4310800000000000000
       internalID: 1391274706038744642
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5101674fdcb33747ad0035ecdb78517
+      internalID: -1504366045
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       vertices: []
       indices: 
       edges: []
@@ -137,20 +199,34 @@ TextureImporter:
       name: player-ClimbLedge_1
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 177
         y: 1
         width: 36
         height: 42
+=======
+        x: 178
+        y: 2
+        width: 34
+        height: 40
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 227f1d35fe08ad360800000000000000
       internalID: 7195205120069596962
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30fcaf674f204f49b924ed454bd0720
+      internalID: -966029060
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       vertices: []
       indices: 
       edges: []
@@ -159,20 +235,34 @@ TextureImporter:
       name: player-ClimbLedge_2
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 307
         y: 1
         width: 42
         height: 43
+=======
+        x: 308
+        y: 2
+        width: 40
+        height: 41
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: 39ee3047c898ac4a0800000000000000
       internalID: -6572289469858976109
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca8a907b12850948a48ee3d5e9645e7
+      internalID: 1083511410
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       vertices: []
       indices: 
       edges: []
@@ -181,20 +271,34 @@ TextureImporter:
       name: player-ClimbLedge_3
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 430
         y: 0
         width: 35
         height: 30
+=======
+        x: 431
+        y: 0
+        width: 33
+        height: 29
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: cfd74da005206f8e0800000000000000
       internalID: -1660136869837111812
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c0c2c8f39c0b6479f7fca4df87bfe7
+      internalID: 395946463
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       vertices: []
       indices: 
       edges: []
@@ -203,20 +307,34 @@ TextureImporter:
       name: player-ClimbLedge_4
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 561
         y: 0
         width: 30
         height: 40
+=======
+        x: 562
+        y: 0
+        width: 28
+        height: 39
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
+<<<<<<< HEAD
       tessellationDetail: -1
       bones: []
       spriteID: ab1f031143a14df80800000000000000
       internalID: -8082806620294155846
+=======
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a3b5d0bd9dba74cbfb6a2b20085c04
+      internalID: 428257688
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
       vertices: []
       indices: 
       edges: []
@@ -225,7 +343,11 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: 
+=======
+    spriteID: aab839d2f6304874e8c8e56e66ad639e
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
     internalID: 0
     vertices: []
     indices: 
@@ -235,11 +357,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< HEAD
       player-ClimbLedge_0: 1391274706038744642
       player-ClimbLedge_1: 7195205120069596962
       player-ClimbLedge_2: -6572289469858976109
       player-ClimbLedge_3: -1660136869837111812
       player-ClimbLedge_4: -8082806620294155846
+=======
+      player-ClimbLedge_0: -1504366045
+      player-ClimbLedge_1: -966029060
+      player-ClimbLedge_2: 1083511410
+      player-ClimbLedge_3: 395946463
+      player-ClimbLedge_4: 428257688
+>>>>>>> d83ecb13441af261b26e312084ed5dc5743da197
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
