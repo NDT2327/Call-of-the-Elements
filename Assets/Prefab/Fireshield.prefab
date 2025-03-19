@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8207726529516992122}
   - component: {fileID: 4081621652978480193}
   - component: {fileID: 5901613006323141282}
+  - component: {fileID: 5483079012425412574}
   m_Layer: 0
   m_Name: Fireshield
   m_TagString: Untagged
@@ -141,9 +142,23 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.28434372, y: -0.6634655}
   m_Radius: 5.8791246
+--- !u!114 &5483079012425412574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656160270309967972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7493ac26eb572d64ebfab609d6e510da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 5
+  damage: 20
