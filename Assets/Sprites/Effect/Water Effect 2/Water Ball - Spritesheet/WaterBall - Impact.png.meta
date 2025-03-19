@@ -1,0 +1,629 @@
+fileFormatVersion: 2
+guid: 00746e7ddee8d5548816eb246aa0a5e0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7137302222193065625
+    second: WaterBall - Impact_0
+  - first:
+      213: -9133753988229148585
+    second: WaterBall - Impact_1
+  - first:
+      213: -5593837395589496270
+    second: WaterBall - Impact_2
+  - first:
+      213: 6645030169266538128
+    second: WaterBall - Impact_3
+  - first:
+      213: -1661517879463943119
+    second: WaterBall - Impact_4
+  - first:
+      213: -5932098213838208203
+    second: WaterBall - Impact_5
+  - first:
+      213: 958537925572860763
+    second: WaterBall - Impact_6
+  - first:
+      213: 1841742937072378158
+    second: WaterBall - Impact_7
+  - first:
+      213: 6269946784342005733
+    second: WaterBall - Impact_8
+  - first:
+      213: -8871709127175419947
+    second: WaterBall - Impact_9
+  - first:
+      213: -8909453327832220519
+    second: WaterBall - Impact_10
+  - first:
+      213: -2477363543820685342
+    second: WaterBall - Impact_11
+  - first:
+      213: -2151723371419578418
+    second: WaterBall - Impact_12
+  - first:
+      213: 5685115777171652607
+    second: WaterBall - Impact_13
+  - first:
+      213: -1012992675655568911
+    second: WaterBall - Impact_14
+  - first:
+      213: -1135733629947606084
+    second: WaterBall - Impact_15
+  - first:
+      213: -5797972781693364805
+    second: WaterBall - Impact_16
+  - first:
+      213: -5203457477961058587
+    second: WaterBall - Impact_17
+  - first:
+      213: 94665528950007817
+    second: WaterBall - Impact_18
+  - first:
+      213: -7213508316181168820
+    second: WaterBall - Impact_19
+  - first:
+      213: 9042574031210874010
+    second: WaterBall - Impact_20
+  - first:
+      213: 8229721817597969476
+    second: WaterBall - Impact_21
+  - first:
+      213: -7553496025616930253
+    second: WaterBall - Impact_22
+  - first:
+      213: 7654073464790383290
+    second: WaterBall - Impact_23
+  - first:
+      213: -3392780405974827720
+    second: WaterBall - Impact_24
+  - first:
+      213: -7634647455962091097
+    second: WaterBall - Impact_25
+  - first:
+      213: -1872131953342251640
+    second: WaterBall - Impact_26
+  - first:
+      213: -7842641231818959948
+    second: WaterBall - Impact_27
+  - first:
+      213: 2455738563202801167
+    second: WaterBall - Impact_28
+  - first:
+      213: 8108042532976448721
+    second: WaterBall - Impact_29
+  - first:
+      213: 4064822969476897753
+    second: WaterBall - Impact_30
+  - first:
+      213: 3569505595722332260
+    second: WaterBall - Impact_31
+  - first:
+      213: -7473051662304648319
+    second: WaterBall - Impact_32
+  - first:
+      213: -8238065694619943569
+    second: WaterBall - Impact_33
+  - first:
+      213: -9151982498190638236
+    second: WaterBall - Impact_34
+  - first:
+      213: 7351890015444393907
+    second: WaterBall - Impact_35
+  - first:
+      213: 5903796865264073760
+    second: WaterBall - Impact_36
+  - first:
+      213: 4856790613823919483
+    second: WaterBall - Impact_37
+  - first:
+      213: -5049118463015295970
+    second: WaterBall - Impact_38
+  - first:
+      213: 2459480869737552471
+    second: WaterBall - Impact_39
+  - first:
+      213: -3473287515206119367
+    second: WaterBall - Impact_40
+  - first:
+      213: 5115282445399355884
+    second: WaterBall - Impact_41
+  - first:
+      213: -4037695184994914883
+    second: WaterBall - Impact_42
+  - first:
+      213: 6466805661092326117
+    second: WaterBall - Impact_43
+  - first:
+      213: -7332554145199973734
+    second: WaterBall - Impact_44
+  - first:
+      213: 7572254236479660603
+    second: WaterBall - Impact_45
+  - first:
+      213: 4110384487817389578
+    second: WaterBall - Impact_46
+  - first:
+      213: -7427851985084113013
+    second: WaterBall - Impact_47
+  - first:
+      213: 2855106875961624479
+    second: WaterBall - Impact_48
+  - first:
+      213: 3844218724780219829
+    second: WaterBall - Impact_49
+  - first:
+      213: 2146203730665796267
+    second: WaterBall - Impact_50
+  - first:
+      213: -1821284463262348905
+    second: WaterBall - Impact_51
+  - first:
+      213: -9168342206832706227
+    second: WaterBall - Impact_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 4
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WaterBall - Impact_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -128}
+        - {x: 128, y: 0}
+        - {x: 0, y: 128}
+        - {x: -128, y: 0}
+      physicsShape:
+      - - {x: 0, y: -128}
+        - {x: 128, y: 0}
+        - {x: 0, y: 128}
+        - {x: -128, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e7c685e8acc0360800000000000000
+      internalID: 7137302222193065625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterBall - Impact_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1240c8230bf23ee4e811a06db8860de4
+      internalID: -1737299584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterBall - Impact_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6970e647aca8fdb4cb23e118befed0cb
+      internalID: 92876403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterBall - Impact_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd44c1e813156c142a2b874a2f3c9c81
+      internalID: 1059399917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterBall - Impact_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0d99b1722f8c443a088e8606f28cbd
+      internalID: 939436734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterBall - Impact_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d4da3eb6683524284dc4873d9f28a9
+      internalID: -152716227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterBall - Impact_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e80cf39f445904e86a94de16799501
+      internalID: 1567760395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterBall - Impact_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17474bc2ecf672409201de979331f4b
+      internalID: -434830750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterBall - Impact_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d45c06e08101f4ca441669a416317b
+      internalID: 1768559806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterBall - Impact_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e2c35bb350dee4db28ae7dcb7039ee
+      internalID: 2133865002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterBall - Impact_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8081aa8c518509488d7173a596bbe02
+      internalID: 1115591357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterBall - Impact_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61146bf75166224448e57d2e10eda569
+      internalID: -1003744882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterBall - Impact_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29cfeff44d4e5047920f4f0fe0e1116
+      internalID: 442972051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterBall - Impact_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f470f0f7193e0e546a56313817fde545
+      internalID: 507141805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterBall - Impact_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6e3b557a7bf904cb008edbf62d0025
+      internalID: 729895985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fb2c88c1c5db1224a8f1e75823343626
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WaterBall - Impact_0: 7137302222193065625
+      WaterBall - Impact_1: -1737299584
+      WaterBall - Impact_10: 1115591357
+      WaterBall - Impact_11: -1003744882
+      WaterBall - Impact_12: 442972051
+      WaterBall - Impact_13: 507141805
+      WaterBall - Impact_14: 729895985
+      WaterBall - Impact_2: 92876403
+      WaterBall - Impact_3: 1059399917
+      WaterBall - Impact_4: 939436734
+      WaterBall - Impact_5: -152716227
+      WaterBall - Impact_6: 1567760395
+      WaterBall - Impact_7: -434830750
+      WaterBall - Impact_8: 1768559806
+      WaterBall - Impact_9: 2133865002
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
