@@ -133,7 +133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 304587244606580798, guid: 9948b841128974e4caeef85b85d6ebe8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 632666485537823151, guid: 9948b841128974e4caeef85b85d6ebe8, type: 3}
       propertyPath: m_Pivot.x
@@ -215,6 +215,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1925805693999600679, guid: 9948b841128974e4caeef85b85d6ebe8, type: 3}
+      propertyPath: bossHealth
+      value: 
+      objectReference: {fileID: 2028728781}
     - target: {fileID: 1925805693999600679, guid: 9948b841128974e4caeef85b85d6ebe8, type: 3}
       propertyPath: playerHealth
       value: 
@@ -301,7 +305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &492664111
 Transform:
   m_ObjectHideFlags: 0
@@ -707,6 +711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 100
+  currentHP: 0
   hitLimit: 3
   invincibleDuration: 3
 --- !u!1 &932983232
@@ -980,6 +985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 100
+  currentHP: 0
   hitLimit: 2
   invincibleDuration: 3
 --- !u!1 &1059958388
@@ -1340,6 +1346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 1000
+  currentHP: 0
   hitLimit: 5
   invincibleDuration: 3
 --- !u!114 &1127212829
@@ -1646,7 +1653,7 @@ GameObject:
   - component: {fileID: 2028728776}
   - component: {fileID: 2028728775}
   - component: {fileID: 2028728780}
-  - component: {fileID: 2028728779}
+  - component: {fileID: 2028728781}
   m_Layer: 3
   m_Name: terrible_knight
   m_TagString: Enemy
@@ -1826,21 +1833,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2028728779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2028728773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fa41cbd3982fda46895bebda5c93f2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHP: 100
-  hitLimit: 3
-  invincibleDuration: 3
 --- !u!114 &2028728780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1863,6 +1855,22 @@ MonoBehaviour:
   jumpForce: 7
   attackCooldown: 2
   enragedMultiplier: 1.5
+--- !u!114 &2028728781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028728773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa41cbd3982fda46895bebda5c93f2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 100
+  currentHP: 0
+  hitLimit: 5
+  invincibleDuration: 3
 --- !u!1 &2073483221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,6 +2132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 100
+  currentHP: 0
   hitLimit: 3
   invincibleDuration: 3
 --- !u!1660057539 &9223372036854775807
