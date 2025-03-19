@@ -30,7 +30,14 @@ public class FireSkullEnemy : MonoBehaviour
 		// B?t ??u tu?n tra t? ?i?m B (ho?c b?n c� th? ch?n ?i?m A)
 		currentPatrolTarget = pointB;
 		anim.SetBool("isFight", false);
-	}
+        // Bỏ qua va chạm giữa enemy và player
+        Collider2D enemyCollider = GetComponent<Collider2D>();
+        Collider2D playerCollider = target.GetComponent<Collider2D>();
+        if (enemyCollider != null && playerCollider != null)
+        {
+            Physics2D.IgnoreCollision(enemyCollider, playerCollider);
+        }
+    }
 
 	void Update()
 	{
