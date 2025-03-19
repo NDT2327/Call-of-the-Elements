@@ -193,38 +193,6 @@ public class GolemEnemyScript : MonoBehaviour
         PerformAttack();
     }
 
-
-    // Gọi từ Animation Event hoặc khi Golem bị tấn công
-    //public void TakeDamage(float damage)
-    //{
-    //    if (isDead) return;
-
-    //    enemyHP.TakeDamage(damage); // Gọi từ EnemyHP
-
-    //    if (enemyHP.GetCurrentHP() <= 0)
-    //    {
-    //        Die();
-    //        return;
-    //    }
-
-    //    currentState = State.Hurt;
-    //    anim.SetTrigger("hurt");
-
-    //    // Ví dụ: Sau khi bị thương 1s thì quay lại Chase (hoặc Patrol)
-    //    Invoke("ResetToChase", 1f);
-    //}
-
-    //// Khi chết
-    //public void Die()
-    //{
-    //    if (isDead) return;
-    //    isDead = true;
-    //    currentState = State.Die;
-    //    anim.SetTrigger("die");
-    //    rb.linearVelocity = Vector2.zero;
-    //    Destroy(gameObject,1f);
-    //}
-
     private void ResetToChase()
     {
         currentState = State.Chase;
