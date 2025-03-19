@@ -311,7 +311,7 @@ Transform:
   m_GameObject: {fileID: 492664110}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.26, y: -2.9, z: -0.054706354}
+  m_LocalPosition: {x: 2.47, y: -2.52, z: -0.054706354}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -904,7 +904,7 @@ MonoBehaviour:
   pointA: {fileID: 1687788927}
   pointB: {fileID: 1519253578}
   patrolSpeed: 2
-  target: {fileID: 0}
+  target: {fileID: 755533439}
   chaseSpeed: 4
   detectionRange: 10
   obstacleMask:
@@ -1663,8 +1663,8 @@ Transform:
   m_GameObject: {fileID: 2028728773}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.2907, y: 0.532, z: 0.054706354}
-  m_LocalScale: {x: 8.503837, y: 8.0716505, z: 1}
+  m_LocalPosition: {x: -2.0874, y: 0.7557, z: 0.054706354}
+  m_LocalScale: {x: 9.956292, y: 9.218632, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 492664111}
@@ -1839,7 +1839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 100
-  hitLimit: 5
+  hitLimit: 3
   invincibleDuration: 3
 --- !u!114 &2028728780
 MonoBehaviour:
@@ -1862,6 +1862,7 @@ MonoBehaviour:
   moveSpeed: 3
   jumpForce: 7
   attackCooldown: 2
+  enragedMultiplier: 1.5
 --- !u!1 &2073483221
 GameObject:
   m_ObjectHideFlags: 0
