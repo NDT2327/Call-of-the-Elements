@@ -1,0 +1,491 @@
+fileFormatVersion: 2
+guid: ccf3887c619066c47acc526db7ab9064
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4730049741179975653
+    second: DarkSlash_0
+  - first:
+      213: 3682828386909597466
+    second: DarkSlash_1
+  - first:
+      213: 2397056214019420232
+    second: DarkSlash_2
+  - first:
+      213: -8697582435939316141
+    second: DarkSlash_3
+  - first:
+      213: -281835469462172012
+    second: DarkSlash_4
+  - first:
+      213: 287822243906385270
+    second: DarkSlash_5
+  - first:
+      213: 4483996212979596043
+    second: DarkSlash_6
+  - first:
+      213: -7213288071372907707
+    second: DarkSlash_7
+  - first:
+      213: -9062894671554824848
+    second: DarkSlash_8
+  - first:
+      213: -6791946964936796609
+    second: DarkSlash_9
+  - first:
+      213: 4873292296049970774
+    second: DarkSlash_10
+  - first:
+      213: 4642062740057930855
+    second: DarkSlash_11
+  - first:
+      213: -4569005468757732763
+    second: DarkSlash_12
+  - first:
+      213: -5651758029534343789
+    second: DarkSlash_13
+  - first:
+      213: -1296567288167834151
+    second: DarkSlash_14
+  - first:
+      213: 5406983297825187177
+    second: DarkSlash_15
+  - first:
+      213: -6467110929610140972
+    second: DarkSlash_16
+  - first:
+      213: -1149685946496132524
+    second: DarkSlash_17
+  - first:
+      213: -715961303734612454
+    second: DarkSlash_18
+  - first:
+      213: -8883470621517572383
+    second: DarkSlash_19
+  - first:
+      213: 7518460536974456056
+    second: DarkSlash_20
+  - first:
+      213: -4280305238575955386
+    second: DarkSlash_21
+  - first:
+      213: 719310696945046536
+    second: DarkSlash_22
+  - first:
+      213: 1589673855787119294
+    second: DarkSlash_23
+  - first:
+      213: -1438729578479432506
+    second: DarkSlash_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DarkSlash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 130
+        width: 39
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e345697f104922141b16d92086dd5633
+      internalID: -234750166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkSlash_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 130
+        width: 66
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b0e6758f142e14799bdb1a9cacb916
+      internalID: 1542826373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkSlash_2
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 130
+        width: 86
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7734e540bd1db64b8201452c106a9c3
+      internalID: -420701388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkSlash_3
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 130
+        width: 106
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2a270e7eab34741a185e279d1f30b8
+      internalID: 1359560215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkSlash_4
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 130
+        width: 111
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bdd4aebe562c9d4b8e3d05ef08fe7d6
+      internalID: 337272032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkSlash_5
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 130
+        width: 123
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c74eea6602453745a7af646d0f60d81
+      internalID: 93176559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkSlash_6
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 130
+        width: 142
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4f1f4886f835c4da83323833d17b75
+      internalID: -958589167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkSlash_7
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 0
+        width: 96
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b119889e899f3b0439e60159b3819490
+      internalID: 225349075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkSlash_8
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 130
+        width: 131
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f535be45961c9a4f979d04689aa0e34
+      internalID: -1484829415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkSlash_9
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 130
+        width: 96
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57bdffd3bc474b4fb5293450b19b23d
+      internalID: 2027998918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkSlash_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 96
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d698488e8f56d4088a60747ae91611
+      internalID: -299814857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkSlash_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1
+        width: 96
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a38ab0e99286fc43af72b11b9c8a9d4
+      internalID: -1832749248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkSlash_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1
+        width: 96
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ccd5dd6b488d24eae778a29f24de94
+      internalID: 1307848203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1447bb035e720494c8c4e4577f96bc38
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DarkSlash_0: -234750166
+      DarkSlash_1: 1542826373
+      DarkSlash_10: -299814857
+      DarkSlash_11: -1832749248
+      DarkSlash_12: 1307848203
+      DarkSlash_2: -420701388
+      DarkSlash_3: 1359560215
+      DarkSlash_4: 337272032
+      DarkSlash_5: 93176559
+      DarkSlash_6: -958589167
+      DarkSlash_7: 225349075
+      DarkSlash_8: -1484829415
+      DarkSlash_9: 2027998918
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
