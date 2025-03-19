@@ -23,8 +23,9 @@ public class Player : MonoBehaviour
     public float attackResetTime = 0.5f;
     private float specialAttackCooldown = 3f; // Thời gian chờ giữa mỗi lần dùng SpAttack
     private float lastSpecialAttackTime = -Mathf.Infinity;
-    private bool isBlocking = false;
-    private bool isRolling = false;
+
+    private int currentElementIndex = 1; // Mặc định là Lửa (1)
+    private string[] elements = { "Wind", "Fire", "Earth", "Water" };
 
 
 
@@ -44,6 +45,7 @@ public class Player : MonoBehaviour
         HandleBlock();
         HandleRoll();
         SpAttack();
+        HandleElementChange();
     }
 
     private void Move()
@@ -107,27 +109,49 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void HandleElementChange()
+    {
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            currentElementIndex = (currentElementIndex + 1) % elements.Length;
+            Debug.Log("Hệ hiện tại: " + elements[currentElementIndex]);
+        }
+    }
+
     private void SpAttack()
     {
         if (Input.GetKeyDown(KeyCode.U) && Time.time - lastSpecialAttackTime >= specialAttackCooldown)
         {
             animator.SetTrigger("Attack3");
 
-            // Tìm enemy gần nhất
-            GameObject nearestEnemy = FindNearestEnemy();
-            if (nearestEnemy != null)
+            GameObject spellPrefab = GetSpellByElement();
+            if (spellPrefab != null)
             {
-                Vector3 spawnPosition = nearestEnemy.transform.position - new Vector3(0, 1f, 0); // Dưới chân enemy
-                SpawnSpell(spellEarthPrefab, spawnPosition);
-                SpawnSpell(spellEarth2Prefab, spawnPosition);
-                SpawnSpell(spellEarth3Prefab, spawnPosition);
+                GameObject nearestEnemy = FindNearestEnemy();
+                if (nearestEnemy != null)
+                {
+                    Vector3 spawnPosition = nearestEnemy.transform.position - new Vector3(0, 1f, 0);
+                    SpawnSpell(spellEarthPrefab, spawnPosition);
+                    SpawnSpell(spellEarth2Prefab, spawnPosition);
+                    SpawnSpell(spellEarth3Prefab, spawnPosition);
+                }
             }
 
             lastSpecialAttackTime = Time.time;
         }
     }
 
-
+    private GameObject GetSpellByElement()
+    {
+        switch (elements[currentElementIndex])
+        {
+            //case "Wind": return spellWindPrefab;
+            //case "Fire": return spellFirePrefab;
+            case "Earth": return spellEarthPrefab;
+            //case "Water": return spellWaterPrefab;
+            default: return null;
+        }
+    }
 
     private GameObject FindNearestEnemy()
     {
@@ -144,10 +168,8 @@ public class Player : MonoBehaviour
                 nearestEnemy = enemy;
             }
         }
-
         return nearestEnemy;
     }
-
 
     private void SpawnSpell(GameObject spellPrefab, Vector3 position)
     {
@@ -155,7 +177,6 @@ public class Player : MonoBehaviour
         {
             Quaternion rotation = facingRight ? Quaternion.identity : Quaternion.Euler(0, 180, 0);
             GameObject spell = Instantiate(spellPrefab, position, rotation);
-
             spell.SetActive(true);
             Destroy(spell, 1f);
         }
@@ -165,13 +186,12 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.S) && isGrounded)
         {
-            isBlocking = true;
             animator.SetTrigger("Block");
             ShowBlockFlash();
         }
         if (Input.GetKeyUp(KeyCode.S))
         {
-            isBlocking = false;
+
         }
     }
 

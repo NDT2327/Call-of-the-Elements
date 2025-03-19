@@ -119,6 +119,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+
 --- !u!114 &199518957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 0
+
 --- !u!1001 &359227948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -231,7 +233,7 @@ PrefabInstance:
     - target: {fileID: 1925805693999600679, guid: 9948b841128974e4caeef85b85d6ebe8, type: 3}
       propertyPath: playerHealth
       value: 
-      objectReference: {fileID: 199518957}
+      objectReference: {fileID: 1234974760}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1299,6 +1301,17 @@ MonoBehaviour:
   attackCooldown: 3
   fireballPrefab: {fileID: 8191482916236993757, guid: d14034e0c4234c0438953ec3f6bfee87, type: 3}
   fireballSpawnPoint: {fileID: 623918187}
+--- !u!114 &1234974760 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4026091479902064295, guid: ad7bee9c046638440853e6df3f3808f7, type: 3}
+  m_PrefabInstance: {fileID: 1301209178}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0a4e9f6b4368bc489f23b142bfdf84a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1240107728
 GameObject:
   m_ObjectHideFlags: 0
