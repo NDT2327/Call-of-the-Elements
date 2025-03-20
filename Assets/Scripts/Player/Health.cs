@@ -42,13 +42,13 @@ public class Health : MonoBehaviour
         }
     }
 
-    public void Heal(float amount)
-    {
-        if (!dead)
+        public void Heal(float amount)
         {
-            CurrentHealth = Mathf.Clamp(CurrentHealth + amount, 0, MaxHealth);
-            Debug.Log("❤️ Hồi " + amount + " máu. Máu hiện tại: " + CurrentHealth);
+            if (!dead)
+            {
+                CurrentHealth = Mathf.Clamp(CurrentHealth + amount, 0, MaxHealth);
+                Debug.Log("❤️ Hồi " + amount + " máu. Máu hiện tại: " + CurrentHealth);
+            }
         }
-    }
 
 }

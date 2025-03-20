@@ -21,6 +21,11 @@ public class EnemyHP : MonoBehaviour
     [SerializeField] private GameObject potionPrefab; // Prefab của Potion
     [SerializeField] private float dropChance = 0.6f; // 60% tỷ lệ rơi Potion
     [SerializeField] private bool isBoss = false; // Nếu là Boss, không rơi Potion
+    [Header("Potion Drop Settings")]
+    [SerializeField] private GameObject healthPotionPrefab; // Prefab của máu
+    [SerializeField] private GameObject manaPotionPrefab;   // Prefab của mana
+
+
     private EnemyHealthBar healthBar;
     void Start()
 	{
@@ -152,10 +157,12 @@ public class EnemyHP : MonoBehaviour
         float randomValue = Random.value; // Random từ 0 -> 1
         if (randomValue <= dropChance)
         {
-            Instantiate(potionPrefab, transform.position, Quaternion.identity);
-            Debug.Log("🧪 Potion đã spawn!");
+            GameObject potionToSpawn = (Random.value < 0.5f) ? healthPotionPrefab : manaPotionPrefab;
+            Instantiate(potionToSpawn, transform.position, Quaternion.identity);
+            Debug.Log($"🧪 {potionToSpawn.name} đã spawn!");
         }
     }
+
 
     // Lấy HP hiện tại
     public float GetCurrentHP()
