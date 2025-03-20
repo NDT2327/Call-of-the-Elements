@@ -23,4 +23,6 @@ public class Stamina : MonoBehaviour
         CurrentStamina += amount;
         CurrentStamina = Mathf.Clamp(CurrentStamina, 0, maxStamina);
     }
+
+    
 }
