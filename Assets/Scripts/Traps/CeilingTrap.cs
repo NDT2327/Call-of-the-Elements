@@ -3,6 +3,7 @@ using UnityEngine;
 public class CeilingTrap : MonoBehaviour
 {
     public float fallSpeed = 5f;
+    public float damage = 20f;
     private bool isFalling = false;
     private Rigidbody2D rb;
 
@@ -17,6 +18,7 @@ public class CeilingTrap : MonoBehaviour
         {
             isFalling = true;
             rb.gravityScale = 1;
+            collision.GetComponent<Health>().TakeDamage(damage);
             Debug.Log("Touch");
         }
 

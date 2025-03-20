@@ -13,6 +13,7 @@ public class Health : MonoBehaviour
     {
         CurrentHealth = startingHealth;
         anim = GetComponent<Animator>();
+        transform.position = GameManager.Instance.GetCheckpoint();
     }
 
     public void TakeDamage(float _damage)
@@ -28,6 +29,7 @@ public class Health : MonoBehaviour
         {
             anim.SetTrigger("Death");
             dead = true;
+            Die();
 
             // Instead of disabling Player, send an event
             Debug.Log("☠ Player has died.");
@@ -51,4 +53,25 @@ public class Health : MonoBehaviour
             }
         }
 
+    public void RecoverFullHealth()
+    {
+        CurrentHealth = MaxHealth;
+    }
+
+    private void Die()
+    {
+        UIManager.Instance.ShowGameOverScreen();
+    }
+
+    public void RestartFromCheckpoint()
+    {
+        transform.position = GameManager.Instance.GetCheckpoint();
+        CurrentHealth = MaxHealth;
+        anim.ResetTrigger("Hurt");
+        anim.ResetTrigger("Death");
+        anim.Play("Idle");
+
+        //stamina
+        Debug.Log("Restarted at checkpoint");
+    }
 }

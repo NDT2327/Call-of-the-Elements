@@ -1,4 +1,6 @@
+﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,7 +10,7 @@ public class GameManager : MonoBehaviour
     //public UIManager uiManager;
     //public AudioManager audioManager;
 
-    private Vector2 lastCheckpoint;
+    private Vector3 lastCheckpoint;
 
     public enum Map { Earth, Lava, Castle }
     public Map currentMap = Map.Earth;
@@ -44,14 +46,34 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void SetCheckpoint(Vector2 position)
+    public void SetCheckpoint(Vector3 position)
     {
         lastCheckpoint = position;
     }
 
-    public Vector2 GetCheckpoint()
+    public Vector3 GetCheckpoint()
     {
         return lastCheckpoint;
+    }
+
+    public void RestartGame()
+    {
+        StartCoroutine(RestartScene());
+    }
+
+
+    private IEnumerator RestartScene()
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
+        yield return new WaitUntil(() => operation.isDone);
+
+        // Sau khi load xong, đặt lại vị trí người chơi
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            player.transform.position = lastCheckpoint ;
+        }
     }
 
     private void EndGame()
