@@ -5,11 +5,56 @@ public class TaurusAI : MonoBehaviour
     public Transform player;
     public float detectionRange = 5f;
 
+    [Header("Enrage Settings")]
+    public ParticleSystem enrageEyeEffect;
+    public float enrageThreshold = 0.5f;
+    public float damageMuliplier = 2f;
+
+    private EnemyHP enemyHP;
+    private bool isEnraged = false;
     private bool isFliped = false;
 
+    void Start()
+    {
+        enemyHP = GetComponent<EnemyHP>();    
+    }
+
+    private void Update()
+    {
+        if (enemyHP != null) { 
+            float currentHP = enemyHP.GetCurrentHP();
+            float maxHP = enemyHP.maxHP;
+
+            //activae enrage
+            if (currentHP <= maxHP * enrageThreshold && !isEnraged) {
+                ActivateEnrage();
+            
+            }
+        }
+    }
     public bool IsPlayerInRange()
     {
         return Vector2.Distance(transform.position, player.position) < detectionRange;
+    }
+
+    public bool IsEnraged()
+    {
+        return isEnraged;
+    }
+
+    public float GetDamageMultiplier()
+    {
+        return isEnraged ? damageMuliplier : 1f;
+    }
+
+    private void ActivateEnrage()
+    {
+        isEnraged = true;
+        if(enrageEyeEffect != null)
+        {
+            enrageEyeEffect.Play();
+        }
+        Debug.Log("Taurus is ENRAGED!");
     }
 
     public void LookAtPlayer()

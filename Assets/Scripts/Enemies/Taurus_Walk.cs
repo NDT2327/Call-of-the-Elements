@@ -9,7 +9,6 @@ public class Taurus_Walk : StateMachineBehaviour
     Transform player;
     Rigidbody2D rb;
     TaurusAI taurus;
-    Taurus_Health health;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -17,7 +16,6 @@ public class Taurus_Walk : StateMachineBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = animator.GetComponent<Rigidbody2D>();
         taurus = animator.GetComponent<TaurusAI>();
-        health = animator.GetComponent<Taurus_Health>();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -27,7 +25,6 @@ public class Taurus_Walk : StateMachineBehaviour
 
         //move toward to player
         Vector2 target = new Vector2(player.position.x, rb.position.y);
-        float currentSpeed = health != null && health.IsEnraged() ? speed * health.speedMultiplier : speed;
         Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
         rb.MovePosition(newPos);
 

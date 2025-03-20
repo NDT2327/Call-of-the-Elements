@@ -11,20 +11,17 @@ public class Taurus_Weapon : MonoBehaviour
     public float attackRange = 6f;
     public LayerMask playerLayer;
 
-    [Header("Cooldown settings")]
+    [Header("Enrage settings")]
     public float baseCooldown = 2f;
     public float enrageCooldownReduction = 0.5f;
+    
 
-    [Header("Effects")]
-    public ParticleSystem enrageEffect;
-
-    private Taurus_Health health;
+    private TaurusAI taurus;
     private float lastAttackTime;
-    private bool isEnragedEffectActive = false;
 
     void Start()
     {
-        health = GetComponent<Taurus_Health>();
+        taurus = GetComponent<TaurusAI>();
         lastAttackTime = -baseCooldown;
     }
 
@@ -33,18 +30,7 @@ public class Taurus_Weapon : MonoBehaviour
     {
         if (Time.time >= lastAttackTime + GetCurrentCooldown())
         {
-            Vector3 pos = transform.position;
-            pos += transform.right * attackOffset.x;
-            pos += transform.up * attackOffset.y;
-
-            Collider2D coliInfo = Physics2D.OverlapCircle(pos, attackRange, playerLayer);
-            if (coliInfo != null)
-            {
-                // Giả sử PlayerHealth là script quản lý máu của người chơi
-                // coliInfo.GetComponent<PlayerHealth>().TakeDamage(attack1Dmg);
-                Debug.Log("Player hit by Attack1 for " + attack1Dmg + " damage");
-            }
-            lastAttackTime = Time.time; // Cập nhật thời gian tấn công cuối
+            PerformAttack(attack1Dmg, "Attack1");
         }
     }
 
@@ -53,24 +39,30 @@ public class Taurus_Weapon : MonoBehaviour
     {
         if (Time.time >= lastAttackTime + GetCurrentCooldown())
         {
-            Vector3 pos = transform.position;
-            pos += transform.right * attackOffset.x;
-            pos += transform.up * attackOffset.y;
-
-            Collider2D coliInfo = Physics2D.OverlapCircle(pos, attackRange, playerLayer);
-            if (coliInfo != null)
-            {
-                // Giả sử PlayerHealth là script quản lý máu của người chơi
-                // coliInfo.GetComponent<PlayerHealth>().TakeDamage(attack2Dmg);
-                Debug.Log("Player hit by Attack2 for " + attack2Dmg + " damage");
-            }
-            lastAttackTime = Time.time; // Cập nhật thời gian tấn công cuối
+            PerformAttack(attack2Dmg, "Attack2");
         }
+    }
+
+    private void PerformAttack(int baseDamge, string attackName)
+    {
+        Vector3 pos = transform.position;
+        pos += transform.right * attackOffset.x;
+        pos += transform.up * attackOffset.y;
+
+        Collider2D coliInfo = Physics2D.OverlapCircle(pos, attackRange, playerLayer);
+        if (coliInfo != null)
+        {
+            // Giả sử PlayerHealth là script quản lý máu của người chơi
+            int finalDmg = Mathf.RoundToInt(baseDamge * taurus.GetDamageMultiplier());
+            // coliInfo.GetComponent<PlayerHealth>().TakeDamage(attack2Dmg);
+            Debug.Log("Player hit by Attack2 for " + finalDmg + " damage");
+        }
+        lastAttackTime = Time.time; // Cập nhật thời gian tấn công cuối
     }
 
     private float GetCurrentCooldown()
     {
-        return (health != null && health.IsEnraged()) ? baseCooldown * health.GetCooldownReduction() : baseCooldown;
+        return (taurus != null && taurus.IsEnraged() ? baseCooldown - enrageCooldownReduction : baseCooldown);
     }
 
     //gizmo to modify attack range
