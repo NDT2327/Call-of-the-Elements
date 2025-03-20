@@ -1,0 +1,680 @@
+fileFormatVersion: 2
+guid: 020863fca6f67424caff22aa4e81a36d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 13560498411389161
+    second: PurpleMysteryDoor_0
+  - first:
+      213: -7087592820720842796
+    second: PurpleMysteryDoor_1
+  - first:
+      213: -648807928074401000
+    second: PurpleMysteryDoor_2
+  - first:
+      213: -3480939311461717750
+    second: PurpleMysteryDoor_3
+  - first:
+      213: 509894906629873992
+    second: PurpleMysteryDoor_4
+  - first:
+      213: -5137552723565399291
+    second: PurpleMysteryDoor_5
+  - first:
+      213: 6906721400312536798
+    second: PurpleMysteryDoor_6
+  - first:
+      213: -2691214474510014657
+    second: PurpleMysteryDoor_7
+  - first:
+      213: 5765640261998319880
+    second: PurpleMysteryDoor_8
+  - first:
+      213: 4708242878181596569
+    second: PurpleMysteryDoor_9
+  - first:
+      213: 5303332942329770270
+    second: PurpleMysteryDoor_10
+  - first:
+      213: -7463362492684325358
+    second: PurpleMysteryDoor_11
+  - first:
+      213: 4118170516811238829
+    second: PurpleMysteryDoor_12
+  - first:
+      213: 8270198237345794629
+    second: PurpleMysteryDoor_13
+  - first:
+      213: -8971899483684475699
+    second: PurpleMysteryDoor_14
+  - first:
+      213: 1051664239972841144
+    second: PurpleMysteryDoor_15
+  - first:
+      213: -4290182144277361169
+    second: PurpleMysteryDoor_16
+  - first:
+      213: 6871086607739104976
+    second: PurpleMysteryDoor_17
+  - first:
+      213: 2673464232327693409
+    second: PurpleMysteryDoor_18
+  - first:
+      213: 2341373304346278128
+    second: PurpleMysteryDoor_19
+  - first:
+      213: 7696867099343235126
+    second: PurpleMysteryDoor_20
+  - first:
+      213: 982291608670026687
+    second: PurpleMysteryDoor_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 95
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0c9c2933d203000800000000000000
+      internalID: 13560498411389161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 71
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7435891efc3ad90800000000000000
+      internalID: -7087592820720842796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 95
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81b0baf70a8fef6f0800000000000000
+      internalID: -648807928074401000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_3
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 71
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09a1a7932831bfc0800000000000000
+      internalID: -3480939311461717750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_4
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 95
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 841647e47b2831700800000000000000
+      internalID: 509894906629873992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_5
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 71
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5033b01940fb3b8b0800000000000000
+      internalID: -5137552723565399291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_6
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 95
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede973c258a99df50800000000000000
+      internalID: 6906721400312536798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_7
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 71
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37e070b1b2e6aad0800000000000000
+      internalID: -2691214474510014657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_8
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 95
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8099917454ba30050800000000000000
+      internalID: 5765640261998319880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_9
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 71
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99dd64ec3f9075140800000000000000
+      internalID: 4708242878181596569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 47
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1171397639399940800000000000000
+      internalID: 5303332942329770270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 23
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ea3910b5fcc6890800000000000000
+      internalID: -7463362492684325358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_12
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 47
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dad450b144ea62930800000000000000
+      internalID: 4118170516811238829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_13
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 23
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54ace0fba75a5c270800000000000000
+      internalID: 8270198237345794629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_14
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 47
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcce97a64f86d7380800000000000000
+      internalID: -8971899483684475699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_15
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 23
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6ff86ed03489e00800000000000000
+      internalID: 1051664239972841144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_16
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 47
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fedcf94f1163674c0800000000000000
+      internalID: -4290182144277361169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_17
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 23
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0deab3b7dd00b5f50800000000000000
+      internalID: 6871086607739104976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_18
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 47
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164ca9ffd8d0a1520800000000000000
+      internalID: 2673464232327693409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_19
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 23
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f8742c7d9a3e7020800000000000000
+      internalID: 2341373304346278128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 638aebbd8d3c0da60800000000000000
+      internalID: 7696867099343235126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleMysteryDoor_21
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbbbf90830dc1ad00800000000000000
+      internalID: 982291608670026687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

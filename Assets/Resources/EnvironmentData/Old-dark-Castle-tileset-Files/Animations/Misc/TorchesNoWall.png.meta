@@ -1,0 +1,1330 @@
+fileFormatVersion: 2
+guid: 8489da3b4170b6741ae01370987c552f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6732490099233395085
+    second: TorchesNoWall_0
+  - first:
+      213: 3455441861832232206
+    second: TorchesNoWall_1
+  - first:
+      213: 6491426577474932634
+    second: TorchesNoWall_2
+  - first:
+      213: -2216700525858830210
+    second: TorchesNoWall_3
+  - first:
+      213: 1231196116382633437
+    second: TorchesNoWall_4
+  - first:
+      213: 3687465373939866158
+    second: TorchesNoWall_5
+  - first:
+      213: 7935537754394374705
+    second: TorchesNoWall_6
+  - first:
+      213: 7364267081475852728
+    second: TorchesNoWall_7
+  - first:
+      213: -4240496850997810332
+    second: TorchesNoWall_8
+  - first:
+      213: 8463181427497359896
+    second: TorchesNoWall_9
+  - first:
+      213: 2136703040732207538
+    second: TorchesNoWall_10
+  - first:
+      213: -4632413588568187892
+    second: TorchesNoWall_11
+  - first:
+      213: -4080708499589021584
+    second: TorchesNoWall_12
+  - first:
+      213: -2213209513571161187
+    second: TorchesNoWall_13
+  - first:
+      213: 3709822748812768680
+    second: TorchesNoWall_14
+  - first:
+      213: 6922245096465836285
+    second: TorchesNoWall_15
+  - first:
+      213: -2706854542759094032
+    second: TorchesNoWall_16
+  - first:
+      213: 6977504875216664816
+    second: TorchesNoWall_17
+  - first:
+      213: -6214292312597360903
+    second: TorchesNoWall_18
+  - first:
+      213: 4951239574343760408
+    second: TorchesNoWall_19
+  - first:
+      213: 7612673744814381803
+    second: TorchesNoWall_20
+  - first:
+      213: 6937071023749845530
+    second: TorchesNoWall_21
+  - first:
+      213: -6944192507801897192
+    second: TorchesNoWall_22
+  - first:
+      213: -5997867299515525853
+    second: TorchesNoWall_23
+  - first:
+      213: -6016543669413847665
+    second: TorchesNoWall_24
+  - first:
+      213: -7531880909832067458
+    second: TorchesNoWall_25
+  - first:
+      213: -7813598201900488727
+    second: TorchesNoWall_26
+  - first:
+      213: 5097741783367373243
+    second: TorchesNoWall_27
+  - first:
+      213: 4321169877204029598
+    second: TorchesNoWall_28
+  - first:
+      213: -2403445056711835746
+    second: TorchesNoWall_29
+  - first:
+      213: 8618171379120602780
+    second: TorchesNoWall_30
+  - first:
+      213: -9180628070341767184
+    second: TorchesNoWall_31
+  - first:
+      213: 583257830128628638
+    second: TorchesNoWall_32
+  - first:
+      213: -7557204917809356209
+    second: TorchesNoWall_33
+  - first:
+      213: 7711409308319155502
+    second: TorchesNoWall_34
+  - first:
+      213: 594099489607979653
+    second: TorchesNoWall_35
+  - first:
+      213: -6316771807352424267
+    second: TorchesNoWall_36
+  - first:
+      213: -5169341680255721272
+    second: TorchesNoWall_37
+  - first:
+      213: 5667986011300450651
+    second: TorchesNoWall_38
+  - first:
+      213: 5114987763345393753
+    second: TorchesNoWall_39
+  - first:
+      213: -315111850926982256
+    second: TorchesNoWall_40
+  - first:
+      213: 7472401765372880982
+    second: TorchesNoWall_41
+  - first:
+      213: -8926923672434302260
+    second: TorchesNoWall_42
+  - first:
+      213: 3017849263823336491
+    second: TorchesNoWall_43
+  - first:
+      213: 1951725114306729777
+    second: TorchesNoWall_44
+  - first:
+      213: 983384137658117965
+    second: TorchesNoWall_45
+  - first:
+      213: -6671425218044248033
+    second: TorchesNoWall_46
+  - first:
+      213: 7856415898127907141
+    second: TorchesNoWall_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TorchesNoWall_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 53
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8114a2331c9e6d50800000000000000
+      internalID: 6732490099233395085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 53
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d468cc01234ff20800000000000000
+      internalID: 3455441861832232206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 53
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f4ce3441e261a50800000000000000
+      internalID: 6491426577474932634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_3
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 53
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7843c6cd92bc31e0800000000000000
+      internalID: -2216700525858830210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_4
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 53
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dddc3dd3856161110800000000000000
+      internalID: 1231196116382633437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_5
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 53
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a1d3778328c2330800000000000000
+      internalID: 3687465373939866158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_6
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 53
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132b0681b81b02e60800000000000000
+      internalID: 7935537754394374705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_7
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 53
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b9887e94e1233660800000000000000
+      internalID: 7364267081475852728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_8
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 53
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46bec15c49ab625c0800000000000000
+      internalID: -4240496850997810332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_9
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 53
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ad9af1ba2437570800000000000000
+      internalID: 8463181427497359896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_10
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 53
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b91755481817ad10800000000000000
+      internalID: 2136703040732207538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_11
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 53
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c53b0826c56bfb0800000000000000
+      internalID: -4632413588568187892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_12
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 53
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070441a7d396e57c0800000000000000
+      internalID: -4080708499589021584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_13
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 53
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9b631a6ca91941e0800000000000000
+      internalID: -2213209513571161187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_14
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 53
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5f5a27220fb7330800000000000000
+      internalID: 3709822748812768680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_15
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 53
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df829075d31c01060800000000000000
+      internalID: 6922245096465836285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_16
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 29
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f8113882225f6ad0800000000000000
+      internalID: -2706854542759094032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 29
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f878d137b315d060800000000000000
+      internalID: 6977504875216664816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_18
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 29
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe8131011662c9a0800000000000000
+      internalID: -6214292312597360903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 29
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81abd9af82656b440800000000000000
+      internalID: 4951239574343760408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_20
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 29
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea9a9eef66a5a960800000000000000
+      internalID: 7612673744814381803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_21
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 29
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12d348875d654060800000000000000
+      internalID: 6937071023749845530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_22
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 29
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 817f980c4b541af90800000000000000
+      internalID: -6944192507801897192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_23
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 29
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325127a187b43cca0800000000000000
+      internalID: -5997867299515525853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_24
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 29
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d56f0e861f08ca0800000000000000
+      internalID: -6016543669413847665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_25
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 29
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e76e9e6d732697790800000000000000
+      internalID: -7531880909832067458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_26
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 29
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e7271665d5809390800000000000000
+      internalID: -7813598201900488727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_27
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 29
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb1574a9421deb640800000000000000
+      internalID: 5097741783367373243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_28
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 29
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e905dd8db11e7fb30800000000000000
+      internalID: 4321169877204029598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_29
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 29
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9fb585747f35aed0800000000000000
+      internalID: -2403445056711835746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_30
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 29
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9efbe15535e99770800000000000000
+      internalID: 8618171379120602780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_31
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 29
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ff8c4c396bd79080800000000000000
+      internalID: -9180628070341767184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_32
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 5
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e93384108e5281800800000000000000
+      internalID: 583257830128628638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 5
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f426323ca2a6f1790800000000000000
+      internalID: -7557204917809356209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_34
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 5
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e25010cb8ed640b60800000000000000
+      internalID: 7711409308319155502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_35
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 5
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 582135f865aae3800800000000000000
+      internalID: 594099489607979653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_36
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 5
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b87e8742815658a0800000000000000
+      internalID: -6316771807352424267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_37
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 5
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0acb1512fc248b0800000000000000
+      internalID: -5169341680255721272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_38
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 5
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51527b3f3bb8ae40800000000000000
+      internalID: 5667986011300450651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_39
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 5
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9580ca835461cf640800000000000000
+      internalID: 5114987763345393753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_40
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 5
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b3bfce07f70abf0800000000000000
+      internalID: -315111850926982256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_41
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 5
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6586d0ca0dd43b760800000000000000
+      internalID: 7472401765372880982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_42
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 5
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc2278f77323d1480800000000000000
+      internalID: -8926923672434302260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_43
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 5
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b243ddb8aed81e920800000000000000
+      internalID: 3017849263823336491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_44
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 5
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 137167996abe51b10800000000000000
+      internalID: 1951725114306729777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_45
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 5
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4faddab9aea5ad00800000000000000
+      internalID: 983384137658117965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_46
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 5
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f10c3e46c165a63a0800000000000000
+      internalID: -6671425218044248033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorchesNoWall_47
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 5
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54935af52a8970d60800000000000000
+      internalID: 7856415898127907141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

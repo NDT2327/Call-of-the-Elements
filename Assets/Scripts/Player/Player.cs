@@ -51,6 +51,12 @@ public class Player : MonoBehaviour
         HandleRoll();
         SpAttack();
         HandleElementChange();
+
+        //if out of map
+        if (transform.position.y < -10) {
+            Die();
+        }
+
     }
 
     private void Move()
@@ -305,5 +311,10 @@ public class Player : MonoBehaviour
                 Debug.Log("Gây " + attackDamage + " sát thương lên " + enemy.gameObject.name);
             }
         }
+    }
+
+    private void Die()
+    {
+        transform.position = GameManager.Instance.GetCheckpoint();
     }
 }

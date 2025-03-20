@@ -41,7 +41,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267464410941782246}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 4
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -751,7 +751,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.1
+      value: 0.5
       mode: 0
       spread: 0
       speed:
@@ -4848,10 +4848,10 @@ GameObject:
   - component: {fileID: 1175415421972254288}
   - component: {fileID: 2868305734918278851}
   - component: {fileID: 1942526265542704856}
-  - component: {fileID: 7905142958441815488}
+  - component: {fileID: 7062658666348077736}
   m_Layer: 0
   m_Name: Taurus
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4866,7 +4866,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 39.76, y: -1.85, z: -10.051176}
-  m_LocalScale: {x: 1.3042474, y: 2.451759, z: 1}
+  m_LocalScale: {x: 1.2119486, y: 1.7417271, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4390959539558382831}
@@ -4915,7 +4915,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 981253208, guid: d687bc4e426f9704f8532e53c451f23f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5035,6 +5035,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  detectionRange: 23
+  enrageEyeEffect: {fileID: 7544254363897442279}
+  enrageThreshold: 0.5
+  damageMuliplier: 1.5
 --- !u!114 &1942526265542704856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5056,8 +5060,7 @@ MonoBehaviour:
     m_Bits: 64
   baseCooldown: 2
   enrageCooldownReduction: 0.5
-  enrageEffect: {fileID: 0}
---- !u!114 &7905142958441815488
+--- !u!114 &7062658666348077736
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5066,12 +5069,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4964681218026043823}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb4d2cf4c67666c42bbd239d184b79ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 2fa41cbd3982fda46895bebda5c93f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 500
-  currentHealth: 0
-  enrageThreshold: 0.3
-  speedMultiplier: 1.5
-  attackCooldownReduction: 0.5
-  enrageEyeEffect: {fileID: 7544254363897442279}
+  maxHP: 500
+  currentHP: 0
+  hitLimit: 5
+  invincibleDuration: 3
+  potionPrefab: {fileID: 0}
+  dropChance: 0.6
+  isBoss: 1
