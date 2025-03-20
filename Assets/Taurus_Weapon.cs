@@ -54,7 +54,7 @@ public class Taurus_Weapon : MonoBehaviour
         {
             // Giả sử PlayerHealth là script quản lý máu của người chơi
             int finalDmg = Mathf.RoundToInt(baseDamge * taurus.GetDamageMultiplier());
-            // coliInfo.GetComponent<PlayerHealth>().TakeDamage(attack2Dmg);
+            coliInfo.GetComponent<Health>().TakeDamage(attack2Dmg);
             Debug.Log("Player hit by Attack2 for " + finalDmg + " damage");
         }
         lastAttackTime = Time.time; // Cập nhật thời gian tấn công cuối

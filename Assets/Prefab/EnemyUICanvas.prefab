@@ -341,8 +341,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossHealthList:
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   totalEnemyHealthBar: {fileID: 1693038181604758786}
   currentEnemyHealthBar: {fileID: 1503236073918463413}
   enemyHealthContainer: {fileID: 287030136735046357}

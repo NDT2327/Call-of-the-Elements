@@ -24,12 +24,12 @@ public class HealthBar : MonoBehaviour
 
     void Start()
     {
-        
+        Debug.Log($"📊 [DEBUG] playerHealth: {playerHealth}, MaxHealth: {playerHealth.MaxHealth}, CurrentHealth: {playerHealth.CurrentHealth}");
+        Debug.Log($"⚡ [DEBUG] playerStamina: {playerStamina}, MaxStamina: {playerStamina.MaxStamina}, CurrentStamina: {playerStamina.CurrentStamina}");
+       
         // Khởi tạo thanh máu Player
         totalHealthBar.fillAmount = playerHealth.CurrentHealth / playerHealth.MaxHealth;
         totalStamina.fillAmount = playerStamina.CurrentStamina / playerStamina.MaxStamina;
-        Debug.Log($"📊 Player HP hiện tại: {playerHealth.CurrentHealth} / {playerHealth.MaxHealth}");
-        Debug.Log($"⚡ Player Stamina hiện tại: {playerStamina.CurrentStamina} / {playerStamina.MaxStamina}");
 
         // Khởi tạo nguyên tố
         elementSprites = new Sprite[] { fireSprite, earthSprite };
