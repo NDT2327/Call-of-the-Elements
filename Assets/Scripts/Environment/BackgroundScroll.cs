@@ -1,34 +1,23 @@
 using Unity.VisualScripting;
+using UnityEditor.EditorTools;
 using UnityEngine;
 
 public class BackgroundScroll : MonoBehaviour
 {
-    public float scrollSpeed = 1f;
-    private float backgroundWidth;
-    private Transform[] backgrounds;
+    private float startPos;
+    public GameObject cam;
+    public float parallaxEffect;
+
     void Start()
     {
-        backgrounds = new Transform[transform.childCount];
-        for (int i = 0; i < transform.childCount; i++)
-        {
-            backgrounds[i] = transform.GetChild(i);
-        }
-
-        SpriteRenderer sr = backgrounds[0].GetComponent<SpriteRenderer>();
-        backgroundWidth = sr.bounds.size.x;
+        startPos = transform.position.x;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += Vector3.left * scrollSpeed * Time.deltaTime;
-
-        foreach (Transform t in backgrounds)
-        {
-            if (t.position.x < -backgroundWidth)
-            {
-                t.position += Vector3.right * backgroundWidth * 2;
-            }
-        }
+        //calculate distance background move based on cam movement
+        float distance = cam.transform.position.x * parallaxEffect; //0 = move with cam || 1 = won;t  move || o.5 = half
+        transform.position = new Vector3(startPos + distance, transform.position.y, transform.position.z);
     }
 }

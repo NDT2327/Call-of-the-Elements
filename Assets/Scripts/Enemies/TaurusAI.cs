@@ -16,7 +16,13 @@ public class TaurusAI : MonoBehaviour
 
     void Start()
     {
-        enemyHP = GetComponent<EnemyHP>();    
+        enemyHP = GetComponent<EnemyHP>();
+        Collider2D enemyCollider = GetComponent<Collider2D>();
+        Collider2D playerCollider = player.GetComponent<Collider2D>();
+        if (enemyCollider != null && playerCollider != null)
+        {
+            Physics2D.IgnoreCollision(enemyCollider, playerCollider);
+        }
     }
 
     private void Update()

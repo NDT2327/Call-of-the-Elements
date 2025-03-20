@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public UIManager uiManager;
     public AudioManager audioManager;
 
+    private Vector2 lastCheckpoint;
+
     public enum Map { Earth, Lava, Castle }
     public Map currentMap = Map.Earth;
 
@@ -40,6 +42,16 @@ public class GameManager : MonoBehaviour
 
         enemyManager.Initialize(currentMap);
         
+    }
+
+    public void SetCheckpoint(Vector2 position)
+    {
+        lastCheckpoint = position;
+    }
+
+    public Vector2 GetCheckpoint()
+    {
+        return lastCheckpoint;
     }
 
     private void EndGame()
