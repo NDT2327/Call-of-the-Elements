@@ -16,6 +16,11 @@ public class EnemyHP : MonoBehaviour
     public int hitLimit = 5; // Sau 5 lần bị đánh, kích hoạt trạng thái invincible
     private bool isInvincible = false;
     public float invincibleDuration = 3f; // Thời gian không nhận sát thương
+
+    [Header("Potion Drop Settings")]
+    [SerializeField] private GameObject potionPrefab; // Prefab của Potion
+    [SerializeField] private float dropChance = 0.6f; // 60% tỷ lệ rơi Potion
+    [SerializeField] private bool isBoss = false; // Nếu là Boss, không rơi Potion
     void Start()
 	{
         currentHP = maxHP;
@@ -120,12 +125,32 @@ public class EnemyHP : MonoBehaviour
         // Hoặc có thể trigger animation chết
         anim.SetTrigger("die");
         rb.linearVelocity = Vector2.zero;
+        if (!isBoss)
+        {
+            TrySpawnPotion();
+        }
         Destroy(gameObject, 1f);
     }
 
-	// Lấy HP hiện tại
-	public float GetCurrentHP()
+    private void TrySpawnPotion()
+    {
+        float randomValue = Random.value; // Random từ 0 -> 1
+        if (randomValue <= dropChance)
+        {
+            Instantiate(potionPrefab, transform.position, Quaternion.identity);
+            Debug.Log("🧪 Potion đã spawn!");
+        }
+    }
+
+    // Lấy HP hiện tại
+    public float GetCurrentHP()
 	{
 		return currentHP;
 	}
+
+    public bool HasAppeared()
+    {
+        return gameObject.activeSelf; // Kiểm tra xem boss có đang hoạt động không
+    }
+
 }
