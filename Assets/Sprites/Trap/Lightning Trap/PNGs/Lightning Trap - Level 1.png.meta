@@ -397,7 +397,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lightning Trap - Level 1_0: -8993374553870450475
+      Lightning Trap - Level 1_1: -2485071078396897478
+      Lightning Trap - Level 1_10: -3615215089514093419
+      Lightning Trap - Level 1_2: 5043428159058767579
+      Lightning Trap - Level 1_3: 1102213598703093158
+      Lightning Trap - Level 1_4: 7129817975209266149
+      Lightning Trap - Level 1_5: 7208612205829099798
+      Lightning Trap - Level 1_6: -2423669965546910410
+      Lightning Trap - Level 1_7: 5222733012296406369
+      Lightning Trap - Level 1_8: -4457956786205815385
+      Lightning Trap - Level 1_9: -8775712008982906962
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

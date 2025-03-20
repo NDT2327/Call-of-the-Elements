@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fire Trap - Level 1_0: 5217671297236562399
+      Fire Trap - Level 1_1: -6154617364274131190
+      Fire Trap - Level 1_2: 1221848524344335182
+      Fire Trap - Level 1_3: 9035281779509367266
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

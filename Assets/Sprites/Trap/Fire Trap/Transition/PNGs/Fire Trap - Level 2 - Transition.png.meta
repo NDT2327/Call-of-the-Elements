@@ -472,7 +472,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fire Trap - Level 2 - Transition_0: 1409867083010922447
+      Fire Trap - Level 2 - Transition_1: 3018928695981826322
+      Fire Trap - Level 2 - Transition_10: 8668971314158022516
+      Fire Trap - Level 2 - Transition_11: -8383923255172038131
+      Fire Trap - Level 2 - Transition_12: -6314093134686036555
+      Fire Trap - Level 2 - Transition_13: -2355841385764365285
+      Fire Trap - Level 2 - Transition_2: 6999186476027536934
+      Fire Trap - Level 2 - Transition_3: 7839146655119127218
+      Fire Trap - Level 2 - Transition_4: -2537425112428506840
+      Fire Trap - Level 2 - Transition_5: -1855720491354369947
+      Fire Trap - Level 2 - Transition_6: -4204412227743241191
+      Fire Trap - Level 2 - Transition_7: -5921858420539969569
+      Fire Trap - Level 2 - Transition_8: -1003471763773665554
+      Fire Trap - Level 2 - Transition_9: 5889849769038273284
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

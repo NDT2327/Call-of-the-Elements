@@ -447,7 +447,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sandworm trap - Level 1 - Transition_0: -2638788640848065226
+      Sandworm trap - Level 1 - Transition_1: 4235215935574237885
+      Sandworm trap - Level 1 - Transition_10: -1471162594666558186
+      Sandworm trap - Level 1 - Transition_11: 347777297785530839
+      Sandworm trap - Level 1 - Transition_12: -1223883835201716625
+      Sandworm trap - Level 1 - Transition_2: 7427100234979310786
+      Sandworm trap - Level 1 - Transition_3: -3732523846317664654
+      Sandworm trap - Level 1 - Transition_4: 3204603112305527190
+      Sandworm trap - Level 1 - Transition_5: 6367824892726288695
+      Sandworm trap - Level 1 - Transition_6: 2363347354864977410
+      Sandworm trap - Level 1 - Transition_7: -5140142745555811959
+      Sandworm trap - Level 1 - Transition_8: -7945406890583711787
+      Sandworm trap - Level 1 - Transition_9: -8154962751228988930
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
