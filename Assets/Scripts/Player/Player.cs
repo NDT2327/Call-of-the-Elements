@@ -37,8 +37,8 @@ public class Player : MonoBehaviour
         if (blockFlash != null) blockFlash.SetActive(false);
         if (dust != null) dust.SetActive(false);
         if (dust2 != null) dust2.SetActive(false);
-        terribleKnightScript = FindFirstObjectByType<TerribleKnightScript>();
-        healthBar = GameObject.FindFirstObjectByType<HealthBar>();
+        terribleKnightScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<TerribleKnightScript>();
+        healthBar = FindFirstObjectByType<HealthBar>();
     }
 
     void Update()
@@ -128,6 +128,18 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.U) && Time.time - lastSpecialAttackTime >= specialAttackCooldown)
         {
+            if (healthBar != null && healthBar.playerStamina != null)
+            {
+                float staminaCost = healthBar.playerStamina.MaxStamina * 0.2f; // 20% tổng Stamina
+                if (healthBar.playerStamina.CurrentStamina < staminaCost)
+                {
+                    Debug.Log("⚠ Không đủ Stamina để sử dụng SpAttack!");
+                    return; // Không thực hiện chiêu nếu không đủ Stamina
+                }
+
+                healthBar.playerStamina.UseStamina(staminaCost); // Trừ Stamina
+            }
+
             animator.SetTrigger("Attack3");
 
             GameObject spellPrefab = GetSpellByElement();

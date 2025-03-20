@@ -21,11 +21,13 @@ public class EnemyHP : MonoBehaviour
     [SerializeField] private GameObject potionPrefab; // Prefab của Potion
     [SerializeField] private float dropChance = 0.6f; // 60% tỷ lệ rơi Potion
     [SerializeField] private bool isBoss = false; // Nếu là Boss, không rơi Potion
+    private EnemyHealthBar healthBar;
     void Start()
 	{
         currentHP = maxHP;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        healthBar = FindFirstObjectByType<EnemyHealthBar>();
     }
     void Awake()
     {
@@ -130,6 +132,19 @@ public class EnemyHP : MonoBehaviour
             TrySpawnPotion();
         }
         Destroy(gameObject, 1f);
+        if (healthBar != null && healthBar.enemyHealthContainer!= null)
+        {
+
+            StartCoroutine(HideBossHealthBar(4f));
+            Debug.Log("🩸 Thanh máu Boss đã bị hủy!");
+        }
+    }
+
+    private IEnumerator HideBossHealthBar(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        healthBar.enemyHealthContainer.SetActive(false);
+        Debug.Log("🩸 Thanh máu Boss đã bị ẩn!");
     }
 
     private void TrySpawnPotion()
@@ -150,7 +165,9 @@ public class EnemyHP : MonoBehaviour
 
     public bool HasAppeared()
     {
+        if (isBoss && currentHP > 0) 
         return gameObject.activeSelf; // Kiểm tra xem boss có đang hoạt động không
+        else return false;
     }
 
 }
