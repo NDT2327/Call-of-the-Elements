@@ -4,9 +4,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    public EnemyManager enemyManager;
-    public UIManager uiManager;
-    public AudioManager audioManager;
+    //public EnemyManager enemyManager;
+    //public UIManager uiManager;
+    //public AudioManager audioManager;
 
     private Vector2 lastCheckpoint;
 
@@ -29,9 +29,9 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        uiManager = GetComponent<UIManager>();
-        enemyManager = GetComponent<EnemyManager>();
-        audioManager = GetComponent<AudioManager>();
+        //uiManager = GetComponent<UIManager>();
+        //enemyManager = GetComponent<EnemyManager>();
+        //audioManager = GetComponent<AudioManager>();
     }
 
     public void OnMapCompleted(Map complatedMap)
@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
         else if (complatedMap == Map.Lava) currentMap = Map.Lava;
         else if (complatedMap == Map.Castle) EndGame();
 
-        enemyManager.Initialize(currentMap);
+        //enemyManager.Initialize(currentMap);
         
     }
 

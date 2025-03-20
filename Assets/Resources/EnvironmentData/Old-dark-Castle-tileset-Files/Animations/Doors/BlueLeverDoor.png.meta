@@ -672,7 +672,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BlueLeverDoor_0: -7215173669109650151
+      BlueLeverDoor_1: -355422640566183713
+      BlueLeverDoor_10: -7575321737100815047
+      BlueLeverDoor_11: -7928568431889101728
+      BlueLeverDoor_12: -6383088589830691640
+      BlueLeverDoor_13: 2869926748644571555
+      BlueLeverDoor_14: 2112031130667897954
+      BlueLeverDoor_15: 5212595240122229469
+      BlueLeverDoor_16: -8221978032842135781
+      BlueLeverDoor_17: 2740133702869405493
+      BlueLeverDoor_18: 4556091430905488109
+      BlueLeverDoor_19: -9205501050935689809
+      BlueLeverDoor_2: -6286775883430661846
+      BlueLeverDoor_20: -2036848242157943248
+      BlueLeverDoor_21: 6367945641577015431
+      BlueLeverDoor_3: 6652838577134265496
+      BlueLeverDoor_4: 7284717235300675122
+      BlueLeverDoor_5: -8896122338928417271
+      BlueLeverDoor_6: -8897421809843327109
+      BlueLeverDoor_7: -5666993320846922831
+      BlueLeverDoor_8: 7846263969123226559
+      BlueLeverDoor_9: -4589080039528996565
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1322,7 +1322,55 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TorchesNoWall_0: 6732490099233395085
+      TorchesNoWall_1: 3455441861832232206
+      TorchesNoWall_10: 2136703040732207538
+      TorchesNoWall_11: -4632413588568187892
+      TorchesNoWall_12: -4080708499589021584
+      TorchesNoWall_13: -2213209513571161187
+      TorchesNoWall_14: 3709822748812768680
+      TorchesNoWall_15: 6922245096465836285
+      TorchesNoWall_16: -2706854542759094032
+      TorchesNoWall_17: 6977504875216664816
+      TorchesNoWall_18: -6214292312597360903
+      TorchesNoWall_19: 4951239574343760408
+      TorchesNoWall_2: 6491426577474932634
+      TorchesNoWall_20: 7612673744814381803
+      TorchesNoWall_21: 6937071023749845530
+      TorchesNoWall_22: -6944192507801897192
+      TorchesNoWall_23: -5997867299515525853
+      TorchesNoWall_24: -6016543669413847665
+      TorchesNoWall_25: -7531880909832067458
+      TorchesNoWall_26: -7813598201900488727
+      TorchesNoWall_27: 5097741783367373243
+      TorchesNoWall_28: 4321169877204029598
+      TorchesNoWall_29: -2403445056711835746
+      TorchesNoWall_3: -2216700525858830210
+      TorchesNoWall_30: 8618171379120602780
+      TorchesNoWall_31: -9180628070341767184
+      TorchesNoWall_32: 583257830128628638
+      TorchesNoWall_33: -7557204917809356209
+      TorchesNoWall_34: 7711409308319155502
+      TorchesNoWall_35: 594099489607979653
+      TorchesNoWall_36: -6316771807352424267
+      TorchesNoWall_37: -5169341680255721272
+      TorchesNoWall_38: 5667986011300450651
+      TorchesNoWall_39: 5114987763345393753
+      TorchesNoWall_4: 1231196116382633437
+      TorchesNoWall_40: -315111850926982256
+      TorchesNoWall_41: 7472401765372880982
+      TorchesNoWall_42: -8926923672434302260
+      TorchesNoWall_43: 3017849263823336491
+      TorchesNoWall_44: 1951725114306729777
+      TorchesNoWall_45: 983384137658117965
+      TorchesNoWall_46: -6671425218044248033
+      TorchesNoWall_47: 7856415898127907141
+      TorchesNoWall_5: 3687465373939866158
+      TorchesNoWall_6: 7935537754394374705
+      TorchesNoWall_7: 7364267081475852728
+      TorchesNoWall_8: -4240496850997810332
+      TorchesNoWall_9: 8463181427497359896
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

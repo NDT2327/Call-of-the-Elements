@@ -672,7 +672,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UpArrowDoor_0: 3699669162874972194
+      UpArrowDoor_1: 5939394251528305496
+      UpArrowDoor_10: -728460605347144203
+      UpArrowDoor_11: 3506953035620973996
+      UpArrowDoor_12: -4130852841386918272
+      UpArrowDoor_13: 3945572230775512879
+      UpArrowDoor_14: 2245711702694849297
+      UpArrowDoor_15: 6887936676316530683
+      UpArrowDoor_16: 1907796647877647468
+      UpArrowDoor_17: -2976270713962659030
+      UpArrowDoor_18: 6681057374851229937
+      UpArrowDoor_19: -2138023835241427142
+      UpArrowDoor_2: 169842088581322061
+      UpArrowDoor_20: -9079569890731627397
+      UpArrowDoor_21: 5318010869963532169
+      UpArrowDoor_3: 7045881793819048275
+      UpArrowDoor_4: 9127805880628960891
+      UpArrowDoor_5: -7385002267752836408
+      UpArrowDoor_6: -3271872779946723300
+      UpArrowDoor_7: -5493251047275177339
+      UpArrowDoor_8: 2995701721733808657
+      UpArrowDoor_9: 2325434678724829827
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

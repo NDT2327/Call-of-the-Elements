@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FallingWater_0: 7519490617792160909
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GreyFlag_0: 6505718469368506800
+      GreyFlag_1: 3840222403987646628
+      GreyFlag_2: 1342290209426069327
+      GreyFlag_3: 2312269533787441583
+      GreyFlag_4: 157737024469686460
+      GreyFlag_5: -271944291376008941
+      GreyFlag_6: -9132522343811415453
+      GreyFlag_7: 3921346444089247967
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

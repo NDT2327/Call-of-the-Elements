@@ -647,7 +647,28 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DungeonDoor_0: -2600754557079541381
+      DungeonDoor_1: 9143384784059196800
+      DungeonDoor_10: -4096034467305370164
+      DungeonDoor_11: -1853238639206404760
+      DungeonDoor_12: 276743952196217379
+      DungeonDoor_13: -7648161062378803022
+      DungeonDoor_14: -6202964582434632646
+      DungeonDoor_15: -373081023626344052
+      DungeonDoor_16: 3714770073001670934
+      DungeonDoor_17: 2247222579708251888
+      DungeonDoor_18: 73519769295130681
+      DungeonDoor_19: -8142588038633223964
+      DungeonDoor_2: 554656896651208838
+      DungeonDoor_20: 8109086112982940570
+      DungeonDoor_3: -572381249695684854
+      DungeonDoor_4: 5472413971098682174
+      DungeonDoor_5: -186853051774449386
+      DungeonDoor_6: -7839530824970895322
+      DungeonDoor_7: -8391876850732554414
+      DungeonDoor_8: 7434663782713139189
+      DungeonDoor_9: 5193527478499652860
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
