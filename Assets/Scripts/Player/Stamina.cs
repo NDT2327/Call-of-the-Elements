@@ -7,7 +7,7 @@ public class Stamina : MonoBehaviour
 
     public float MaxStamina => maxStamina;
 
-    private void Start()
+    private void Awake()
     {
         CurrentStamina = maxStamina;
     }
