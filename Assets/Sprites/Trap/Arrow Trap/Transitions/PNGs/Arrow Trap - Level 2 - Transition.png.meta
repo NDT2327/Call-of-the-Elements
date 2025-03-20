@@ -547,7 +547,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Arrow Trap - Level 2 - Transition_0: 2116983223787649145
+      Arrow Trap - Level 2 - Transition_1: 2534501781626917526
+      Arrow Trap - Level 2 - Transition_10: 1929862477129834696
+      Arrow Trap - Level 2 - Transition_11: 1802905203858578204
+      Arrow Trap - Level 2 - Transition_12: -7401553041136043821
+      Arrow Trap - Level 2 - Transition_13: -1590677683616409400
+      Arrow Trap - Level 2 - Transition_14: 8125058756666684912
+      Arrow Trap - Level 2 - Transition_15: -6582262186589566694
+      Arrow Trap - Level 2 - Transition_16: 8896095247036591685
+      Arrow Trap - Level 2 - Transition_2: -4030985034446125596
+      Arrow Trap - Level 2 - Transition_3: -7303216905631285060
+      Arrow Trap - Level 2 - Transition_4: 3714745089694319665
+      Arrow Trap - Level 2 - Transition_5: -8357193404106828956
+      Arrow Trap - Level 2 - Transition_6: 2470269034834859964
+      Arrow Trap - Level 2 - Transition_7: 5432197607778320483
+      Arrow Trap - Level 2 - Transition_8: 8642820133404105362
+      Arrow Trap - Level 2 - Transition_9: 7675143817490736511
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

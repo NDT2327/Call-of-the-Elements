@@ -472,7 +472,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fire Breather Trap - Level 2 - Transition_0: -3730018480986573650
+      Fire Breather Trap - Level 2 - Transition_1: -3575217698406185883
+      Fire Breather Trap - Level 2 - Transition_10: 3792734641888545902
+      Fire Breather Trap - Level 2 - Transition_11: -8366301249742048841
+      Fire Breather Trap - Level 2 - Transition_12: 2755541863086563568
+      Fire Breather Trap - Level 2 - Transition_13: -4270993652066463726
+      Fire Breather Trap - Level 2 - Transition_2: -2265704838546428165
+      Fire Breather Trap - Level 2 - Transition_3: 4250656273879648218
+      Fire Breather Trap - Level 2 - Transition_4: -5223074978545457687
+      Fire Breather Trap - Level 2 - Transition_5: 8037143167264536483
+      Fire Breather Trap - Level 2 - Transition_6: 5674468085380412682
+      Fire Breather Trap - Level 2 - Transition_7: 1219639918743283214
+      Fire Breather Trap - Level 2 - Transition_8: 4462044957693966612
+      Fire Breather Trap - Level 2 - Transition_9: 4301461564724975829
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
