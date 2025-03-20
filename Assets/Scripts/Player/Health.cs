@@ -2,16 +2,16 @@
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private float startingHealth;
+    [SerializeField] private float startingHealth =100f;
     public float CurrentHealth { get; private set; }
-    public float MaxHealth { get; private set; }
+    public float MaxHealth => startingHealth;
+
     private Animator anim;
     private bool dead;
 
     private void Awake()
     {
         CurrentHealth = startingHealth;
-        MaxHealth = startingHealth;
         anim = GetComponent<Animator>();
     }
 
@@ -24,16 +24,13 @@ public class Health : MonoBehaviour
             //player hurt
             anim.SetTrigger("Hurt");
         }
-        else
+        else if (!dead)
         {
-            //player dead
-            if (!dead)
-            {
-                anim.SetTrigger("Death");
-                GetComponent<Player>().enabled = false;
-                dead = true;
-            }
-            
+            anim.SetTrigger("Death");
+            dead = true;
+
+            // Instead of disabling Player, send an event
+            Debug.Log("☠ Player has died.");
         }
     }
 
