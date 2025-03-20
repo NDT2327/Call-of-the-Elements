@@ -29,12 +29,16 @@ public class Player : MonoBehaviour
     public GameObject spellFirePrefab;
     private TerribleKnightScript terribleKnightScript;
 
+    private HealthBar healthBar;
+
+
     void Start()
     {
         if (blockFlash != null) blockFlash.SetActive(false);
         if (dust != null) dust.SetActive(false);
         if (dust2 != null) dust2.SetActive(false);
-        terribleKnightScript = FindObjectOfType<TerribleKnightScript>();
+        terribleKnightScript = FindFirstObjectByType<TerribleKnightScript>();
+        healthBar = GameObject.FindFirstObjectByType<HealthBar>();
     }
 
     void Update()
@@ -153,6 +157,11 @@ public class Player : MonoBehaviour
             }
 
             lastSpecialAttackTime = Time.time;
+            // 🔥 Gọi cooldown trực tiếp trên `element`
+            if (healthBar != null)
+            {
+                healthBar.StartElementCooldown();
+            }
         }
     }
 

@@ -4,28 +4,32 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     [SerializeField] private Health playerHealth;
-    [SerializeField] private EnemyHP bossHealth; // Thêm biến quản lý máu Boss
+    [SerializeField] private EnemyHP bossHealth; // Cho phép null
     [SerializeField] private Image totalHealthBar;
     [SerializeField] private Image currentHealthBar;
+    [SerializeField] private Image totalStamina;
+    [SerializeField] private Image currentStamina;
     [SerializeField] private Image totalEnemyHealthBar;
     [SerializeField] private Image currentEnemyHealthBar;
+    [SerializeField] private GameObject enemyHealthContainer; // Chứa thanh máu của boss
     [SerializeField] private Image element;
-
+    [SerializeField] private GameObject frame;
     [SerializeField] private Sprite fireSprite;
     [SerializeField] private Sprite earthSprite;
 
-    private int currentElementIndex = 0; // Mặc định là Lửa (Fire)
+    private int currentElementIndex = 0;
     private Sprite[] elementSprites;
+
+    private float cooldownTime = 3f; // Thời gian hồi chiêu
+    private float cooldownTimer = 0f;
+    private bool isCooldownActive = false;
 
     void Start()
     {
         Debug.Log("🏁 Health Bar Script Started!");
-        Debug.Log($"📌 PlayerHealth: {playerHealth}, BossHealth: {bossHealth}");
+
         if (playerHealth == null)
             Debug.LogError("❌ playerHealth chưa được gán trong Inspector!", this);
-
-        if (bossHealth == null)
-            Debug.LogError("❌ bossHealth chưa được gán trong Inspector!", this);
 
         if (totalHealthBar == null)
             Debug.LogError("❌ totalHealthBar chưa được gán trong Inspector!", this);
@@ -33,11 +37,8 @@ public class HealthBar : MonoBehaviour
         if (currentHealthBar == null)
             Debug.LogError("❌ currentHealthBar chưa được gán trong Inspector!", this);
 
-        if (totalEnemyHealthBar == null)
-            Debug.LogError("❌ totalEnemyHealthBar chưa được gán trong Inspector!", this);
-
-        if (currentEnemyHealthBar == null)
-            Debug.LogError("❌ currentEnemyHealthBar chưa được gán trong Inspector!", this);
+        if (enemyHealthContainer == null)
+            Debug.LogError("❌ enemyHealthContainer chưa được gán trong Inspector!", this);
 
         if (element == null)
             Debug.LogError("❌ element chưa được gán trong Inspector!", this);
@@ -45,30 +46,55 @@ public class HealthBar : MonoBehaviour
         if (fireSprite == null || earthSprite == null)
             Debug.LogError("❌ Một trong các Sprite (fire, earth) chưa được gán trong Inspector!", this);
 
-        // Khởi tạo thanh máu
+        // Khởi tạo thanh máu Player
         totalHealthBar.fillAmount = playerHealth.CurrentHealth / playerHealth.MaxHealth;
 
-        totalEnemyHealthBar.fillAmount = bossHealth.GetCurrentHP() / bossHealth.MaxHealth;
-        Debug.Log($"🛠️ Boss HP: {bossHealth.GetCurrentHP()} / {bossHealth.MaxHealth}");
-
+        // Nếu bossHealth không null, khởi tạo máu của boss và ẩn đi nếu boss chưa xuất hiện
+        if (bossHealth != null)
+        {
+            totalEnemyHealthBar.fillAmount = bossHealth.GetCurrentHP() / bossHealth.MaxHealth;
+            enemyHealthContainer.SetActive(false); // Ẩn ban đầu
+        }
 
         // Khởi tạo nguyên tố
         elementSprites = new Sprite[] { fireSprite, earthSprite };
         element.sprite = elementSprites[currentElementIndex];
     }
 
-    void Update()   
+    void Update()
     {
         // Cập nhật thanh máu Player
         currentHealthBar.fillAmount = playerHealth.CurrentHealth / playerHealth.MaxHealth;
 
-        // Cập nhật thanh máu Boss
-        currentEnemyHealthBar.fillAmount = bossHealth.GetCurrentHP() / bossHealth.MaxHealth;
-        Debug.Log($"🛠️ Boss HP: {bossHealth.GetCurrentHP()} / {bossHealth.MaxHealth}");
+        // Nếu bossHealth không null, cập nhật thanh máu boss
+        if (bossHealth != null)
+        {
+            // Kiểm tra boss có xuất hiện hay không
+            if (bossHealth.HasAppeared()) // Giả sử có phương thức kiểm tra boss đã xuất hiện
+            {
+                enemyHealthContainer.SetActive(true); // Hiện thanh máu Boss
+                currentEnemyHealthBar.fillAmount = bossHealth.GetCurrentHP() / bossHealth.MaxHealth;
+            }
+            else
+            {
+                enemyHealthContainer.SetActive(false); // Ẩn nếu boss chưa xuất hiện
+            }
+        }
 
         if (Input.GetKeyDown(KeyCode.O))
         {
             ChangeElementSprite();
+        }
+        if (isCooldownActive)
+        {
+            cooldownTimer -= Time.deltaTime;
+            element.fillAmount = cooldownTimer / cooldownTime; // Giảm dần
+
+            if (cooldownTimer <= 0)
+            {
+                isCooldownActive = false;
+                element.fillAmount = 1f; // Reset lại trạng thái đầy sau cooldown
+            }
         }
     }
 
@@ -84,4 +110,12 @@ public class HealthBar : MonoBehaviour
     {
         return currentElementIndex == 0 ? "Lửa" : "Đất";
     }
+
+    public void StartElementCooldown()
+    {
+        isCooldownActive = true;
+        cooldownTimer = cooldownTime;
+        element.fillAmount = 1f; // Bắt đầu đầy
+    }
+
 }

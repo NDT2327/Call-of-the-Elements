@@ -391,7 +391,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -503,6 +503,10 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 6273768500582756310}
+    - target: {fileID: 2219573990436573890, guid: 9948b841128974e4caeef85b85d6ebe8, type: 3}
+      propertyPath: m_Name
+      value: Khung
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -522,11 +526,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8272168031876575635, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.58
+      value: 11.48
       objectReference: {fileID: 0}
     - target: {fileID: 8272168031876575635, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.71
+      value: -5.49
       objectReference: {fileID: 0}
     - target: {fileID: 8272168031876575635, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
       propertyPath: m_LocalPosition.z
