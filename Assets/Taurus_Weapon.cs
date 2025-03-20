@@ -22,7 +22,7 @@ public class Taurus_Weapon : MonoBehaviour
     private float lastAttackTime;
     private bool isEnragedEffectActive = false;
 
-    void Startt()
+    void Start()
     {
         health = GetComponent<Taurus_Health>();
         lastAttackTime = -baseCooldown;
@@ -31,28 +31,40 @@ public class Taurus_Weapon : MonoBehaviour
     //perform attack1 
     public void Attack1()
     {
-        Vector3 pos = transform.position;
-        pos += transform.right * attackOffset.x;
-        pos += transform.up * attackOffset.y;
+        if (Time.time >= lastAttackTime + GetCurrentCooldown())
+        {
+            Vector3 pos = transform.position;
+            pos += transform.right * attackOffset.x;
+            pos += transform.up * attackOffset.y;
 
-        Collider2D coliInfo = Physics2D.OverlapCircle(pos, attackRange, playerLayer);
-        if (coliInfo != null ) {
-            //coliInfo.GetComponent<PlayerHealtth>().TakeDamage(attack1Dmg);
-            Debug.Log("Take damage");
+            Collider2D coliInfo = Physics2D.OverlapCircle(pos, attackRange, playerLayer);
+            if (coliInfo != null)
+            {
+                // Giả sử PlayerHealth là script quản lý máu của người chơi
+                // coliInfo.GetComponent<PlayerHealth>().TakeDamage(attack1Dmg);
+                Debug.Log("Player hit by Attack1 for " + attack1Dmg + " damage");
+            }
+            lastAttackTime = Time.time; // Cập nhật thời gian tấn công cuối
         }
     }
 
     //perform attack 2
-    public void Attack2() {
-        Vector3 pos = transform.position;
-        pos += transform.right * attackOffset.x;
-        pos += transform.up * attackOffset.y;
-
-        Collider2D coliInfo = Physics2D.OverlapCircle(pos, attackRange, playerLayer);
-        if (coliInfo != null)
+    public void Attack2()
+    {
+        if (Time.time >= lastAttackTime + GetCurrentCooldown())
         {
-            //coliInfo.GetComponent<PlayerHealtth>().TakeDamage(attack1Dmg);
-            Debug.Log("Take damage");
+            Vector3 pos = transform.position;
+            pos += transform.right * attackOffset.x;
+            pos += transform.up * attackOffset.y;
+
+            Collider2D coliInfo = Physics2D.OverlapCircle(pos, attackRange, playerLayer);
+            if (coliInfo != null)
+            {
+                // Giả sử PlayerHealth là script quản lý máu của người chơi
+                // coliInfo.GetComponent<PlayerHealth>().TakeDamage(attack2Dmg);
+                Debug.Log("Player hit by Attack2 for " + attack2Dmg + " damage");
+            }
+            lastAttackTime = Time.time; // Cập nhật thời gian tấn công cuối
         }
     }
 

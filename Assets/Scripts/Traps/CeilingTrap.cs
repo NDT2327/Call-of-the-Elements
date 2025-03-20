@@ -13,18 +13,20 @@ public class CeilingTrap : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player") && !isFalling)
+        if (collision.CompareTag("Player") && !isFalling)
         {
             isFalling = true;
             rb.gravityScale = 1;
+            Debug.Log("Touch");
         }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            Destroy(gameObject, 1f);
+            Destroy(gameObject, 3f);
         }
     }
 }

@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Taurus_Walk : StateMachineBehaviour
 {
@@ -31,17 +31,19 @@ public class Taurus_Walk : StateMachineBehaviour
         Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
         rb.MovePosition(newPos);
 
+        float distance = Vector2.Distance(player.position, rb.position);
+
         //tinh khoang cach player va boss   
-        if (Vector2.Distance(player.position, rb.position) <= attackRange)
+        if (distance <= attackRange)
         {
-            animator.SetBool("IsWalking", false);
-            animator.SetBool("IsAttacking", true);
-            if (Random.value > 0.5f) animator.SetTrigger("AttackType");//random attack type
+            animator.SetTrigger("Attack");
+            if (Random.value > 0.5f) animator.SetTrigger("AttackType");
+
         }
     }
 
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.ResetTrigger("AttackType");
+        animator.ResetTrigger("Attack");
     }
 }
