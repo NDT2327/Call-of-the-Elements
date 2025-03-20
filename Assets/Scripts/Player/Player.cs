@@ -319,6 +319,6 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-        transform.position = GameManager.Instance.GetCheckpoint();
+        UIManager.Instance.ShowGameOverScreen();
     }
 }

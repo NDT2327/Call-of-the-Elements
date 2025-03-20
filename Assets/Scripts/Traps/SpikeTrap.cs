@@ -10,6 +10,7 @@ public class SpikeTrap : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isPlayerOnTrap = true;
+            collision.GetComponent<Health>().TakeDamage(damage);
             Debug.Log("Take damage");
         }
     }

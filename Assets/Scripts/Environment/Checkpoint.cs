@@ -6,10 +6,18 @@ public class Checkpoint : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player") && !isActivated)
+        if (collision.CompareTag("Player") && !isActivated)
         {
             isActivated = true;
             GameManager.Instance.SetCheckpoint(transform.position);
+            Health playerHealth = collision.GetComponent<Health>();
+            if (playerHealth != null)
+            {
+                playerHealth.RecoverFullHealth();
+
+            }
         }
+
+
     }
 }
