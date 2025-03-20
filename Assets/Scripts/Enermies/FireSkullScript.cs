@@ -17,9 +17,11 @@ public class FireSkullEnemy : MonoBehaviour
 	private Rigidbody2D rb;
 	private Animator anim;
 	private Transform currentPatrolTarget;
+    private Health playerHP;
 
-	// C�c tr?ng th�i c?a enemy
-	private enum State { Patrol, Chase, Return }
+
+    // C�c tr?ng th�i c?a enemy
+    private enum State { Patrol, Chase, Return }
 	private State currentState = State.Patrol;
 
 	void Start()
@@ -27,6 +29,7 @@ public class FireSkullEnemy : MonoBehaviour
 		Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("EnermyLayer"), LayerMask.NameToLayer("EnermyLayer"));
 		rb = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
+		playerHP = GetComponent<Health>();
 		// B?t ??u tu?n tra t? ?i?m B (ho?c b?n c� th? ch?n ?i?m A)
 		currentPatrolTarget = pointB;
 		anim.SetBool("isFight", false);
@@ -146,8 +149,25 @@ public class FireSkullEnemy : MonoBehaviour
 		transform.localScale = localScale;
 	}
 
-	// V? Gizmos ?? hi?n th? v�ng ?i?m trong Scene view (ch? hi?n th? khi ch?a ch?y game)
-	void OnDrawGizmos()
+    public void DoDamageCloseRange()
+    {
+        // Kiểm tra xem có collider nào nằm trong phạm vi closeAttackRange và thuộc targetMask không
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, targetMask);
+        if (hit != null)
+        {
+            // Tại đây bạn có thể gọi các hàm để gây sát thương lên đối tượng
+            playerHP = hit.GetComponent<Health>();
+            if (playerHP != null)
+            {
+
+                playerHP.TakeDamage(3); // Gây 1 damage
+                Debug.Log("HellBeast gây sát thương Burn cận chiến!");
+            }
+        }
+    }
+
+    // V? Gizmos ?? hi?n th? v�ng ?i?m trong Scene view (ch? hi?n th? khi ch?a ch?y game)
+    void OnDrawGizmos()
 	{
 		// Vẽ vòng tròn detectionRange
 		Gizmos.color = Color.yellow;
