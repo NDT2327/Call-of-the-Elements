@@ -647,7 +647,28 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ceiling Trap - Level 1 - Transition_0: 1662552264923583524
+      Ceiling Trap - Level 1 - Transition_1: 8407705546558800243
+      Ceiling Trap - Level 1 - Transition_10: -2875807866961331856
+      Ceiling Trap - Level 1 - Transition_11: 6453681264707932389
+      Ceiling Trap - Level 1 - Transition_12: -8680966226633646935
+      Ceiling Trap - Level 1 - Transition_13: 2153148677394212517
+      Ceiling Trap - Level 1 - Transition_14: 1344240844895369031
+      Ceiling Trap - Level 1 - Transition_15: 6936524044989077697
+      Ceiling Trap - Level 1 - Transition_16: 5982560128263347433
+      Ceiling Trap - Level 1 - Transition_17: 4933432962839959978
+      Ceiling Trap - Level 1 - Transition_18: -7753243778705277717
+      Ceiling Trap - Level 1 - Transition_19: 4419337011460710205
+      Ceiling Trap - Level 1 - Transition_2: -334113167299715160
+      Ceiling Trap - Level 1 - Transition_20: 3159751465848449814
+      Ceiling Trap - Level 1 - Transition_3: 6050569943532979915
+      Ceiling Trap - Level 1 - Transition_4: -1206442670342874251
+      Ceiling Trap - Level 1 - Transition_5: 3423528489439964345
+      Ceiling Trap - Level 1 - Transition_6: -7176441757419794582
+      Ceiling Trap - Level 1 - Transition_7: -3783697608279475021
+      Ceiling Trap - Level 1 - Transition_8: 319261431825014174
+      Ceiling Trap - Level 1 - Transition_9: -2635903875009960924
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
