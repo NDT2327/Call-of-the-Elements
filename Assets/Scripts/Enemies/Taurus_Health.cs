@@ -37,7 +37,7 @@ public class Taurus_Health : MonoBehaviour
         }
     }
 
-    public void TakdDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         if (currentHealth < 0)

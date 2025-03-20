@@ -132,6 +132,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -434,7 +447,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EnemyHealth-removebg-preview_0: -3354063953003298258
+      EnemyHealth-removebg-preview_1: 5053438555958866796
+      EnemyHealth-removebg-preview_10: -2043634515791566485
+      EnemyHealth-removebg-preview_11: 906200009812414364
+      EnemyHealth-removebg-preview_12: 336566043987239623
+      EnemyHealth-removebg-preview_2: 3588355470460553578
+      EnemyHealth-removebg-preview_3: 8227034292070877805
+      EnemyHealth-removebg-preview_4: -6587573571619693245
+      EnemyHealth-removebg-preview_5: -8176052949371129733
+      EnemyHealth-removebg-preview_6: -5342791452968372916
+      EnemyHealth-removebg-preview_7: -5668112449871829820
+      EnemyHealth-removebg-preview_8: 3191369674373327640
+      EnemyHealth-removebg-preview_9: -5771217760420763393
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

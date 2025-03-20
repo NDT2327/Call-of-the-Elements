@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Taurus_Walk : StateMachineBehaviour
 {
@@ -9,7 +9,6 @@ public class Taurus_Walk : StateMachineBehaviour
     Transform player;
     Rigidbody2D rb;
     TaurusAI taurus;
-    Taurus_Health health;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -17,7 +16,6 @@ public class Taurus_Walk : StateMachineBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = animator.GetComponent<Rigidbody2D>();
         taurus = animator.GetComponent<TaurusAI>();
-        health = animator.GetComponent<Taurus_Health>();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -27,21 +25,22 @@ public class Taurus_Walk : StateMachineBehaviour
 
         //move toward to player
         Vector2 target = new Vector2(player.position.x, rb.position.y);
-        float currentSpeed = health != null && health.IsEnraged() ? speed * health.speedMultiplier : speed;
         Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
         rb.MovePosition(newPos);
 
+        float distance = Vector2.Distance(player.position, rb.position);
+
         //tinh khoang cach player va boss   
-        if (Vector2.Distance(player.position, rb.position) <= attackRange)
+        if (distance <= attackRange)
         {
-            animator.SetBool("IsWalking", false);
-            animator.SetBool("IsAttacking", true);
-            if (Random.value > 0.5f) animator.SetTrigger("AttackType");//random attack type
+            animator.SetTrigger("Attack");
+            if (Random.value > 0.5f) animator.SetTrigger("AttackType");
+
         }
     }
 
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.ResetTrigger("AttackType");
+        animator.ResetTrigger("Attack");
     }
 }
