@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6771277195998061783}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.5, y: 4, z: 0}
+  m_LocalPosition: {x: 10.2, y: 9, z: 0}
   m_LocalScale: {x: 1, y: 1.6901, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -124,8 +124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d86765602106864b975272ce9b29c93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  knockUpForce: 10
+  damage: 50
+  knockUpForce: 20
 --- !u!61 &6255908287803487715
 BoxCollider2D:
   m_ObjectHideFlags: 0
