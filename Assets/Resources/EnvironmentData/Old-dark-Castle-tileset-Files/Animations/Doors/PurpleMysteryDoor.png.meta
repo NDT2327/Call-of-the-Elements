@@ -672,7 +672,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PurpleMysteryDoor_0: 13560498411389161
+      PurpleMysteryDoor_1: -7087592820720842796
+      PurpleMysteryDoor_10: 5303332942329770270
+      PurpleMysteryDoor_11: -7463362492684325358
+      PurpleMysteryDoor_12: 4118170516811238829
+      PurpleMysteryDoor_13: 8270198237345794629
+      PurpleMysteryDoor_14: -8971899483684475699
+      PurpleMysteryDoor_15: 1051664239972841144
+      PurpleMysteryDoor_16: -4290182144277361169
+      PurpleMysteryDoor_17: 6871086607739104976
+      PurpleMysteryDoor_18: 2673464232327693409
+      PurpleMysteryDoor_19: 2341373304346278128
+      PurpleMysteryDoor_2: -648807928074401000
+      PurpleMysteryDoor_20: 7696867099343235126
+      PurpleMysteryDoor_21: 982291608670026687
+      PurpleMysteryDoor_3: -3480939311461717750
+      PurpleMysteryDoor_4: 509894906629873992
+      PurpleMysteryDoor_5: -5137552723565399291
+      PurpleMysteryDoor_6: 6906721400312536798
+      PurpleMysteryDoor_7: -2691214474510014657
+      PurpleMysteryDoor_8: 5765640261998319880
+      PurpleMysteryDoor_9: 4708242878181596569
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

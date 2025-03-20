@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PurpleFlag_0: -1838838469456936823
+      PurpleFlag_1: -3962110602757170235
+      PurpleFlag_2: -8763337552296724148
+      PurpleFlag_3: 1366647546748958939
+      PurpleFlag_4: -5162894652509628511
+      PurpleFlag_5: -7352515320859300586
+      PurpleFlag_6: 412588682005884937
+      PurpleFlag_7: 2060901863127914695
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

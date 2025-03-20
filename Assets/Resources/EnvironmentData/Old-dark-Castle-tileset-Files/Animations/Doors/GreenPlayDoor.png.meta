@@ -672,7 +672,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GreenPlayDoor_0: -589508198549791922
+      GreenPlayDoor_1: -1694796718441702940
+      GreenPlayDoor_10: 6955727762349827686
+      GreenPlayDoor_11: 4353303688969224068
+      GreenPlayDoor_12: -8228441399362285542
+      GreenPlayDoor_13: -5987585283941911677
+      GreenPlayDoor_14: -5199277148491957169
+      GreenPlayDoor_15: -6466645663166621216
+      GreenPlayDoor_16: 4679587489519842782
+      GreenPlayDoor_17: -1168783294917537841
+      GreenPlayDoor_18: 8034679206707573932
+      GreenPlayDoor_19: -4986162438697624180
+      GreenPlayDoor_2: -6457406216411897283
+      GreenPlayDoor_20: 8450414901576208350
+      GreenPlayDoor_21: -4036817269662075499
+      GreenPlayDoor_3: 1348298783335308599
+      GreenPlayDoor_4: -3578959085012402362
+      GreenPlayDoor_5: 2792137317388593109
+      GreenPlayDoor_6: 4610731506021083538
+      GreenPlayDoor_7: 7242385846212205303
+      GreenPlayDoor_8: -140102944499975325
+      GreenPlayDoor_9: -6615797193405564175
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

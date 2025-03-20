@@ -672,7 +672,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DownArrowDoor_0: -3275901768249159251
+      DownArrowDoor_1: 4164197469774497656
+      DownArrowDoor_10: -659150057873340650
+      DownArrowDoor_11: 4909495300989875932
+      DownArrowDoor_12: 387085814546378489
+      DownArrowDoor_13: 9189232801550590095
+      DownArrowDoor_14: 3833877021143366889
+      DownArrowDoor_15: 5868944063970870467
+      DownArrowDoor_16: -7625109167842275542
+      DownArrowDoor_17: -4462247496279568175
+      DownArrowDoor_18: -1051401654912583994
+      DownArrowDoor_19: -4608762757637012538
+      DownArrowDoor_2: 464492316608813040
+      DownArrowDoor_20: 6980380525137596065
+      DownArrowDoor_21: 7703129468071006155
+      DownArrowDoor_3: 106437178338363886
+      DownArrowDoor_4: 6389111762902016242
+      DownArrowDoor_5: 3581138058572236850
+      DownArrowDoor_6: -3480574938130215450
+      DownArrowDoor_7: -4950020992138450658
+      DownArrowDoor_8: 639873677779341555
+      DownArrowDoor_9: 1284652418276301136
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

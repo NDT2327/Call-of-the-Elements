@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RedFlag_0: 3633503451578214408
+      RedFlag_1: 4428894848824060189
+      RedFlag_2: -1573061962048161835
+      RedFlag_3: 711017403723941327
+      RedFlag_4: -6687956822265159018
+      RedFlag_5: -3554603204499048268
+      RedFlag_6: 5476968897946364345
+      RedFlag_7: -1114091980105594831
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

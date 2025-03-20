@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FlowingCartoonWater_0: 4715272773175255400
+      FlowingCartoonWater_1: -5577268975904178393
+      FlowingCartoonWater_2: 5068790158189506885
+      FlowingCartoonWater_3: 6037390830436837359
+      FlowingCartoonWater_4: 868074569349347323
+      FlowingCartoonWater_5: -3603382540422521727
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

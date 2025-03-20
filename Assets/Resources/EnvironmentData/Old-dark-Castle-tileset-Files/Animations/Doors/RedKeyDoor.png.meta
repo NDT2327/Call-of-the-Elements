@@ -672,7 +672,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RedKeyDoor_0: -3697262760248377906
+      RedKeyDoor_1: -3815504898167830174
+      RedKeyDoor_10: 722800697801486903
+      RedKeyDoor_11: -47544850697051963
+      RedKeyDoor_12: -81828801674233384
+      RedKeyDoor_13: 7578807836252167888
+      RedKeyDoor_14: -792471590520271523
+      RedKeyDoor_15: 6150362953868481303
+      RedKeyDoor_16: 2002218869202677193
+      RedKeyDoor_17: -6726668747732433567
+      RedKeyDoor_18: -7073218073449602771
+      RedKeyDoor_19: 7903447694569765996
+      RedKeyDoor_2: -9080565096185865955
+      RedKeyDoor_20: -6111129819985517436
+      RedKeyDoor_21: -6786375629236511428
+      RedKeyDoor_3: 7676895442665071190
+      RedKeyDoor_4: -4655800803611706754
+      RedKeyDoor_5: -6605995972177905981
+      RedKeyDoor_6: 1261855562157227093
+      RedKeyDoor_7: 3133053969643164059
+      RedKeyDoor_8: 5765054186730724649
+      RedKeyDoor_9: -4180958692835108561
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
