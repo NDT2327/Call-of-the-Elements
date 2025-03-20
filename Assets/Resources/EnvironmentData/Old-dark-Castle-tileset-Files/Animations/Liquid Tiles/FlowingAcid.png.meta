@@ -247,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FlowingAcid_0: -5489724068911297113
+      FlowingAcid_1: 3882857004753246624
+      FlowingAcid_2: 3127649716221240308
+      FlowingAcid_3: 1496346620539642024
+      FlowingAcid_4: -8926515486433832220
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

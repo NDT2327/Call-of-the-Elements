@@ -247,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FlowingLava_0: 5049956614998539506
+      FlowingLava_1: 899850305648233704
+      FlowingLava_2: 4212675380469583686
+      FlowingLava_3: -3786592399033721711
+      FlowingLava_4: 2958935980110676647
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
