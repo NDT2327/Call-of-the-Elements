@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
         if (blockFlash != null) blockFlash.SetActive(false);
         if (dust != null) dust.SetActive(false);
         if (dust2 != null) dust2.SetActive(false);
-        terribleKnightScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<TerribleKnightScript>();
+        if (terribleKnightScript != null) terribleKnightScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<TerribleKnightScript>();
         healthBar = FindFirstObjectByType<HealthBar>();
     }
 
@@ -53,7 +53,8 @@ public class Player : MonoBehaviour
         HandleElementChange();
 
         //if out of map
-        if (transform.position.y < -10) {
+        if (transform.position.y < -10)
+        {
             Die();
         }
 
@@ -83,7 +84,10 @@ public class Player : MonoBehaviour
                 Jump();
                 isGrounded = false;
                 canDoubleJump = true;
-                terribleKnightScript.OnPlayerJump();
+                if (terribleKnightScript != null)
+                {
+                    terribleKnightScript.OnPlayerJump();
+                }
             }
             else if (canDoubleJump)
             {
@@ -260,7 +264,7 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Danger"))
         {
             isGrounded = true;
             animator.SetBool("Grounded", true);

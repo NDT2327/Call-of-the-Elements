@@ -29,6 +29,7 @@ public class LavaDanger : MonoBehaviour
         while(isPlayerInLava && health != null)
         {
             health.TakeDamage(damagePerSecond);
+            Debug.Log("Player take damage");
             yield return new WaitForSeconds(damagerInterval);
         }
     }
