@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
     public enum Map { Earth, Lava, Castle }
     public Map currentMap = Map.Earth;
 
+    private bool bossDefeated = false;
+    private bool skillCollected = false;
+
     private void Awake()
     {
         if (Instance == null)
@@ -42,8 +45,22 @@ public class GameManager : MonoBehaviour
         else if (complatedMap == Map.Lava) currentMap = Map.Lava;
         else if (complatedMap == Map.Castle) EndGame();
 
-        //enemyManager.Initialize(currentMap);
-        
+        SceneManager.LoadScene(currentMap.ToString());
+        ResetCondition();
+    }
+
+    public void OnBossDefeated()
+    {
+        bossDefeated = true;
+        CheckMapCompletion();
+    }
+
+    private void CheckMapCompletion()
+    {
+        if (bossDefeated)
+        {
+            OnMapCompleted(currentMap);
+        }
     }
 
     public void SetCheckpoint(Vector3 position)
@@ -54,6 +71,11 @@ public class GameManager : MonoBehaviour
     public Vector3 GetCheckpoint()
     {
         return lastCheckpoint;
+    }
+
+    private void ResetCondition()
+    {
+        bossDefeated = false;
     }
 
     public void RestartGame()

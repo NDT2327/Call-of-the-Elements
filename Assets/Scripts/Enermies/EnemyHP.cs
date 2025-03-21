@@ -38,7 +38,6 @@ public class EnemyHP : MonoBehaviour
     {
         if (maxHP <= 0)
         {
-            Debug.LogError("❌ maxHP của Boss phải lớn hơn 0! Kiểm tra giá trị trong Inspector.");
             maxHP = 100f; // Đặt giá trị mặc định nếu chưa có
         }
         MaxHealth = maxHP;
@@ -66,7 +65,6 @@ public class EnemyHP : MonoBehaviour
         if (hitCount >= hitLimit)
         {
             anim.SetTrigger("hurt");
-            Debug.Log("stun");
             // Kích hoạt trạng thái invincible cho thời gian cho enemy phục hồi
             //StartCoroutine(ActivateInvincibility());
             hitCount = 0; // Reset biến đếm sau khi kích hoạt hurt
@@ -110,12 +108,10 @@ public class EnemyHP : MonoBehaviour
     private IEnumerator ActivateInvincibility()
     {
         isInvincible = true;
-        Debug.Log(gameObject.name + " is invincible now!");
         // Có thể thêm hiệu ứng hoặc đổi màu để thông báo trạng thái invincible
         yield return new WaitForSeconds(invincibleDuration);
         isInvincible = false;
         hitCount = 0; // Reset lại biến đếm sau khi hết trạng thái invincible
-        Debug.Log(gameObject.name + " can take damage again.");
     }
 
     // Hồi máu cho quái
@@ -135,6 +131,10 @@ public class EnemyHP : MonoBehaviour
         if (!isBoss)
         {
             TrySpawnPotion();
+        }
+        else
+        {
+            GameManager.Instance.OnBossDefeated();
         }
         Destroy(gameObject, 1f);
         if (healthBar != null && healthBar.enemyHealthContainer!= null)
