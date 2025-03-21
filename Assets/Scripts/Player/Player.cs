@@ -31,6 +31,9 @@ public class Player : MonoBehaviour
     private int currentLevel = 1; // Giả sử bắt đầu từ màn 1
 
     private HealthBar healthBar;
+    //private float ultimateCooldown = 15f; 
+    //private float lastUltimateTime = -Mathf.Infinity; 
+    //public GameObject ultimatePrefab; 
 
 
     void Start()
@@ -51,6 +54,7 @@ public class Player : MonoBehaviour
         HandleBlock();
         HandleRoll();
         SpAttack();
+        //HandleUltimate();
         HandleElementChange();
 
         //if out of map
@@ -196,7 +200,40 @@ public class Player : MonoBehaviour
             }
         }
     }
-    
+
+    //private void HandleUltimate()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.I) && Time.time - lastUltimateTime >= ultimateCooldown)
+    //    {
+    //        if (healthBar != null && healthBar.playerStamina != null)
+    //        {
+    //            float staminaCost = healthBar.playerStamina.MaxStamina * 0.4f; // Tốn 40% Stamina
+    //            if (healthBar.playerStamina.CurrentStamina < staminaCost)
+    //            {
+    //                Debug.Log("⚠ Không đủ Stamina để dùng Ultimate!");
+    //                return;
+    //            }
+    //            healthBar.playerStamina.UseStamina(staminaCost);
+    //        }
+
+    //        animator.SetTrigger("Attack1"); // Kích hoạt animation Ultimate
+
+    //        // Triệu hồi Ultimate
+    //        Vector3 spawnPosition = transform.position + new Vector3(facingRight ? 1.5f : -1.5f, 0, 0);
+    //        Quaternion rotation = facingRight ? Quaternion.identity : Quaternion.Euler(0, 180, 0);
+    //        GameObject ultimate = Instantiate(ultimatePrefab, spawnPosition, rotation);
+    //        ultimate.SetActive(true);
+
+    //        lastUltimateTime = Time.time; // Lưu thời gian dùng Ultimate
+
+    //        Debug.Log("🔥 Ultimate được kích hoạt!");
+    //        if (healthBar != null)
+    //        {
+    //            healthBar.StartUltimateCooldown();
+    //        }
+    //    }
+    //}
+
     private GameObject GetSpellByElement()
     {
         return elements[currentElementIndex] switch
