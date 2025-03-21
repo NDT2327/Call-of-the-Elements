@@ -72,6 +72,8 @@ public class GameManager : MonoBehaviour
     public void SetCheckpoint(Vector3 position)
     {
         lastCheckpoint = position;
+        Debug.Log("Checkpoint saved at: " + lastCheckpoint);
+
     }
 
     public Vector3 GetCheckpoint()
@@ -86,6 +88,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
+        Debug.Log("RestartGame() called in GameManager");
         StartCoroutine(RestartScene());
     }
 
@@ -95,12 +98,13 @@ public class GameManager : MonoBehaviour
         string sceneName = SceneManager.GetActiveScene().name;
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
         yield return new WaitUntil(() => operation.isDone);
-
+        Debug.Log("Checkpoint loaded at position: " + lastCheckpoint);
         // Sau khi load xong, đặt lại vị trí người chơi
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
             player.transform.position = lastCheckpoint ;
+            Debug.Log("Player repositioned to: " + player.transform.position);
         }
     }
 

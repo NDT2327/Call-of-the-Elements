@@ -46,7 +46,11 @@ public class GolemEnemyScript : MonoBehaviour
         enemyHP = GetComponent<EnemyHP>();
         playerHP = GetComponent<Health>();
         audioSource = GetComponent<AudioSource>();
-
+        if (audioSource == null)
+        {
+            Debug.LogWarning("AudioSource was missing, adding one to " + gameObject.name);
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
 
         // Bắt đầu tuần tra từ pointA
         currentPatrolTarget = pointA;

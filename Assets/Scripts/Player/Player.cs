@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class Player : MonoBehaviour
 {
@@ -34,6 +35,10 @@ public class Player : MonoBehaviour
     //private float ultimateCooldown = 15f; 
     //private float lastUltimateTime = -Mathf.Infinity; 
     //public GameObject ultimatePrefab; 
+
+    public float rollDistance = 5f; // Khoảng cách lướt có thể điều chỉnh
+    public float rollDuration = 0.3f; // Thời gian lướt
+    private bool isRolling = false;
 
 
     void Start()
@@ -289,10 +294,26 @@ public class Player : MonoBehaviour
 
     private void HandleRoll()
     {
-        if (Input.GetKeyDown(KeyCode.L) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.L) && isGrounded && !isRolling)
         {
-            animator.SetTrigger("Roll");
+            StartCoroutine(Roll());
         }
+    }
+    private IEnumerator Roll()
+    {
+        isRolling = true;
+        animator.SetTrigger("Roll");
+
+        float rollDirection = facingRight ? 1f : -1f; // Hướng lướt dựa vào mặt nhân vật
+        float startTime = Time.time;
+
+        while (Time.time < startTime + rollDuration)
+        {
+            transform.position += new Vector3(rollDirection * rollDistance * Time.deltaTime, 0, 0);
+            yield return null;
+        }
+
+        isRolling = false;
     }
 
     private void FixedUpdate()

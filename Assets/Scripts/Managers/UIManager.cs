@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
@@ -51,9 +51,12 @@ public class UIManager : MonoBehaviour
 
     public void RestartGame()
     {
+        Debug.Log("🔄 Restart button clicked!");
+        Debug.Log("RestartGame() called in UIManager");
         Time.timeScale = 1f;
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null) { 
+        if (player != null) {
+            Debug.Log("Player found, restarting from checkpoint.");
             player.GetComponent<Health>().RestartFromCheckpoint();
             GameManager.Instance.RestartGame();
             gameOverPanel.SetActive (false);
