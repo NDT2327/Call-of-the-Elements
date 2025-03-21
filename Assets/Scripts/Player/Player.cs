@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
     private float lastSpecialAttackTime = -Mathf.Infinity;
 
     private int currentElementIndex = 0; // Mặc định là Lửa (1)
-    private string[] elements = { "Fire", "Earth" };
+    private string[] elements = { "Earth", "Fire" };
     public GameObject spellFirePrefab;
     private TerribleKnightScript terribleKnightScript;
     private int currentLevel = 1; // Giả sử bắt đầu từ màn 1
