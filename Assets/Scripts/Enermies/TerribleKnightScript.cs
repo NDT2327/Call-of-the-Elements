@@ -3,6 +3,13 @@ using System.Collections;
 
 public class TerribleKnightScript : MonoBehaviour
 {
+    [Header("Audio Clips")]
+    public AudioClip attackSound;
+    public AudioClip attackSound2;
+    public AudioClip jumpSound;
+    public AudioClip runSound; // Âm thanh chạy
+    private AudioSource audioSource;
+
     [Header("Detection Settings")]
     public Transform target;
     public float detectionRange = 7f;
@@ -40,6 +47,8 @@ public class TerribleKnightScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         enemyHP = GetComponent<EnemyHP>(); // Giả sử EnemyHP được gắn trên cùng GameObject
         playerHP = GetComponent<Health>();
+        audioSource = GetComponent<AudioSource>();
+
 
         // Loại bỏ va chạm giữa enemy và player nếu có
         Collider2D enemyCollider = GetComponent<Collider2D>();
@@ -63,6 +72,7 @@ public class TerribleKnightScript : MonoBehaviour
         }
 
         if (isJumping) return; // Nếu đang nhảy, không đổi trạng thái
+
 
         float distanceToTarget = target ? Vector2.Distance(transform.position, target.position) : Mathf.Infinity;
         bool canAttack = (Time.time - lastAttackTime) >= attackCooldown;
@@ -108,17 +118,47 @@ public class TerribleKnightScript : MonoBehaviour
 
         Vector2 direction = (target.position - transform.position).normalized;
         rb.linearVelocity = new Vector2(direction.x * moveSpeed * currentMultiplier, rb.linearVelocity.y);
+        if (!audioSource.isPlaying || audioSource.clip != runSound)
+        {
+            audioSource.clip = runSound;
+            audioSource.loop = true;
+            audioSource.Play();
+        }
         FlipSprite(direction.x);
     }
 
     void PerformAttack()
     {
+        if (audioSource.clip == runSound)
+        {
+            audioSource.Stop();
+        }
         lastAttackTime = Time.time;
         // Chọn kiểu tấn công từ 1 đến 5
         currentAttackType = Random.Range(1, 6);
         anim.SetTrigger($"attack{currentAttackType}");
-
+        //audioSource.PlayOneShot(attackSound);
+        PlayAttackSound(currentAttackType);
         Invoke(nameof(ResetToRun), 1f);
+    }
+
+    private void PlayAttackSound(int attackType)
+    {
+        switch (attackType)
+        {
+            case 1:
+            case 2:
+            case 5:
+                audioSource.PlayOneShot(attackSound);
+                break;
+            case 3:
+            case 4:
+                audioSource.PlayOneShot(attackSound2);
+                break;
+            default:
+                Debug.LogWarning("Không có âm thanh cho kiểu tấn công này!");
+                break;
+        }
     }
 
     private void ResetToRun()
@@ -146,7 +186,7 @@ public class TerribleKnightScript : MonoBehaviour
     public void OnPlayerJump()
     {
         if (isJumping) return;
-
+        Debug.Log("jump");
         if (Random.value < 0.3f) // 30% cơ hội nhảy khi Player nhảy
         {
             Jump();
@@ -155,11 +195,15 @@ public class TerribleKnightScript : MonoBehaviour
 
     private void Jump()
     {
+        if (audioSource.clip == runSound)
+        {
+            audioSource.Stop();
+        }
         currentState = State.Jump;
         isJumping = true;
         anim.SetTrigger("jump");
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-
+        audioSource.PlayOneShot(jumpSound);
         StartCoroutine(JumpAttackChance());
     }
 

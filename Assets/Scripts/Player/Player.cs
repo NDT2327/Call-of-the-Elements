@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
         if (blockFlash != null) blockFlash.SetActive(false);
         if (dust != null) dust.SetActive(false);
         if (dust2 != null) dust2.SetActive(false);
-        if (terribleKnightScript != null) terribleKnightScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<TerribleKnightScript>();
+        terribleKnightScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<TerribleKnightScript>();
         healthBar = FindFirstObjectByType<HealthBar>();
     }
 
@@ -91,7 +91,9 @@ public class Player : MonoBehaviour
                 canDoubleJump = true;
                 if (terribleKnightScript != null)
                 {
+                    Debug.Log("JUMP");
                     terribleKnightScript.OnPlayerJump();
+                    
                 }
             }
             else if (canDoubleJump)

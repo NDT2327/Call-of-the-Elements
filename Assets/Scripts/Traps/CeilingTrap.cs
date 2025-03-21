@@ -1,15 +1,17 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CeilingTrap : MonoBehaviour
 {
     public float fallSpeed = 5f;
     public float damage = 20f;
+
     private bool isFalling = false;
     private Rigidbody2D rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        rb.gravityScale = 0;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -18,17 +20,28 @@ public class CeilingTrap : MonoBehaviour
         {
             isFalling = true;
             rb.gravityScale = 1;
-            collision.GetComponent<Health>().TakeDamage(damage);
-            Debug.Log("Touch");
         }
 
     }
 
+    public void ActivateTrap()
+    {
+        isFalling = true;
+        rb.gravityScale = 1;
+        Debug.Log("Bay tran da duoc kich hoat");
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject, 3f);
+            Health playerHealth = collision.gameObject.GetComponent<Health>();
+            if (playerHealth != null)
+            {
+
+                playerHealth.TakeDamage(damage);
+                Debug.Log("Touch");
+            }
         }
     }
     private void OnDrawGizmos()

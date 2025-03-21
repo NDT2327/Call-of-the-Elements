@@ -20,7 +20,6 @@ public class EnemyHealthBar : MonoBehaviour
         {
             EnemyHP firstBoss = bossHealthList[0];
             totalEnemyHealthBar.fillAmount = firstBoss.GetCurrentHP() / firstBoss.MaxHealth;
-            Debug.Log($"📊 Boss đầu tiên HP hiện tại: {firstBoss.GetCurrentHP()} / {firstBoss.MaxHealth}");
         }
     }
 
@@ -42,7 +41,6 @@ public class EnemyHealthBar : MonoBehaviour
                     currentBoss = boss;
                     totalEnemyHealthBar.fillAmount = currentBoss.GetCurrentHP() / currentBoss.MaxHealth;
                     enemyHealthContainer.SetActive(true);
-                    Debug.Log($"📊 Hiển thị thanh máu Boss: {currentBoss.gameObject.name}");
                 }
 
 
