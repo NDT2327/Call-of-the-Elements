@@ -39,11 +39,17 @@ public class GameManager : MonoBehaviour
         //audioManager = GetComponent<AudioManager>();
     }
 
-    public void OnMapCompleted(Map complatedMap)
+    public void OnMapCompleted(Map completedMap)
     {
-        if (complatedMap == Map.Earth) currentMap = Map.Earth;
-        else if (complatedMap == Map.Lava) currentMap = Map.Lava;
-        else if (complatedMap == Map.Castle) EndGame();
+        Player player = FindFirstObjectByType<Player>();
+        if (player != null)
+        {
+            player.RecoverHealthAndStamina(0.5f); // Hồi 50% máu và stamina
+            player.UnlockSpecialAttack(completedMap); // Mở khóa SpAttack mới
+        }
+        if (completedMap == Map.Earth) currentMap = Map.Earth;
+        else if (completedMap == Map.Lava) currentMap = Map.Lava;
+        else if (completedMap == Map.Castle) EndGame();
 
         SceneManager.LoadScene(currentMap.ToString());
         ResetCondition();

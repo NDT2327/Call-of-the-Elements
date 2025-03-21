@@ -3,7 +3,7 @@
 public class Potion : MonoBehaviour
 {
     private float healPercentage = 0.15f; // Hồi 15% tổng máu
-
+   
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))

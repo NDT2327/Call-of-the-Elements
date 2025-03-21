@@ -32,7 +32,7 @@ public class HealthBar : MonoBehaviour
         totalStamina.fillAmount = playerStamina.CurrentStamina / playerStamina.MaxStamina;
 
         // Khởi tạo nguyên tố
-        elementSprites = new Sprite[] { fireSprite, earthSprite };
+        elementSprites = new Sprite[] { earthSprite, fireSprite  };
         element.sprite = elementSprites[currentElementIndex];
     }
 

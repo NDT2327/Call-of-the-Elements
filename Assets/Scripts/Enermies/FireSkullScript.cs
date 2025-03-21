@@ -2,7 +2,11 @@ using UnityEngine;
 
 public class FireSkullEnemy : MonoBehaviour
 {
-	[Header("Patrol Settings")]
+	[Header("Audio Clips")]
+	public AudioClip attackSound;
+	private AudioSource audioSource;
+
+    [Header("Patrol Settings")]
 	public Transform pointA;
 	public Transform pointB;
 	public float patrolSpeed = 2f;
@@ -10,7 +14,8 @@ public class FireSkullEnemy : MonoBehaviour
 	[Header("Chase Settings")]
 	public Transform target;         // Th??ng l� transform c?a Player
 	public float chaseSpeed = 3f;
-	public float detectionRange = 5f;
+    public float attackRange = 2f;
+    public float detectionRange = 5f;
 	public LayerMask obstacleMask;   // Layer ch?a v?t c?n
 	public LayerMask targetMask;     // Layer ch?a target (Player)
 
@@ -30,8 +35,9 @@ public class FireSkullEnemy : MonoBehaviour
 		rb = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 		playerHP = GetComponent<Health>();
-		// B?t ??u tu?n tra t? ?i?m B (ho?c b?n c� th? ch?n ?i?m A)
-		currentPatrolTarget = pointB;
+        audioSource = GetComponent<AudioSource>();
+        // B?t ??u tu?n tra t? ?i?m B (ho?c b?n c� th? ch?n ?i?m A)
+        currentPatrolTarget = pointB;
 		anim.SetBool("isFight", false);
         // Bỏ qua va chạm giữa enemy và player
         Collider2D enemyCollider = GetComponent<Collider2D>();
@@ -93,17 +99,31 @@ public class FireSkullEnemy : MonoBehaviour
 	{
 		Vector2 direction = (target.position - transform.position).normalized;
 		rb.linearVelocity = direction * chaseSpeed;
-
-		// ??o h??ng sprite n?u c?n
-		if ((direction.x > 0 && transform.localScale.x < 0) ||
+		
+        // ??o h??ng sprite n?u c?n
+        if ((direction.x > 0 && transform.localScale.x < 0) ||
 			(direction.x < 0 && transform.localScale.x > 0))
 		{
 			Flip();
 		}
-	}
 
-	// Quay l?i ?i?m tu?n tra khi m?t target
-	void ReturnToPatrol()
+        if (!IsInvoking(nameof(PlayChaseSound)))
+        {
+            InvokeRepeating(nameof(PlayChaseSound), 0f, 2f); // Phát âm thanh mỗi 2 giây
+        }
+    }
+
+    void PlayChaseSound()
+    {
+        if (currentState == State.Chase && audioSource != null && attackSound != null)
+        {
+            audioSource.PlayOneShot(attackSound);
+        }
+    }
+
+
+    // Quay l?i ?i?m tu?n tra khi m?t target
+    void ReturnToPatrol()
 	{
 		// Ch?n ?i?m tu?n tra g?n nh?t ?? quay v?
 		Transform nearest = Vector2.Distance(transform.position, pointA.position) < Vector2.Distance(transform.position, pointB.position) ? pointA : pointB;
@@ -152,7 +172,7 @@ public class FireSkullEnemy : MonoBehaviour
     public void DoDamageCloseRange()
     {
         // Kiểm tra xem có collider nào nằm trong phạm vi closeAttackRange và thuộc targetMask không
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, targetMask);
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, attackRange, targetMask);
         if (hit != null)
         {
             // Tại đây bạn có thể gọi các hàm để gây sát thương lên đối tượng
@@ -160,8 +180,8 @@ public class FireSkullEnemy : MonoBehaviour
             if (playerHP != null)
             {
 
-                playerHP.TakeDamage(3); // Gây 1 damage
-                Debug.Log("HellBeast gây sát thương Burn cận chiến!");
+                playerHP.TakeDamage(1); // Gây 1 damage
+                //Debug.Log("Fire gây sát thương Burn cận chiến!");
             }
         }
     }
