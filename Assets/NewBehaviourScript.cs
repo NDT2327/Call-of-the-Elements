@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
 public class NewBehaviourScript : MonoBehaviour
 {
     public GameObject dialoguePanel;
@@ -15,29 +16,34 @@ public class NewBehaviourScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.V) && playerIsClose) // Đổi từ E thành V
+        if (playerIsClose && !dialoguePanel.activeInHierarchy)
         {
-            if (dialoguePanel.activeInHierarchy)
-            {
-                ZeroText();
-            }
-            else
-            {
-                if (dialogue.Length > 0)  // Kiểm tra xem có dữ liệu không
-                {
-                    dialoguePanel.SetActive(true);
-                    StartCoroutine(Typing());
-                }
-                else
-                {
-                    Debug.LogWarning("Dialogue array is empty!");
-                }
-            }
+            ShowDialogue(); // Tự động hiện hội thoại khi player đến gần
         }
 
         if (dialogueText.text == dialogue[index])
         {
             contButton.SetActive(true);
+        }
+
+        // Kiểm tra nếu nhấn Enter thì chuyển câu tiếp theo
+        if (dialoguePanel.activeInHierarchy && Input.GetKeyDown(KeyCode.Return))
+        {
+            NextLine();
+        }
+
+    }
+
+    private void ShowDialogue()
+    {
+        if (dialogue.Length > 0)
+        {
+            dialoguePanel.SetActive(true);
+            StartCoroutine(Typing());
+        }
+        else
+        {
+            Debug.LogWarning("Dialogue array is empty!");
         }
     }
 
@@ -51,7 +57,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     IEnumerator Typing()
     {
-        dialogueText.text = ""; // Xóa nội dung cũ trước khi gõ
+        dialogueText.text = "";
         foreach (char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter;
@@ -71,16 +77,23 @@ public class NewBehaviourScript : MonoBehaviour
         else
         {
             ZeroText();
-            SceneManager.LoadScene("Earth");
+            SceneManager.LoadScene("Earth"); // Chuyển màn hình sau hội thoại
         }
+    }
+
+
+    public void SkipDialogue()
+    {
+        ZeroText();
+        SceneManager.LoadScene("Earth"); // Chuyển màn khi bấm Skip
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player entered NPC trigger");
             playerIsClose = true;
+            ShowDialogue(); // Hiện hội thoại ngay khi vào vùng trigger
         }
     }
 
@@ -88,7 +101,6 @@ public class NewBehaviourScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player exited NPC trigger");
             playerIsClose = false;
             ZeroText();
         }

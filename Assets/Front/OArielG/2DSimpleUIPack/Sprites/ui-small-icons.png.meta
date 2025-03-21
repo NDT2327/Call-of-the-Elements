@@ -1,10 +1,14 @@
 fileFormatVersion: 2
-guid: 4bc02a830afc1344686efb5821aed2e0
+guid: 497877696662aee47ba7434638be1ea7
+AssetOrigin:
+  serializedVersion: 1
+  productId: 218050
+  packageName: 2D Simple UI Pack
+  packageVersion: 1.0
+  assetPath: Assets/OArielG/2DSimpleUIPack/Sprites/ui-small-icons.png
+  uploadId: 493490
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 4919510043890435728
-    second: Screenshot_2025-03-21_101954-removebg-preview_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +50,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -68,7 +72,7 @@ TextureImporter:
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
@@ -98,34 +102,12 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Screenshot_2025-03-21_101954-removebg-preview_0
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 4
-        width: 58
-        height: 91
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0964e0bf15c954440800000000000000
-      internalID: 4919510043890435728
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -134,8 +116,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Screenshot_2025-03-21_101954-removebg-preview_0: 4919510043890435728
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
