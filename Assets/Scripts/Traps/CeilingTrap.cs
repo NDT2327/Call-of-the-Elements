@@ -31,4 +31,10 @@ public class CeilingTrap : MonoBehaviour
             Destroy(gameObject, 3f);
         }
     }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(transform.position, GetComponent<BoxCollider2D>().bounds.size);
+    }
+
 }

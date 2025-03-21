@@ -15,6 +15,7 @@ public class HealthBar : MonoBehaviour
     [SerializeField] private Sprite fireSprite;
     [SerializeField] private Sprite earthSprite;
     [SerializeField] private Sprite normalSprite;
+    [SerializeField] private Sprite ultimateSprite;
     private int currentElementIndex = 0;
     private Sprite[] elementSprites;
 
@@ -22,6 +23,11 @@ public class HealthBar : MonoBehaviour
     private float cooldownTimer = 0f;
     private bool isCooldownActive = false;
     public bool hasSpAttack = false;
+
+    [SerializeField] private Image ultimateCooldownFill;
+    private float ultimateCooldown = 15f; 
+    private float ultimateTimer = 0f;
+    private bool isUltimateCooldown = false;
 
     void Start()
     {
@@ -35,6 +41,7 @@ public class HealthBar : MonoBehaviour
         // Khởi tạo nguyên tố
         elementSprites = new Sprite[] { earthSprite, fireSprite  };
         element.sprite = normalSprite;
+        ultimateCooldownFill.sprite = ultimateSprite;
     }
 
     void Update()
@@ -51,6 +58,21 @@ public class HealthBar : MonoBehaviour
             {
                 isCooldownActive = false;
                 element.fillAmount = 1f; 
+            }
+        }
+
+        if (isUltimateCooldown)
+        {
+            ultimateTimer -= Time.deltaTime;
+            float fillValue = Mathf.Clamp01(ultimateTimer / ultimateCooldown);
+            ultimateCooldownFill.fillAmount = fillValue;
+
+            Debug.Log($"⏳ Ultimate Cooldown: {ultimateTimer:F2}s - Fill: {fillValue}");
+
+            if (ultimateTimer <= 0)
+            {
+                isUltimateCooldown = false;
+                ultimateCooldownFill.fillAmount = 1f;
             }
         }
     }
@@ -82,6 +104,12 @@ public class HealthBar : MonoBehaviour
         isCooldownActive = true;
         cooldownTimer = cooldownTime;
         element.fillAmount = 1f; 
+    }
+    public void StartUltimateCooldown()
+    {
+        isUltimateCooldown = true;
+        ultimateTimer = ultimateCooldown;
+        ultimateCooldownFill.fillAmount = 1f;
     }
 
 }
