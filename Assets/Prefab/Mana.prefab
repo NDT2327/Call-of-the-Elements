@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8272168031876575635}
   - component: {fileID: 8322640403527773298}
   - component: {fileID: 1939532340061254724}
-  - component: {fileID: -3756539285168797163}
   - component: {fileID: -8958877034224575828}
   m_Layer: 0
   m_Name: Mana
@@ -79,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3469513562030614040, guid: b5e576fb30e1f7d47b9230c7c9645104, type: 3}
+  m_Sprite: {fileID: 4919510043890435728, guid: 4bc02a830afc1344686efb5821aed2e0, type: 3}
   m_Color: {r: 0.98490566, g: 0.98490566, b: 0.98490566, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -120,7 +119,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -128,7 +127,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.23, y: 0.42}
+    oldSize: {x: 0.58, y: 0.91}
     newSize: {x: 0.23, y: 0.42}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -136,33 +135,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.359375, y: 0.65625}
   m_EdgeRadius: 0
---- !u!50 &-3756539285168797163
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2477822142919698583}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!114 &-8958877034224575828
 MonoBehaviour:
   m_ObjectHideFlags: 0

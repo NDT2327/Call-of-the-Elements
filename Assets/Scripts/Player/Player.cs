@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
     private float lastSpecialAttackTime = -Mathf.Infinity;
 
     private int currentElementIndex = 0; // Mặc định là Lửa (1)
-    private string[] elements = { "Fire", "Earth" };
+    private string[] elements = { "Earth", "Fire" };
     public GameObject spellFirePrefab;
     private TerribleKnightScript terribleKnightScript;
     private int currentLevel = 1; // Giả sử bắt đầu từ màn 1
@@ -233,15 +233,15 @@ public class Player : MonoBehaviour
 
     private void HandleBlock()
     {
-        if (Input.GetKeyDown(KeyCode.S) && isGrounded)
-        {
-            animator.SetTrigger("Block");
-            ShowBlockFlash();
-        }
-        if (Input.GetKeyUp(KeyCode.S))
-        {
+        //if (Input.GetKeyDown(KeyCode.S) && isGrounded)
+        //{
+        //    animator.SetTrigger("Block");
+        //    ShowBlockFlash();
+        //}
+        //if (Input.GetKeyUp(KeyCode.S))
+        //{
 
-        }
+        //}
     }
 
 

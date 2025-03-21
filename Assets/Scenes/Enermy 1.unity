@@ -897,7 +897,6 @@ MonoBehaviour:
   currentHP: 0
   hitLimit: 3
   invincibleDuration: 3
-  potionPrefab: {fileID: 0}
   dropChance: 0.6
   isBoss: 0
   healthPotionPrefab: {fileID: 0}
@@ -1176,7 +1175,6 @@ MonoBehaviour:
   currentHP: 0
   hitLimit: 2
   invincibleDuration: 3
-  potionPrefab: {fileID: 0}
   dropChance: 0.6
   isBoss: 0
   healthPotionPrefab: {fileID: 2477822142919698583, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
@@ -1633,7 +1631,6 @@ MonoBehaviour:
   currentHP: 0
   hitLimit: 5
   invincibleDuration: 3
-  potionPrefab: {fileID: 0}
   dropChance: 0.6
   isBoss: 0
   healthPotionPrefab: {fileID: 0}
@@ -2024,7 +2021,6 @@ MonoBehaviour:
   currentHP: 0
   hitLimit: 3
   invincibleDuration: 3
-  potionPrefab: {fileID: 0}
   dropChance: 0.6
   isBoss: 1
   healthPotionPrefab: {fileID: 0}
@@ -2368,11 +2364,10 @@ MonoBehaviour:
   currentHP: 0
   hitLimit: 3
   invincibleDuration: 3
-  potionPrefab: {fileID: 0}
   dropChance: 0.6
   isBoss: 0
-  healthPotionPrefab: {fileID: 0}
-  manaPotionPrefab: {fileID: 0}
+  healthPotionPrefab: {fileID: 2477822142919698583, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
+  manaPotionPrefab: {fileID: 2477822142919698583, guid: 347a5cc06f583b54cb4f6aee819c0c3f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
