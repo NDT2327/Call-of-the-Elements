@@ -15,7 +15,7 @@ public class EnemyManager : MonoBehaviour
     public GameObject conqueror;
 
     [Header("Camera Settings")]
-    public CinemachineVirtualCamera virtualCamera;
+    public CinemachineCamera virtualCamera;
     public PolygonCollider2D mapBoudary;
     public float bossAreaWidth = 10f;
     public float bossAreaHeight = 8f;
@@ -30,7 +30,7 @@ public class EnemyManager : MonoBehaviour
         bossAreaConfiner = gameObject.AddComponent<PolygonCollider2D>();
         bossAreaConfiner.isTrigger = true;
         bossAreaConfiner.enabled = false;
-        virtualCamera.GetComponent<CinemachineConfiner>().m_BoundingShape2D = bossAreaConfiner;
+        virtualCamera.GetComponent<CinemachineConfiner2D>().BoundingShape2D = bossAreaConfiner;
 
         //all enenmies
         SetEnemiesActive(earthEnemies, false);
@@ -110,13 +110,13 @@ public class EnemyManager : MonoBehaviour
         };
         bossAreaConfiner.points = points;
         bossAreaConfiner.enabled = true;
-        virtualCamera.GetComponent<CinemachineConfiner>().m_BoundingShape2D = bossAreaConfiner;
+        virtualCamera.GetComponent<CinemachineConfiner2D>().BoundingShape2D = bossAreaConfiner;
 
     }
 
     private void UnlockCamera()
     {
-        virtualCamera.GetComponent<CinemachineConfiner>().m_BoundingShape2D = mapBoudary;
+        virtualCamera.GetComponent<CinemachineConfiner2D>().BoundingShape2D = mapBoudary;
         bossAreaConfiner.enabled = false;
     }
 
