@@ -1,8 +1,16 @@
 ﻿using UnityEngine;
+using UnityEngine.Audio;
 
 public class HellBeastScript : MonoBehaviour
 {
-	[Header("Movement & Detection")]
+    [Header("Audio Clips")]
+    public AudioClip attackSound;
+    public AudioClip attackSound2;
+    //public AudioClip jumpSound;
+    //public AudioClip runSound; // Âm thanh chạy
+    private AudioSource audioSource;
+
+    [Header("Movement & Detection")]
 	public Transform target;          // Thường là Player
 	public float detectionRange = 5f; // Tầm phát hiện Player
 	public float chaseSpeed = 2f;     // Tốc độ di chuyển khi đuổi
@@ -31,6 +39,7 @@ public class HellBeastScript : MonoBehaviour
 		anim = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
 		playerHP = GetComponent<Health>();
+        audioSource = GetComponent<AudioSource>();
 
         // Bỏ qua va chạm giữa enemy và player
         Collider2D enemyCollider = GetComponent<Collider2D>();
@@ -114,17 +123,21 @@ public class HellBeastScript : MonoBehaviour
 		currentState = State.Attack; // Đặt trạng thái thành Attack
 		anim.SetTrigger("burnAttack");
 		lastAttackTime = Time.time;
-		Invoke("ResetToChase", 1f); // Đợi 1 giây rồi reset
+        audioSource.PlayOneShot(attackSound);
+
+        Invoke("ResetToChase", 1f); // Đợi 1 giây rồi reset
 	}
 
 	// Hàm tấn công xa (thở lửa)
 	private void AttackBreath()
 	{
+		
 		currentState = State.Attack;
 		anim.SetTrigger("breathAttack");
 		lastAttackTime = Time.time;
-		// Gọi hàm SpawnFireball để tạo quả cầu lửa
-		Invoke("SpawnFireball", 1.1f); // Delay một chút cho hợp với animation
+        audioSource.PlayOneShot(attackSound2);
+        // Gọi hàm SpawnFireball để tạo quả cầu lửa
+        Invoke("SpawnFireball", 1.1f); // Delay một chút cho hợp với animation
 		Invoke("ResetToChase", 1.5f);
 	}
 
