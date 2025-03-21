@@ -233,15 +233,15 @@ public class Player : MonoBehaviour
 
     private void HandleBlock()
     {
-        if (Input.GetKeyDown(KeyCode.S) && isGrounded)
-        {
-            animator.SetTrigger("Block");
-            ShowBlockFlash();
-        }
-        if (Input.GetKeyUp(KeyCode.S))
-        {
+        //if (Input.GetKeyDown(KeyCode.S) && isGrounded)
+        //{
+        //    animator.SetTrigger("Block");
+        //    ShowBlockFlash();
+        //}
+        //if (Input.GetKeyUp(KeyCode.S))
+        //{
 
-        }
+        //}
     }
 
 
