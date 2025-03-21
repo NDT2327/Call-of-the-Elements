@@ -67,7 +67,6 @@ public class HealthBar : MonoBehaviour
             float fillValue = Mathf.Clamp01(ultimateTimer / ultimateCooldown);
             ultimateCooldownFill.fillAmount = fillValue;
 
-            Debug.Log($"⏳ Ultimate Cooldown: {ultimateTimer:F2}s - Fill: {fillValue}");
 
             if (ultimateTimer <= 0)
             {
@@ -93,7 +92,7 @@ public class HealthBar : MonoBehaviour
         }
         if (elementIndex < 0 || elementIndex >= elementSprites.Length)
         {
-            Debug.LogError("⚠ Element index không hợp lệ!");
+
             return;
         }
         element.sprite = elementSprites[elementIndex];
