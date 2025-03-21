@@ -139,6 +139,8 @@ public class Player : MonoBehaviour
 
     private void SpAttack()
     {
+        if (!HasUnlockedSpAttack()) return;
+
         if (Input.GetKeyDown(KeyCode.U) && Time.time - lastSpecialAttackTime >= specialAttackCooldown)
         {
             if (healthBar != null && healthBar.playerStamina != null)
@@ -189,6 +191,7 @@ public class Player : MonoBehaviour
 
             if (healthBar != null)
             {
+                healthBar.SetElementSprite(currentElementIndex);
                 healthBar.StartElementCooldown();
             }
         }
@@ -196,12 +199,12 @@ public class Player : MonoBehaviour
     
     private GameObject GetSpellByElement()
     {
-        switch (elements[currentElementIndex])
+        return elements[currentElementIndex] switch
         {
-            case "Fire": return spellFirePrefab;
-            case "Earth": return spellEarthPrefab;
-            default: return null;
-        }
+            "Fire" => spellFirePrefab,
+            "Earth" => spellEarthPrefab,
+            _ => null,
+        };
     }
 
     private GameObject FindNearestEnemy()
@@ -342,6 +345,18 @@ public class Player : MonoBehaviour
             Debug.Log($"Hồi {percentage * 100}% máu và stamina!");
         }
     }
+    public bool HasUnlockedSpAttack()
+    {
+        bool unlocked = (elements[currentElementIndex] == "Fire" && currentLevel >= 3) ||
+                        (elements[currentElementIndex] == "Earth" && currentLevel >= 2);
+
+        if (unlocked && healthBar != null && !healthBar.hasSpAttack)
+        {
+            healthBar.UnlockSpAttack();
+        }
+        return unlocked;
+    }
+
 
     public void UnlockSpecialAttack(GameManager.Map completedMap)
     {

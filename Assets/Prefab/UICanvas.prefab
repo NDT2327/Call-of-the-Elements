@@ -464,7 +464,9 @@ MonoBehaviour:
   currentStamina: {fileID: 760281821429445261}
   element: {fileID: 7818174907901925292}
   fireSprite: {fileID: -2763552863712626065, guid: d209bd0e849ad2043b5341d125e4c129, type: 3}
-  earthSprite: {fileID: 5243583006262740181, guid: f59d3b7a68216f649b8f3fb56c9916a8, type: 3}
+  earthSprite: {fileID: 3980317264126531967, guid: ec061dea940fa6e4fbc9f165b176b8e2, type: 3}
+  normalSprite: {fileID: 0}
+  hasSpAttack: 0
 --- !u!1 &7786651437512397589
 GameObject:
   m_ObjectHideFlags: 0
