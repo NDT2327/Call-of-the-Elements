@@ -3,7 +3,7 @@
 public class Health : MonoBehaviour
 {
     [SerializeField] private float startingHealth =100f;
-    public float CurrentHealth { get; private set; }
+    public float CurrentHealth { get; set; }
     public float MaxHealth => startingHealth;
 
     private Animator anim;

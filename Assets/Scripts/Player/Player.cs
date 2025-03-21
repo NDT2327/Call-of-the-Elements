@@ -28,6 +28,7 @@ public class Player : MonoBehaviour
     private string[] elements = { "Fire", "Earth" };
     public GameObject spellFirePrefab;
     private TerribleKnightScript terribleKnightScript;
+    private int currentLevel = 1; // Giả sử bắt đầu từ màn 1
 
     private HealthBar healthBar;
 
@@ -140,14 +141,21 @@ public class Player : MonoBehaviour
         {
             if (healthBar != null && healthBar.playerStamina != null)
             {
-                float staminaCost = healthBar.playerStamina.MaxStamina * 0.2f; // 20% tổng Stamina
+                float staminaCost = healthBar.playerStamina.MaxStamina * 0.2f;
                 if (healthBar.playerStamina.CurrentStamina < staminaCost)
                 {
                     Debug.Log("⚠ Không đủ Stamina để sử dụng SpAttack!");
-                    return; // Không thực hiện chiêu nếu không đủ Stamina
+                    return;
                 }
+                healthBar.playerStamina.UseStamina(staminaCost);
+            }
 
-                healthBar.playerStamina.UseStamina(staminaCost); // Trừ Stamina
+            // Kiểm tra màn chơi hiện tại
+            if ((elements[currentElementIndex] == "Fire" && currentLevel < 3) ||
+                (elements[currentElementIndex] == "Earth" && currentLevel < 2))
+            {
+                Debug.Log("⚠ Chưa mở khóa chiêu này ở màn hiện tại!");
+                return;
             }
 
             animator.SetTrigger("Attack3");
@@ -155,7 +163,7 @@ public class Player : MonoBehaviour
             GameObject spellPrefab = GetSpellByElement();
             if (spellPrefab == null) return;
 
-            Vector3 spawnPosition = transform.position; // Mặc định đặt phép ở người chơi
+            Vector3 spawnPosition = transform.position;
 
             switch (elements[currentElementIndex])
             {
@@ -173,20 +181,17 @@ public class Player : MonoBehaviour
                     SpawnSpell(spellEarth2Prefab, spawnPosition);
                     SpawnSpell(spellEarth3Prefab, spawnPosition);
                     break;
-                default:
-                    Debug.Log("Không có phép cho hệ này.");
-                    return;
             }
 
             lastSpecialAttackTime = Time.time;
-            // 🔥 Gọi cooldown trực tiếp trên `element`
+
             if (healthBar != null)
             {
                 healthBar.StartElementCooldown();
             }
         }
     }
-
+    
     private GameObject GetSpellByElement()
     {
         switch (elements[currentElementIndex])
@@ -321,4 +326,33 @@ public class Player : MonoBehaviour
     {
         UIManager.Instance.ShowGameOverScreen();
     }
+
+    public void RecoverHealthAndStamina(float percentage)
+    {
+        if (healthBar != null)
+        {
+            float healAmount = healthBar.playerHealth.MaxHealth * percentage;
+            healthBar.playerHealth.CurrentHealth = Mathf.Min(healthBar.playerHealth.MaxHealth, healthBar.playerHealth.CurrentHealth + healAmount);
+
+            float staminaAmount = healthBar.playerStamina.MaxStamina * percentage;
+            healthBar.playerStamina.CurrentStamina = Mathf.Min(healthBar.playerStamina.MaxStamina, healthBar.playerStamina.CurrentStamina + staminaAmount);
+
+            Debug.Log($"Hồi {percentage * 100}% máu và stamina!");
+        }
+    }
+
+    public void UnlockSpecialAttack(GameManager.Map completedMap)
+    {
+        if (completedMap == GameManager.Map.Earth)
+        {
+            currentLevel = 2; // Mở khóa SpAttack Earth
+            Debug.Log("🌱 Đã mở khóa Special Attack Earth!");
+        }
+        else if (completedMap == GameManager.Map.Lava)
+        {
+            currentLevel = 3; // Mở khóa SpAttack Fire
+            Debug.Log("🔥 Đã mở khóa Special Attack Fire!");
+        }
+    }
+
 }
