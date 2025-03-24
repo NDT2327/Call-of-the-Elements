@@ -2,6 +2,14 @@
 
 public class GolemEnemyScript : MonoBehaviour
 {
+    [Header("Audio Clips")]
+    public AudioClip attackSound;
+    //public AudioClip attackSound2;
+    //public AudioClip attackSound3;
+    //public AudioClip jumpSound;
+    public AudioClip runSound; // Âm thanh chạy
+    private AudioSource audioSource;
+
     [Header("Patrol Settings")]
     public Transform pointA;
     public Transform pointB;
@@ -37,6 +45,12 @@ public class GolemEnemyScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         enemyHP = GetComponent<EnemyHP>();
         playerHP = GetComponent<Health>();
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            Debug.LogWarning("AudioSource was missing, adding one to " + gameObject.name);
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
 
         // Bắt đầu tuần tra từ pointA
         currentPatrolTarget = pointA;
@@ -140,7 +154,13 @@ public class GolemEnemyScript : MonoBehaviour
     {
         Vector2 direction = (target.position - transform.position).normalized;
         rb.linearVelocity = new Vector2(direction.x * chaseSpeed, rb.linearVelocity.y);
-
+        if (!audioSource.isPlaying || audioSource.clip != runSound)
+        {
+            audioSource.clip = runSound;
+            audioSource.loop = true;
+            audioSource.pitch = 3f;
+            audioSource.Play();
+        }
         // Flip dựa theo hướng target
         FlipChase(-direction.x);
     }
@@ -161,12 +181,24 @@ public class GolemEnemyScript : MonoBehaviour
     // ----- ATTACK -----
     private void PerformAttack()
     {
+        if (audioSource.clip == runSound)
+        {
+            audioSource.Stop();
+        }
+
         lastAttackTime = Time.time;
         // Random kiểu tấn công 1,2,3
         int attackType = Random.Range(1, 4);
         anim.SetTrigger($"attack{attackType}");
+        Invoke(nameof(PlayAttackSound), 0.5f);
+        //audioSource.PlayOneShot(attackSound);
+
         Invoke("ResetToChase", 1f);
 
+    }
+    private void PlayAttackSound()
+    {
+        audioSource.PlayOneShot(attackSound);
     }
 
     public void DoDamageCloseRange()

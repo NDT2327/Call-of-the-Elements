@@ -18,7 +18,6 @@ public class EnemyHP : MonoBehaviour
     public float invincibleDuration = 3f; // Thời gian không nhận sát thương
 
     [Header("Potion Drop Settings")]
-    [SerializeField] private GameObject potionPrefab; // Prefab của Potion
     [SerializeField] private float dropChance = 0.6f; // 60% tỷ lệ rơi Potion
     [SerializeField] private bool isBoss = false; // Nếu là Boss, không rơi Potion
     [Header("Potion Drop Settings")]
@@ -38,7 +37,6 @@ public class EnemyHP : MonoBehaviour
     {
         if (maxHP <= 0)
         {
-            Debug.LogError("❌ maxHP của Boss phải lớn hơn 0! Kiểm tra giá trị trong Inspector.");
             maxHP = 100f; // Đặt giá trị mặc định nếu chưa có
         }
         MaxHealth = maxHP;
@@ -66,7 +64,6 @@ public class EnemyHP : MonoBehaviour
         if (hitCount >= hitLimit)
         {
             anim.SetTrigger("hurt");
-            Debug.Log("stun");
             // Kích hoạt trạng thái invincible cho thời gian cho enemy phục hồi
             //StartCoroutine(ActivateInvincibility());
             hitCount = 0; // Reset biến đếm sau khi kích hoạt hurt
@@ -110,12 +107,10 @@ public class EnemyHP : MonoBehaviour
     private IEnumerator ActivateInvincibility()
     {
         isInvincible = true;
-        Debug.Log(gameObject.name + " is invincible now!");
         // Có thể thêm hiệu ứng hoặc đổi màu để thông báo trạng thái invincible
         yield return new WaitForSeconds(invincibleDuration);
         isInvincible = false;
         hitCount = 0; // Reset lại biến đếm sau khi hết trạng thái invincible
-        Debug.Log(gameObject.name + " can take damage again.");
     }
 
     // Hồi máu cho quái
@@ -136,6 +131,10 @@ public class EnemyHP : MonoBehaviour
         {
             TrySpawnPotion();
         }
+        else
+        {
+            GameManager.Instance.OnBossDefeated();
+        }
         Destroy(gameObject, 1f);
         if (healthBar != null && healthBar.enemyHealthContainer!= null)
         {
@@ -151,18 +150,16 @@ public class EnemyHP : MonoBehaviour
         healthBar.enemyHealthContainer.SetActive(false);
         Debug.Log("🩸 Thanh máu Boss đã bị ẩn!");
     }
-
     private void TrySpawnPotion()
     {
         float randomValue = Random.value; // Random từ 0 -> 1
-        if (randomValue <= dropChance)
+        if (randomValue <= dropChance) // 60% cơ hội rơi đồ
         {
             GameObject potionToSpawn = (Random.value < 0.5f) ? healthPotionPrefab : manaPotionPrefab;
             Instantiate(potionToSpawn, transform.position, Quaternion.identity);
             Debug.Log($"🧪 {potionToSpawn.name} đã spawn!");
         }
     }
-
 
     // Lấy HP hiện tại
     public float GetCurrentHP()

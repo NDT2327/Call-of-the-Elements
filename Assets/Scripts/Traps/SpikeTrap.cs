@@ -10,6 +10,7 @@ public class SpikeTrap : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isPlayerOnTrap = true;
+            collision.GetComponent<Health>().TakeDamage(damage);
             Debug.Log("Take damage");
         }
     }
@@ -21,4 +22,10 @@ public class SpikeTrap : MonoBehaviour
             isPlayerOnTrap = false;
         }
     }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(transform.position, GetComponent<BoxCollider2D>().bounds.size);
+    }
+
 }

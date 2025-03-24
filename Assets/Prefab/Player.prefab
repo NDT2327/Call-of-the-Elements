@@ -550,6 +550,7 @@ MonoBehaviour:
   isGrounded: 0
   attackResetTime: 0.5
   spellFirePrefab: {fileID: 1656160270309967972, guid: 1cd3057c5b13c6b4d8b62628b84981fa, type: 3}
+  ultimatePrefab: {fileID: 3240662124554436099, guid: eab474b2f63904e4aa9fb07fbc35571a, type: 3}
 --- !u!95 &8690977338272217667
 Animator:
   serializedVersion: 7

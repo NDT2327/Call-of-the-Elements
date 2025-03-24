@@ -3,6 +3,13 @@ using System.Collections;
 
 public class BlackWolfScript : MonoBehaviour
 {
+    [Header("Audio Clips")]
+    public AudioClip attackSound;
+    //public AudioClip attackSound2;
+    //public AudioClip jumpSound;
+    public AudioClip runSound; // Âm thanh chạy
+    private AudioSource audioSource;
+
     [Header("Patrol Settings")]
     public Transform pointA;
     public Transform pointB;
@@ -43,7 +50,12 @@ public class BlackWolfScript : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         playerHP = GetComponent<Health>();
-
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            Debug.LogWarning("AudioSource was missing, adding one to " + gameObject.name);
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
 
         // Bắt đầu tuần tra từ pointA
         if (pointA != null) currentPatrolTarget = pointA;
@@ -170,16 +182,27 @@ public class BlackWolfScript : MonoBehaviour
         if (target == null) return;
         Vector2 direction = (target.position - transform.position).normalized;
         rb.linearVelocity = new Vector2(direction.x * chaseSpeed, rb.linearVelocity.y);
-
+        if (!audioSource.isPlaying || audioSource.clip != runSound)
+        {
+            audioSource.clip = runSound;
+            audioSource.loop = true;
+            audioSource.pitch = 3f;
+            audioSource.Play();
+        }
         FlipSprite(direction.x);
     }
 
     // ----------------- ATTACK -----------------
     void PerformAttack()
     {
+        if (audioSource.clip == runSound)
+        {
+            audioSource.Stop();
+        }
         lastAttackTime = Time.time;
         int attackType = Random.Range(1, 5);
         anim.SetTrigger($"attack{attackType}");
+        audioSource.PlayOneShot(attackSound);
 
         // Sau 1 giây, quay lại chạy
         Invoke(nameof(ResetToRun), 1f);

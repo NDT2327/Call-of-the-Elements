@@ -216,6 +216,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1925805693999600679, guid: 9948b841128974e4caeef85b85d6ebe8, type: 3}
+      propertyPath: normalSprite
+      value: 
+      objectReference: {fileID: 3980317264126531967, guid: ec061dea940fa6e4fbc9f165b176b8e2, type: 3}
+    - target: {fileID: 1925805693999600679, guid: 9948b841128974e4caeef85b85d6ebe8, type: 3}
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 1066076728}
@@ -223,6 +227,10 @@ PrefabInstance:
       propertyPath: playerStamina
       value: 
       objectReference: {fileID: 1066076727}
+    - target: {fileID: 7818174907901925292, guid: 9948b841128974e4caeef85b85d6ebe8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3980317264126531967, guid: ec061dea940fa6e4fbc9f165b176b8e2, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -438,7 +446,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &507073694
 Transform:
   m_ObjectHideFlags: 0
@@ -574,6 +582,10 @@ PrefabInstance:
       value: Taurus
       objectReference: {fileID: 0}
     - target: {fileID: 4964681218026043823, guid: a61f5a9289b91814786f29847ca11b78, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4964681218026043823, guid: a61f5a9289b91814786f29847ca11b78, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -632,67 +644,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2219123463786518281, guid: ad7bee9c046638440853e6df3f3808f7, type: 3}
   m_PrefabInstance: {fileID: 1066076726}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &733768086
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2477822142919698583, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
-      propertyPath: m_Name
-      value: Potion
-      objectReference: {fileID: 0}
-    - target: {fileID: 2477822142919698583, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8272168031876575635, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.61
-      objectReference: {fileID: 0}
-    - target: {fileID: 8272168031876575635, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 8272168031876575635, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8272168031876575635, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8272168031876575635, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8272168031876575635, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8272168031876575635, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8272168031876575635, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8272168031876575635, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8272168031876575635, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
 --- !u!1 &795461507
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,9 +905,10 @@ MonoBehaviour:
   currentHP: 0
   hitLimit: 3
   invincibleDuration: 3
-  potionPrefab: {fileID: 0}
   dropChance: 0.6
   isBoss: 0
+  healthPotionPrefab: {fileID: 0}
+  manaPotionPrefab: {fileID: 0}
 --- !u!1 &932983232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,9 +1183,10 @@ MonoBehaviour:
   currentHP: 0
   hitLimit: 2
   invincibleDuration: 3
-  potionPrefab: {fileID: 0}
   dropChance: 0.6
   isBoss: 0
+  healthPotionPrefab: {fileID: 2477822142919698583, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
+  manaPotionPrefab: {fileID: 2477822142919698583, guid: 347a5cc06f583b54cb4f6aee819c0c3f, type: 3}
 --- !u!1 &1059958388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,9 +1639,10 @@ MonoBehaviour:
   currentHP: 0
   hitLimit: 5
   invincibleDuration: 3
-  potionPrefab: {fileID: 0}
   dropChance: 0.6
   isBoss: 0
+  healthPotionPrefab: {fileID: 0}
+  manaPotionPrefab: {fileID: 0}
 --- !u!114 &1127212829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2075,9 +2029,10 @@ MonoBehaviour:
   currentHP: 0
   hitLimit: 3
   invincibleDuration: 3
-  potionPrefab: {fileID: 0}
   dropChance: 0.6
   isBoss: 1
+  healthPotionPrefab: {fileID: 0}
+  manaPotionPrefab: {fileID: 0}
 --- !u!114 &2028728780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2417,9 +2372,10 @@ MonoBehaviour:
   currentHP: 0
   hitLimit: 3
   invincibleDuration: 3
-  potionPrefab: {fileID: 0}
   dropChance: 0.6
   isBoss: 0
+  healthPotionPrefab: {fileID: 2477822142919698583, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
+  manaPotionPrefab: {fileID: 2477822142919698583, guid: 347a5cc06f583b54cb4f6aee819c0c3f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2432,7 +2388,6 @@ SceneRoots:
   - {fileID: 1240107729}
   - {fileID: 359227948}
   - {fileID: 507073694}
-  - {fileID: 733768086}
   - {fileID: 670233393}
   - {fileID: 493185578}
   - {fileID: 1066076726}

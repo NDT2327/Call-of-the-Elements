@@ -14,13 +14,20 @@ public class HealthBar : MonoBehaviour
     [SerializeField] private Image element;
     [SerializeField] private Sprite fireSprite;
     [SerializeField] private Sprite earthSprite;
-
+    [SerializeField] private Sprite normalSprite;
+    //[SerializeField] private Sprite ultimateSprite;
     private int currentElementIndex = 0;
     private Sprite[] elementSprites;
 
     private float cooldownTime = 3f; 
     private float cooldownTimer = 0f;
     private bool isCooldownActive = false;
+    public bool hasSpAttack = false;
+
+    //[SerializeField] private Image ultimateCooldownFill;
+    //private float ultimateCooldown = 15f; 
+    //private float ultimateTimer = 0f;
+    //private bool isUltimateCooldown = false;
 
     void Start()
     {
@@ -32,8 +39,9 @@ public class HealthBar : MonoBehaviour
         totalStamina.fillAmount = playerStamina.CurrentStamina / playerStamina.MaxStamina;
 
         // Khởi tạo nguyên tố
-        elementSprites = new Sprite[] { fireSprite, earthSprite };
-        element.sprite = elementSprites[currentElementIndex];
+        elementSprites = new Sprite[] { earthSprite, fireSprite  };
+        element.sprite = normalSprite;
+        //ultimateCooldownFill.sprite = ultimateSprite;
     }
 
     void Update()
@@ -41,10 +49,6 @@ public class HealthBar : MonoBehaviour
         currentHealthBar.fillAmount = playerHealth.CurrentHealth / playerHealth.MaxHealth;
         currentStamina.fillAmount = playerStamina.CurrentStamina / playerStamina.MaxStamina;
 
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            ChangeElementSprite();
-        }
         if (isCooldownActive)
         {
             cooldownTimer -= Time.deltaTime;
@@ -56,19 +60,42 @@ public class HealthBar : MonoBehaviour
                 element.fillAmount = 1f; 
             }
         }
+
+        //if (isUltimateCooldown)
+        //{
+        //    ultimateTimer -= Time.deltaTime;
+        //    float fillValue = Mathf.Clamp01(ultimateTimer / ultimateCooldown);
+        //    ultimateCooldownFill.fillAmount = fillValue;
+
+
+        //    if (ultimateTimer <= 0)
+        //    {
+        //        isUltimateCooldown = false;
+        //        ultimateCooldownFill.fillAmount = 1f;
+        //    }
+        //}
     }
 
-    private void ChangeElementSprite()
-    {
-        currentElementIndex = (currentElementIndex + 1) % elementSprites.Length;
-        element.sprite = elementSprites[currentElementIndex];
 
-        Debug.Log("Nguyên tố hiện tại: " + GetElementName());
+    public void UnlockSpAttack()
+    {
+        hasSpAttack = true;
+        SetElementSprite(currentElementIndex);
     }
 
-    private string GetElementName()
+    public void SetElementSprite(int elementIndex)
     {
-        return currentElementIndex == 0 ? "Lửa" : "Đất";
+        if (!hasSpAttack)
+        {
+            element.sprite = normalSprite;
+            return;
+        }
+        if (elementIndex < 0 || elementIndex >= elementSprites.Length)
+        {
+
+            return;
+        }
+        element.sprite = elementSprites[elementIndex];
     }
 
     public void StartElementCooldown()
@@ -77,5 +104,11 @@ public class HealthBar : MonoBehaviour
         cooldownTimer = cooldownTime;
         element.fillAmount = 1f; 
     }
+    //public void StartUltimateCooldown()
+    //{
+    //    isUltimateCooldown = true;
+    //    ultimateTimer = ultimateCooldown;
+    //    ultimateCooldownFill.fillAmount = 1f;
+    //}
 
 }

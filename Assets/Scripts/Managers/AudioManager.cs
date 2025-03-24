@@ -2,11 +2,17 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    [Header("Background music")]
     public AudioSource backgroundMusic;
     public AudioClip earthMusic;
     public AudioClip fireMusic;
     public AudioClip castleMusic;
     public AudioClip victoryMusic;
+
+    [Header("Boss sound")]
+    public AudioSource sound;
+
+    
 
     public void PlayBackgroundMusic(GameManager.Map map)
     {

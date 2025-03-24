@@ -282,6 +282,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1684,7 +1697,70 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_0: 6329173309536520205
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_1: 1918069797710216068
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_10: -4761554620980911552
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_11: 32674810044240634
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_12: -8976602469756719280
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_13: 2196123935690730251
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_14: 4666407239337224639
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_15: -2874781199992881044
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_16: -5647857866567684376
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_17: 3279926857449924278
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_18: -3729268417987631826
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_19: -283954852016451576
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_2: 8027790515407039239
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_20: -8641738026326574645
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_21: 2058616994815874868
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_22: 4666809008572746559
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_23: 4154284077719589980
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_24: 9008731537273918364
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_25: 4331510072860380471
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_26: -2468333863111654371
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_27: 8001416900018464940
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_28: 6981166363477309182
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_29: -4214120474267406564
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_3: -939555523122487953
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_30: -3320533750795181794
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_31: -8164002237014008875
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_32: 3432690115954575841
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_33: 2477994436981023574
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_34: 1543705794518109464
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_35: -6670824960772377605
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_36: -4137230117373356887
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_37: 3759009712885579416
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_38: 359272681464477544
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_39: 5573022925515768512
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_4: 8695028613231511587
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_40: 7249805185550559150
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_41: -2917515058207149077
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_42: 7005193433995572859
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_43: 6836605117916149677
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_44: 4576037136130518910
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_45: 4121297202767075472
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_46: -6414378155601599624
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_47: 6796361638486168586
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_48: -5337232768683737803
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_49: -60450903587049429
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_5: -2583255445184226955
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_50: 4095210999157187049
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_51: 5250502662668376382
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_52: -4603376854149331330
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_53: -7899218817626766977
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_54: 2999020068840472811
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_55: -4582247622702157605
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_56: -3374040694645530123
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_57: 1802643039197244718
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_58: 5973458263093043753
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_59: 7531772472848348244
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_6: -7824174310527554303
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_60: -4220246677849555167
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_61: 6767296656337263411
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_62: -1050346241801395817
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_7: 5675649982653699961
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_8: -305804564428149665
+      Game_Boy_GBC_-_Dragon_Ball_Z_Legendary_Super_Warriors_-_Krillin-removebg-preview_9: -2059249280751056749
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
