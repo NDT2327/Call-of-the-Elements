@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
     public void OnBossDefeated()
     {
         bossDefeated = true;
-        CheckMapCompletion();
+        //CheckMapCompletion();
     }
 
     private void CheckMapCompletion()
