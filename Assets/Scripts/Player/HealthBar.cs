@@ -77,19 +77,19 @@ public class HealthBar : MonoBehaviour
     }
 
 
-    public void UnlockSpAttack()
-    {
-        hasSpAttack = true;
-        SetElementSprite(currentElementIndex);
-    }
+    //public void UnlockSpAttack()
+    //{
+    //    hasSpAttack = true;
+    //    SetElementSprite(currentElementIndex);
+    //}
 
     public void SetElementSprite(int elementIndex)
     {
-        if (!hasSpAttack)
-        {
-            element.sprite = normalSprite;
-            return;
-        }
+        //if (!hasSpAttack)
+        //{
+        //    element.sprite = normalSprite;
+        //    return;
+        //}
         if (elementIndex < 0 || elementIndex >= elementSprites.Length)
         {
 

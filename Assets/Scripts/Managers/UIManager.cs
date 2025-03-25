@@ -69,7 +69,7 @@ public class UIManager : MonoBehaviour
     public void LoadMainMenu()
     {
         Time.timeScale = 1f;
-        SceneManagerCustom.instance.LoadScene("Menu");
+        SceneManager.LoadScene("Menu");
         AudioManager.instance.PlayClickButtonSound();
 
     }
