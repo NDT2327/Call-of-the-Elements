@@ -39,6 +39,8 @@ public class Player : MonoBehaviour
     public float rollDistance = 5f; // Khoảng cách lướt có thể điều chỉnh
     public float rollDuration = 0.3f; // Thời gian lướt
     private bool isRolling = false;
+    //track unlock element skill
+    private bool[] elementUnlocked = { false, false };
 
 
     void Start()
@@ -46,7 +48,12 @@ public class Player : MonoBehaviour
         if (blockFlash != null) blockFlash.SetActive(false);
         if (dust != null) dust.SetActive(false);
         if (dust2 != null) dust2.SetActive(false);
-        terribleKnightScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<TerribleKnightScript>();
+        GameObject terribleKnight = GameObject.FindGameObjectWithTag("Enemy");
+        if(terribleKnight != null)
+        {
+            terribleKnightScript = terribleKnight.GetComponent<TerribleKnightScript>();
+        }
+
         healthBar = FindFirstObjectByType<HealthBar>();
     }
 
@@ -58,7 +65,11 @@ public class Player : MonoBehaviour
         HandleAttack();
         HandleBlock();
         HandleRoll();
-        SpAttack();
+        if (elementUnlocked[currentElementIndex])
+        {
+            SpAttack();
+
+        }
         //HandleUltimate();
         HandleElementChange();
 
@@ -70,6 +81,26 @@ public class Player : MonoBehaviour
 
     }
 
+    public void UnlockSpecialAttack(GameManager.Map map)
+    {
+        switch (map)
+        {
+            case GameManager.Map.Earth:
+                elementUnlocked[1] = true;
+                Debug.Log("Earth special attack unlocked");
+                break;
+            case GameManager.Map.Lava:
+                elementUnlocked[0] = true;
+                Debug.Log("Fire special attack unlocked");
+                break;
+            case GameManager.Map.Castle:
+                elementUnlocked[0] = true;
+                elementUnlocked[1] = true;
+                Debug.Log("All special attacks unlocked");
+                break;
+        }
+    }
+
     private void Move()
     {
         if ((movement < 0f && facingRight) || (movement > 0f && !facingRight))
@@ -77,6 +108,9 @@ public class Player : MonoBehaviour
             Flip();
         }
         animator.SetInteger("AnimState", Mathf.Abs(movement) > 0f ? 1 : 0);
+        if (Mathf.Abs(movement) > 0f && isGrounded && !isRolling) {
+            AudioManager.instance.PlayPlayerMoveSound();
+        }
     }
 
     private void Flip()
@@ -96,9 +130,8 @@ public class Player : MonoBehaviour
                 canDoubleJump = true;
                 if (terribleKnightScript != null)
                 {
-                    Debug.Log("JUMP");
                     terribleKnightScript.OnPlayerJump();
-                    
+
                 }
             }
             else if (canDoubleJump)
@@ -106,6 +139,7 @@ public class Player : MonoBehaviour
                 Jump();
                 canDoubleJump = false;
             }
+            AudioManager.instance.PlayPlayerJumpSound();
         }
     }
 
@@ -124,14 +158,18 @@ public class Player : MonoBehaviour
             if (attackCount == 1)
             {
                 animator.SetTrigger("Attack1");
+                AudioManager.instance.PlayPlayerAttackSound();
             }
             else if (attackCount == 2)
             {
                 animator.SetTrigger("Attack2");
+                AudioManager.instance.PlayPlayerAttackSound();
+
             }
             else if (attackCount >= 3)
             {
                 animator.SetTrigger("Attack3");
+                AudioManager.instance.PlayPlayerAttackSound();
                 attackCount = 0;
             }
         }
@@ -142,6 +180,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.O))
         {
             currentElementIndex = (currentElementIndex + 1) % elements.Length;
+            AudioManager.instance.PlayChangeElementSound();
             Debug.Log("Hệ hiện tại: " + elements[currentElementIndex]);
         }
     }
@@ -182,6 +221,7 @@ public class Player : MonoBehaviour
             {
                 case "Fire":
                     SpawnSpell(spellFirePrefab, transform.position);
+                    AudioManager.instance.PlayPlayerSpecial1Sound();
                     break;
 
                 case "Earth":
@@ -193,6 +233,7 @@ public class Player : MonoBehaviour
                     SpawnSpell(spellEarthPrefab, spawnPosition);
                     SpawnSpell(spellEarth2Prefab, spawnPosition);
                     SpawnSpell(spellEarth3Prefab, spawnPosition);
+                    AudioManager.instance.PlayPlayerSpecial2Sound();
                     break;
             }
 
@@ -385,8 +426,9 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void Die()
+    public void Die()
     {
+        AudioManager.instance.PlayPlayerDeathSound();
         UIManager.Instance.ShowGameOverScreen();
     }
 
@@ -416,18 +458,18 @@ public class Player : MonoBehaviour
     }
 
 
-    public void UnlockSpecialAttack(GameManager.Map completedMap)
-    {
-        if (completedMap == GameManager.Map.Earth)
-        {
-            currentLevel = 2; // Mở khóa SpAttack Earth
-            Debug.Log("🌱 Đã mở khóa Special Attack Earth!");
-        }
-        else if (completedMap == GameManager.Map.Lava)
-        {
-            currentLevel = 3; // Mở khóa SpAttack Fire
-            Debug.Log("🔥 Đã mở khóa Special Attack Fire!");
-        }
-    }
+    //public void UnlockSpecialAttack(GameManager.Map completedMap)
+    //{
+    //    if (completedMap == GameManager.Map.Earth)
+    //    {
+    //        currentLevel = 2; // Mở khóa SpAttack Earth
+    //        Debug.Log("🌱 Đã mở khóa Special Attack Earth!");
+    //    }
+    //    else if (completedMap == GameManager.Map.Lava)
+    //    {
+    //        currentLevel = 3; // Mở khóa SpAttack Fire
+    //        Debug.Log("🔥 Đã mở khóa Special Attack Fire!");
+    //    }
+    //}
 
 }

@@ -1,27 +1,58 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneManagerCustom : MonoBehaviour
 {
     public static SceneManagerCustom instance;
-    public Animator fadeAnimator;
 
     private void Awake()
     {
-        if(instance == null) instance = this;
+        if (instance == null) instance = this;
         else Destroy(gameObject);
+    }
+
+    private void Start()
+    {
+        LoadAudioForCurrentScene();
     }
 
     public void LoadScene(string sceneName)
     {
-        StartCoroutine(LoadSceneCoroutine(sceneName));
+        SceneManager.LoadScene(sceneName);
+        PlayAudioForScene(sceneName);
     }
 
-    private IEnumerator LoadSceneCoroutine(string sceneName)
+    public void ReloadCurrentScene()
     {
-        fadeAnimator.SetTrigger("FadeOut");
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(sceneName);
+        string currentScene = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(currentScene);
+        PlayAudioForScene(currentScene);
+    }
+
+    private void PlayAudioForScene(string sceneName)
+    {
+        switch (sceneName)
+        {
+
+            case "Menu":
+                AudioManager.instance.PlayMainBackgroundMusic(); break;
+            case "Earth":
+                AudioManager.instance.PlayBackgroundMusic(GameManager.Map.Earth);
+                break;
+            case "Lava":
+                AudioManager.instance.PlayBackgroundMusic(GameManager.Map.Lava);
+                break;
+            case "Castle":
+                AudioManager.instance.PlayBackgroundMusic(GameManager.Map.Castle);
+                break;
+        }
+    }
+
+    private void LoadAudioForCurrentScene()
+    {
+        string currentScene = SceneManager.GetActiveScene().name;
+        PlayAudioForScene(currentScene);
     }
 }

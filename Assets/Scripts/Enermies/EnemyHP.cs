@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Unity.Jobs;
 
 
 public class EnemyHP : MonoBehaviour
@@ -24,8 +25,13 @@ public class EnemyHP : MonoBehaviour
     [SerializeField] private GameObject healthPotionPrefab; // Prefab của máu
     [SerializeField] private GameObject manaPotionPrefab;   // Prefab của mana
 
+    [Header("Upgrad item")]
+    [SerializeField] private GameObject upgradeItemPrefab;
+    [SerializeField] private GameManager.Map map;
+
 
     private EnemyHealthBar healthBar;
+    private bool isDead = false;
     void Start()
 	{
         currentHP = maxHP;
@@ -66,6 +72,7 @@ public class EnemyHP : MonoBehaviour
             anim.SetTrigger("hurt");
             // Kích hoạt trạng thái invincible cho thời gian cho enemy phục hồi
             //StartCoroutine(ActivateInvincibility());
+            AudioManager.instance.PlayEnemyHurtSound();
             hitCount = 0; // Reset biến đếm sau khi kích hoạt hurt
         }
     }
@@ -95,6 +102,8 @@ public class EnemyHP : MonoBehaviour
         if (hitCount < hitLimit)
         {
             anim.SetTrigger("hurt");
+            AudioManager.instance.PlayEnemyHurtSound();
+
         }
         else
         {
@@ -123,25 +132,51 @@ public class EnemyHP : MonoBehaviour
 	// Xử lý khi quái chết
 	private void Die()
 	{
+        if (isDead) return;
+        isDead = true;
+
 		Debug.Log(gameObject.name + " has died!");
         // Hoặc có thể trigger animation chết
         anim.SetTrigger("die");
+        AudioManager.instance.PlayEnemyDeathSound();
+
         rb.linearVelocity = Vector2.zero;
         if (!isBoss)
         {
             TrySpawnPotion();
+            Destroy(gameObject, 1f);
         }
         else
         {
-            GameManager.Instance.OnBossDefeated();
+            StartCoroutine(HandleBossDeath());
         }
-        Destroy(gameObject, 1f);
-        if (healthBar != null && healthBar.enemyHealthContainer!= null)
-        {
+    }
 
-            StartCoroutine(HideBossHealthBar(4f));
-            Debug.Log("🩸 Thanh máu Boss đã bị hủy!");
+    private IEnumerator HandleBossDeath()
+    {
+        float deathAnimationDuration = 1f;
+        yield return new WaitForSeconds(deathAnimationDuration);
+
+        //spawn 
+        if (upgradeItemPrefab != null)
+        {
+            GameObject item = Instantiate(upgradeItemPrefab, transform.position, Quaternion.identity);
+            UpgradeItem upgradeItem = item.GetComponent<UpgradeItem>();
+            if (upgradeItem != null)
+            {
+                upgradeItem.unlockMap = map;
+            }
+            Debug.Log("Upgrad item spawned at: " + transform.position);
         }
+
+        AudioManager.instance.PlayBossDefeatedSound();
+        GameManager.Instance.OnBossDefeated();
+
+        if(healthBar != null && healthBar.enemyHealthContainer != null)
+        {
+            yield return StartCoroutine(HideBossHealthBar(4f));
+        }
+        Destroy(gameObject);
     }
 
     private IEnumerator HideBossHealthBar(float delay)

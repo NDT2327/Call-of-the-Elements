@@ -24,12 +24,14 @@ public class Health : MonoBehaviour
         {
             //player hurt
             anim.SetTrigger("Hurt");
+            AudioManager.instance.PlayPlayerHurtSound();
         }
         else if (!dead)
         {
             anim.SetTrigger("Death");
+            AudioManager.instance.PlayPlayerDeathSound();
             dead = true;
-            Die();
+            GetComponent<Player>().Die();
 
             // Instead of disabling Player, send an event
             Debug.Log("☠ Player has died.");
@@ -58,10 +60,6 @@ public class Health : MonoBehaviour
         CurrentHealth = MaxHealth;
     }
 
-    private void Die()
-    {
-        UIManager.Instance.ShowGameOverScreen();
-    }
 
     public void RestartFromCheckpoint()
     {
