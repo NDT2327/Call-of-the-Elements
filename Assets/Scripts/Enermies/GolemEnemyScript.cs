@@ -212,7 +212,7 @@ public class GolemEnemyScript : MonoBehaviour
             playerHP = hit.GetComponent<Health>();
             if (playerHP != null)
             {
-                playerHP.TakeDamage(10); // Gây 10 damage
+                playerHP.TakeDamage(20); // Gây 10 damage
                 Debug.Log("Golem gây sát thương cận chiến!");
             }
         }
