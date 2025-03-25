@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
 
     private bool bossDefeated = false;
     private bool skillCollected = false;
+    private int bossCount = 0;
+    private int totalBoss = 2;
 
     private void Awake()
     {
@@ -93,7 +95,7 @@ public class GameManager : MonoBehaviour
 
     public void OnBossDefeated()
     {
-        bossDefeated = true;
+        bossCount++;
         AudioManager.instance.PlayBossDefeatedSound();
         CheckMapCompletion();
     }
