@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
         if (dust != null) dust.SetActive(false);
         if (dust2 != null) dust2.SetActive(false);
         GameObject terribleKnight = GameObject.FindGameObjectWithTag("Enemy");
-        if(terribleKnight != null)
+        if (terribleKnight != null)
         {
             terribleKnightScript = terribleKnight.GetComponent<TerribleKnightScript>();
         }
@@ -65,11 +65,10 @@ public class Player : MonoBehaviour
         HandleAttack();
         HandleBlock();
         HandleRoll();
-        if (elementUnlocked[currentElementIndex])
-        {
-            SpAttack();
 
-        }
+        SpAttack();
+
+
         //HandleUltimate();
         HandleElementChange();
 
@@ -108,7 +107,8 @@ public class Player : MonoBehaviour
             Flip();
         }
         animator.SetInteger("AnimState", Mathf.Abs(movement) > 0f ? 1 : 0);
-        if (Mathf.Abs(movement) > 0f && isGrounded && !isRolling) {
+        if (Mathf.Abs(movement) > 0f && isGrounded && !isRolling)
+        {
             AudioManager.instance.PlayPlayerMoveSound();
         }
     }
@@ -187,7 +187,7 @@ public class Player : MonoBehaviour
 
     private void SpAttack()
     {
-        if (!HasUnlockedSpAttack()) return;
+        //if (!HasUnlockedSpAttack()) return;
 
         if (Input.GetKeyDown(KeyCode.U) && Time.time - lastSpecialAttackTime >= specialAttackCooldown)
         {
@@ -202,13 +202,13 @@ public class Player : MonoBehaviour
                 healthBar.playerStamina.UseStamina(staminaCost);
             }
 
-            // Kiểm tra màn chơi hiện tại
-            if ((elements[currentElementIndex] == "Fire" && currentLevel < 3) ||
-                (elements[currentElementIndex] == "Earth" && currentLevel < 2))
-            {
-                Debug.Log("⚠ Chưa mở khóa chiêu này ở màn hiện tại!");
-                return;
-            }
+            //// Kiểm tra màn chơi hiện tại
+            //if ((elements[currentElementIndex] == "Fire" && currentLevel < 3) ||
+            //    (elements[currentElementIndex] == "Earth" && currentLevel < 2))
+            //{
+            //    Debug.Log("⚠ Chưa mở khóa chiêu này ở màn hiện tại!");
+            //    return;
+            //}
 
             animator.SetTrigger("Attack3");
 
@@ -445,17 +445,17 @@ public class Player : MonoBehaviour
             Debug.Log($"Hồi {percentage * 100}% máu và stamina!");
         }
     }
-    public bool HasUnlockedSpAttack()
-    {
-        bool unlocked = (elements[currentElementIndex] == "Fire" && currentLevel >= 3) ||
-                        (elements[currentElementIndex] == "Earth" && currentLevel >= 2);
+    //public bool HasUnlockedSpAttack()
+    //{
+    //    bool unlocked = (elements[currentElementIndex] == "Fire" && currentLevel >= 3) ||
+    //                    (elements[currentElementIndex] == "Earth" && currentLevel >= 2);
 
-        if (unlocked && healthBar != null && !healthBar.hasSpAttack)
-        {
-            healthBar.UnlockSpAttack();
-        }
-        return unlocked;
-    }
+    //    if (unlocked && healthBar != null && !healthBar.hasSpAttack)
+    //    {
+    //        healthBar.UnlockSpAttack();
+    //    }
+    //    return unlocked;
+    //}
 
 
     //public void UnlockSpecialAttack(GameManager.Map completedMap)
