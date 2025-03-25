@@ -109,6 +109,7 @@ public class GameManager : MonoBehaviour
     public void SetCheckpoint(Vector3 position)
     {
         lastCheckpoint = position;
+        AudioManager.instance.PlayCheckpointSound();
         Debug.Log("Checkpoint saved at: " + lastCheckpoint);
 
     }
@@ -153,7 +154,6 @@ public class GameManager : MonoBehaviour
 
     private void EndGame()
     {
-        Debug.Log("Elementia restored");
-        AudioManager.instance.PlayVictoryMusic();
+        SceneManager.LoadScene("EndGame");
     }
 }
