@@ -45,7 +45,6 @@ public class GameManager : MonoBehaviour
         if (player != null)
         {
             player.RecoverHealthAndStamina(0.5f); // Hồi 50% máu và stamina
-            player.UnlockSpecialAttack(completedMap); // Mở khóa SpAttack mới
         }
         switch (completedMap)
         {
