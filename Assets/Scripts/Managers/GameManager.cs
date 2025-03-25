@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     //public EnemyManager enemyManager;
     //public UIManager uiManager;
-    //public AudioManager audioManager;
+    public AudioManager audioManager;
 
     private Vector3 lastCheckpoint;
 
@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     {
         //uiManager = GetComponent<UIManager>();
         //enemyManager = GetComponent<EnemyManager>();
-        //audioManager = GetComponent<AudioManager>();
+        audioManager = GetComponent<AudioManager>();
     }
 
     public void OnMapCompleted(Map completedMap)
@@ -47,18 +47,55 @@ public class GameManager : MonoBehaviour
             player.RecoverHealthAndStamina(0.5f); // Hồi 50% máu và stamina
             player.UnlockSpecialAttack(completedMap); // Mở khóa SpAttack mới
         }
-        if (completedMap == Map.Earth) currentMap = Map.Earth;
-        else if (completedMap == Map.Lava) currentMap = Map.Lava;
-        else if (completedMap == Map.Castle) EndGame();
+        switch (completedMap)
+        {
+            case Map.Earth:
+                currentMap = Map.Lava; // Chuyển từ Earth sang Lava
+                break;
+            case Map.Lava:
+                currentMap = Map.Castle; // Chuyển từ Lava sang Castle
+                break;
+            case Map.Castle:
+                EndGame();
+                return; // Không load scene nếu kết thúc game
+            default:
+                Debug.LogWarning("Unknown map completed: " + completedMap);
+                return;
+        }
+        Debug.Log("Loading next map: " + currentMap);
+        StartCoroutine(LoadMapWithSpawn(currentMap.ToString())); // Dùng coroutine để load và đặt spawn 
+    }
 
-        SceneManager.LoadScene(currentMap.ToString());
+    private IEnumerator LoadMapWithSpawn(string sceneName)
+    {
+        // Load scene bất đồng bộ
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
+        yield return new WaitUntil(() => operation.isDone);
+
+        // Tìm điểm spawn trong scene mới
+        GameObject spawnPoint = GameObject.FindGameObjectWithTag("Respawn");
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+        if (spawnPoint != null && player != null)
+        {
+            player.transform.position = spawnPoint.transform.position;
+            Debug.Log("Player spawned at: " + spawnPoint.transform.position + " in map: " + sceneName);
+        }
+        else
+        {
+            if (spawnPoint == null) Debug.LogWarning("SpawnPoint not found in scene: " + sceneName);
+            if (player == null) Debug.LogWarning("Player not found in scene: " + sceneName);
+        }
+
+        AudioManager.instance.PlayBackgroundMusic(currentMap);
         ResetCondition();
     }
 
     public void OnBossDefeated()
     {
         bossDefeated = true;
-        //CheckMapCompletion();
+        AudioManager.instance.PlayBossDefeatedSound();
+        CheckMapCompletion();
     }
 
     private void CheckMapCompletion()
@@ -101,15 +138,22 @@ public class GameManager : MonoBehaviour
         Debug.Log("Checkpoint loaded at position: " + lastCheckpoint);
         // Sau khi load xong, đặt lại vị trí người chơi
         GameObject player = GameObject.FindGameObjectWithTag("Player");
+        GameObject spawnPoint = GameObject.FindGameObjectWithTag("Respawn");
+
+
         if (player != null)
         {
+            if (lastCheckpoint == Vector3.zero && spawnPoint != null) { 
+                player.transform.position = spawnPoint.transform.position;
+            }
             player.transform.position = lastCheckpoint ;
-            Debug.Log("Player repositioned to: " + player.transform.position);
         }
+        AudioManager.instance.PlayBackgroundMusic(currentMap);
     }
 
     private void EndGame()
     {
         Debug.Log("Elementia restored");
+        AudioManager.instance.PlayVictoryMusic();
     }
 }

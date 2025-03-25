@@ -31,6 +31,7 @@ public class Taurus_Weapon : MonoBehaviour
         if (Time.time >= lastAttackTime + GetCurrentCooldown())
         {
             PerformAttack(attack1Dmg, "Attack1");
+            AudioManager.instance.PlayEnemyAttackSound1();
         }
     }
 
@@ -40,6 +41,7 @@ public class Taurus_Weapon : MonoBehaviour
         if (Time.time >= lastAttackTime + GetCurrentCooldown())
         {
             PerformAttack(attack2Dmg, "Attack2");
+            AudioManager.instance.PlayEnemyAttackSound2();
         }
     }
 

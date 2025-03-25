@@ -15,11 +15,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Control.unity
     guid: 21c5b0b2cc9dbb142bd5698b605519fb
   - enabled: 1
+    path: Assets/Scenes/Lava.unity
+    guid: 04b04d356c1b70b42b59ba073507c3e8
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 9bdbf31eb99a2f64ab5f5a7fc6f10a9f
   - enabled: 1
     path: Assets/Scenes/Story.unity
     guid: 8075d2304453d364bbe42d4e90389762
+  - enabled: 1
+    path: Assets/Scenes/Castle.unity
+    guid: 73f4dfc7a0c9bfb48857b74e46e9fb9c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -40,6 +40,8 @@ public class UIManager : MonoBehaviour
         gameOverPanel.SetActive
             (true);
         Time.timeScale = 0f;
+        AudioManager.instance.PlayGameOverMusic();
+
     }
 
     public void TogglePause()
@@ -47,25 +49,28 @@ public class UIManager : MonoBehaviour
         isPaused = !isPaused;
         pauseGamePanel.SetActive(isPaused);
         Time.timeScale = isPaused ? 0f : 1f;
+        AudioManager.instance.PlayClickButtonSound();
+
     }
 
     public void RestartGame()
     {
-        Debug.Log("🔄 Restart button clicked!");
-        Debug.Log("RestartGame() called in UIManager");
         Time.timeScale = 1f;
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null) {
-            Debug.Log("Player found, restarting from checkpoint.");
             player.GetComponent<Health>().RestartFromCheckpoint();
             GameManager.Instance.RestartGame();
             gameOverPanel.SetActive (false);
         }
+        AudioManager.instance.PlayClickButtonSound();
+
     }
 
     public void LoadMainMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Main Menu");
+        SceneManagerCustom.instance.LoadScene("Menu");
+        AudioManager.instance.PlayClickButtonSound();
+
     }
 }
