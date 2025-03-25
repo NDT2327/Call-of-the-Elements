@@ -8,21 +8,27 @@ public class CeilingTrap : MonoBehaviour
     private bool isFalling = false;
     private Rigidbody2D rb;
 
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        rb.gravityScale = 0;
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player") && !isFalling)
-        {
-            isFalling = true;
-            rb.gravityScale = 1;
-        }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Player") && !isFalling)
+    //    {
+    //        isFalling = true;
+    //        rb.gravityScale = 1;
+    //    }
 
-    }
+    //}
 
     public void ActivateTrap()
     {
@@ -41,8 +47,16 @@ public class CeilingTrap : MonoBehaviour
 
                 playerHealth.TakeDamage(damage);
                 Debug.Log("Touch");
+
+                Destroy(gameObject);
             }
         }
+        if(collision.gameObject.CompareTag("Ground") && isFalling == true)
+        {
+            Destroy(gameObject);
+        }
+        
+
     }
     private void OnDrawGizmos()
     {
