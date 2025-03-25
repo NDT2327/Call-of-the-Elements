@@ -1203,6 +1203,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: fba41fe1dab1f9f499612bc3f3a11744, type: 3}
     - target: {fileID: 8715342842003795232, guid: 2130ed7b4a6383443b2b297464a5096f, type: 3}
+      propertyPath: isBoss
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715342842003795232, guid: 2130ed7b4a6383443b2b297464a5096f, type: 3}
       propertyPath: hitLimit
       value: 10
       objectReference: {fileID: 0}
@@ -1513,7 +1517,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 557669478861135575, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 607763901803024440, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
       propertyPath: bossHealthList.Array.size

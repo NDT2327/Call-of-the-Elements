@@ -65,29 +65,25 @@ public class AudioManager : MonoBehaviour
 
     public void PlayBackgroundMusic(GameManager.Map map)
     {
-        AudioClip clip = null;
-        switch (map)
+        AudioClip clip = map switch
         {
-
-            case GameManager.Map.Earth:
-                clip = earthMusic; break;
-            case GameManager.Map.Lava:
-                clip = fireMusic; break;
-            case GameManager.Map.Castle:
-                clip = castleMusic; break;
-        }
+            GameManager.Map.Earth => earthMusic,
+            GameManager.Map.Lava => fireMusic,
+            GameManager.Map.Castle => castleMusic,
+            _ => null
+        };
 
         if (clip != null && backgroundMusic.clip != clip)
         {
             backgroundMusic.clip = clip;
             backgroundMusic.Play();
-            Debug.Log("Playing background music for map: " + map);
+            Debug.Log($"Playing background music for map: {map}");
         }
     }
 
     public void PlayMainBackgroundMusic()
     {
-        if (mainBackgroundMusic != null)
+        if (mainBackgroundMusic != null && backgroundMusic.clip != mainBackgroundMusic)
         {
             backgroundMusic.clip = mainBackgroundMusic;
             backgroundMusic.loop = true;
@@ -97,26 +93,17 @@ public class AudioManager : MonoBehaviour
     }
 
     //play victory
-    public void PlayVictoryMusic()
-    {
-        if (victoryMusic != null)
-        {
-            backgroundMusic.clip = victoryMusic;
-            backgroundMusic.loop = false;
-            backgroundMusic.Play();
-            Debug.Log("Playing victory music");
-        }
-    }
+    public void PlayVictoryMusic() => PlayMusic(victoryMusic, false);
+    public void PlayGameOverMusic() => PlayMusic(gameOverMusic, false);
 
-    //play game over
-    public void PlayGameOverMusic()
+    private void PlayMusic(AudioClip clip, bool loop)
     {
-        if (gameOverMusic != null)
+        if (clip != null && backgroundMusic.clip != clip)
         {
-            backgroundMusic.clip = gameOverMusic;
-            backgroundMusic.loop = false;
+            backgroundMusic.clip = clip;
+            backgroundMusic.loop = loop;
             backgroundMusic.Play();
-            Debug.Log("Playing game over music");
+            Debug.Log($"Playing music: {clip.name}");
         }
     }
 
