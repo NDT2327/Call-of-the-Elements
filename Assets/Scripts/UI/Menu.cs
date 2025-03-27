@@ -4,9 +4,14 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-   public void Play()
+
+    public void LoadGame()
     {
-        SceneManager.LoadScene("Story");
+        GameManager.Instance.LoadGame();
+    }
+    public void Play()
+    {
+        GameManager.Instance.NewGame();
     }
 
     // Update is called once per frame
