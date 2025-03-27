@@ -1227,6 +1227,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &428218117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 322943490965478533, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
+  m_PrefabInstance: {fileID: 818533235}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &482398361
 GameObject:
   m_ObjectHideFlags: 0
@@ -1397,6 +1402,10 @@ PrefabInstance:
     - target: {fileID: 8715342842003795232, guid: 2130ed7b4a6383443b2b297464a5096f, type: 3}
       propertyPath: hitLimit
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715342842003795232, guid: 2130ed7b4a6383443b2b297464a5096f, type: 3}
+      propertyPath: upgradeItemPrefab
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8648538339429673620, guid: 2130ed7b4a6383443b2b297464a5096f, type: 3}
@@ -1923,22 +1932,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 557669478861135575, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 607763901803024440, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
-      propertyPath: bossHealthList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 607763901803024440, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
       propertyPath: 'bossHealthList.Array.data[0]'
       value: 
       objectReference: {fileID: 1125055004}
-    - target: {fileID: 1027908521065980552, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1203076819419555044, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
       propertyPath: m_LocalPosition.x
       value: 553.98926
@@ -1983,18 +1980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
-    - target: {fileID: 1595516804946898054, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2270560297612594300, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1230018302}
-    - target: {fileID: 2270560297612594300, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartGame
-      objectReference: {fileID: 0}
     - target: {fileID: 2675882512837352213, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
       propertyPath: playerHealth
       value: 
@@ -2007,46 +1996,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1230018302}
-    - target: {fileID: 3630964913844510171, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TogglePause
-      objectReference: {fileID: 0}
     - target: {fileID: 6226978785349499169, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1230018302}
-    - target: {fileID: 6226978785349499169, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadMainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 6948573844112334900, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7039103906111389998, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8004950117020398549, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1230018302}
-    - target: {fileID: 8004950117020398549, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartGame
-      objectReference: {fileID: 0}
     - target: {fileID: 9189691928709098898, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1230018302}
-    - target: {fileID: 9189691928709098898, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadMainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 9189691928709098898, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UIManager, Assembly-CSharp
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2939,6 +2900,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7250720184046556139, guid: cf367d844b7cd9e4f9ddc76ed8366c57, type: 3}
+      propertyPath: notification
+      value: 
+      objectReference: {fileID: 428218117}
     - target: {fileID: 7250720184046556139, guid: cf367d844b7cd9e4f9ddc76ed8366c57, type: 3}
       propertyPath: gameOverPanel
       value: 

@@ -3,7 +3,20 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private GameObject loadGameButton;
+
+	private void Start()
+	{
+		UpdateLoadGameButton();
+	}
+	private void UpdateLoadGameButton()
+    {
+        if(loadGameButton != null)
+        {
+            bool hasSavedData = PlayerPrefs.HasKey("CurrentMap");
+            loadGameButton.SetActive(hasSavedData);
+        }
+    }
 
     public void LoadGame()
     {
