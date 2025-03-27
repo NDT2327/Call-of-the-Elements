@@ -36,10 +36,8 @@ public class Player : MonoBehaviour
     public float rollDistance = 5f; // Khoảng cách lướt có thể điều chỉnh
     public float rollDuration = 0.3f; // Thời gian lướt
     private bool isRolling = false;
-    //track unlock element skill
-    private bool[] elementUnlocked = { false, false };
-	private float lastMovement = 0f;
 
+	private float lastMovement = 0f;
 
 	void Start()
     {
@@ -53,6 +51,7 @@ public class Player : MonoBehaviour
         }
 
         healthBar = FindFirstObjectByType<HealthBar>();
+
     }
 
     void Update()
@@ -78,27 +77,8 @@ public class Player : MonoBehaviour
 
     }
 
-    public void UnlockSpecialAttack(GameManager.Map map)
-    {
-        switch (map)
-        {
-            case GameManager.Map.Earth:
-                elementUnlocked[1] = true;
-                Debug.Log("Earth special attack unlocked");
-                break;
-            case GameManager.Map.Lava:
-                elementUnlocked[0] = true;
-                Debug.Log("Fire special attack unlocked");
-                break;
-            case GameManager.Map.Castle:
-                elementUnlocked[0] = true;
-                elementUnlocked[1] = true;
-                Debug.Log("All special attacks unlocked");
-                break;
-        }
-    }
 
-    private void Move()
+	private void Move()
     {
 
 		if ((movement < 0f && facingRight) || (movement > 0f && !facingRight))
@@ -195,7 +175,8 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.U) && Time.time - lastSpecialAttackTime >= specialAttackCooldown)
         {
-            if (healthBar != null && healthBar.playerStamina != null)
+
+			if (healthBar != null && healthBar.playerStamina != null)
             {
                 float staminaCost = healthBar.playerStamina.MaxStamina * 0.2f;
                 if (healthBar.playerStamina.CurrentStamina < staminaCost)
@@ -206,13 +187,6 @@ public class Player : MonoBehaviour
                 healthBar.playerStamina.UseStamina(staminaCost);
             }
 
-            //// Kiểm tra màn chơi hiện tại
-            //if ((elements[currentElementIndex] == "Fire" && currentLevel < 3) ||
-            //    (elements[currentElementIndex] == "Earth" && currentLevel < 2))
-            //{
-            //    Debug.Log("⚠ Chưa mở khóa chiêu này ở màn hiện tại!");
-            //    return;
-            //}
 
             animator.SetTrigger("Attack3");
 

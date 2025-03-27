@@ -25,10 +25,6 @@ public class EnemyHP : MonoBehaviour
     [SerializeField] private GameObject healthPotionPrefab; // Prefab của máu
     [SerializeField] private GameObject manaPotionPrefab;   // Prefab của mana
 
-    [Header("Upgrad item")]
-    [SerializeField] private GameObject upgradeItemPrefab;
-    [SerializeField] private GameManager.Map map;
-
 
     private EnemyHealthBar healthBar;
     private bool isDead = false;
@@ -156,19 +152,7 @@ public class EnemyHP : MonoBehaviour
         float deathAnimationDuration = 1f;
         yield return new WaitForSeconds(deathAnimationDuration);
 
-        //spawn 
-        if (upgradeItemPrefab != null)
-        {
-            GameObject item = Instantiate(upgradeItemPrefab, transform.position, Quaternion.identity);
-            UpgradeItem upgradeItem = item.GetComponent<UpgradeItem>();
-            if (upgradeItem != null)
-            {
-                upgradeItem.unlockMap = map;
-            }
-            Debug.Log("Upgrad item spawned at: " + transform.position);
-        }
-
-        AudioManager.instance.PlayBossDefeatedSound();
+		AudioManager.instance.PlayBossDefeatedSound();
         GameManager.Instance.OnBossDefeated();
 
         if(healthBar != null && healthBar.enemyHealthContainer != null)
