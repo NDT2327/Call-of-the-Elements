@@ -7,27 +7,37 @@ public class Menu : MonoBehaviour
 
     public void LoadGame()
     {
-        GameManager.Instance.LoadGame();
+		AudioManager.instance.PlayClickButtonSound();
+		GameManager.Instance.LoadGame();
     }
     public void Play()
     {
-        GameManager.Instance.NewGame();
+		if (AudioManager.instance == null)
+		{
+			Debug.LogError("AudioManager.instance is null!");
+			return;
+		}
+		AudioManager.instance.PlayClickButtonSound();
+		GameManager.Instance.NewGame();
     }
 
     // Update is called once per frame
     public void Control()
     {
+        AudioManager.instance.PlayClickButtonSound();
         SceneManager.LoadScene("Control");
     }
 
     public void Main()
     {
-        SceneManager.LoadScene("Menu");
+		AudioManager.instance.PlayClickButtonSound();
+		SceneManager.LoadScene("Menu");
     }
 
     public void Quit()
     {
-        Application.Quit();
+		AudioManager.instance.PlayClickButtonSound();
+		Application.Quit();
     }
 
 }

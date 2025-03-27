@@ -6,12 +6,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    //public EnemyManager enemyManager;
-    //public UIManager uiManager;
-    public AudioManager audioManager;
 
     private Vector3 lastCheckpoint;
-
+    
     public enum Map { Earth, Lava, Castle }
     public Map currentMap = Map.Earth;
 
@@ -29,14 +26,6 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        //uiManager = GetComponent<UIManager>();
-        //enemyManager = GetComponent<EnemyManager>();
-        audioManager = GetComponent<AudioManager>();
     }
 
     public void OnMapCompleted(Map completedMap)
@@ -70,8 +59,10 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator LoadMapWithSpawn(string sceneName)
     {
-        // Load scene bất đồng bộ
-        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
+		AudioManager.instance.PlayBackgroundMusic(currentMap);
+
+		// Load scene bất đồng bộ
+		AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
         yield return new WaitUntil(() => operation.isDone);
 
         // Tìm điểm spawn trong scene mới
@@ -89,14 +80,14 @@ public class GameManager : MonoBehaviour
             if (player == null) Debug.LogWarning("Player not found in scene: " + sceneName);
         }
 
-        AudioManager.instance.PlayBackgroundMusic(currentMap);
         ResetCondition();
     }
 
     public void OnBossDefeated()
     {
-        bossDefeated = true;
-        AudioManager.instance.PlayBossDefeatedSound();
+		AudioManager.instance.PlayBossDefeatedSound();
+
+		bossDefeated = true;
         Debug.Log("Terrible Knight has been defeated!");
 
         CheckMapCompletion();
@@ -111,8 +102,9 @@ public class GameManager : MonoBehaviour
 
     public void SetCheckpoint(Vector3 position)
     {
-        lastCheckpoint = position;
-        AudioManager.instance.PlayCheckpointSound();
+		AudioManager.instance.PlayCheckpointSound();
+
+		lastCheckpoint = position;
         Debug.Log("Checkpoint saved at: " + lastCheckpoint);
 
     }
@@ -135,7 +127,8 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator RestartScene()
     {
-        string sceneName = SceneManager.GetActiveScene().name;
+		AudioManager.instance.PlayBackgroundMusic(currentMap);
+		string sceneName = SceneManager.GetActiveScene().name;
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
         yield return new WaitUntil(() => operation.isDone);
 
@@ -152,7 +145,6 @@ public class GameManager : MonoBehaviour
             }
             player.transform.position = lastCheckpoint;
         }
-        AudioManager.instance.PlayBackgroundMusic(currentMap);
     }
 
     private void EndGame()
