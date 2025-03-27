@@ -32,18 +32,16 @@ public class Player : MonoBehaviour
     private int currentLevel = 1; // Giả sử bắt đầu từ màn 1
 
     private HealthBar healthBar;
-    //private float ultimateCooldown = 15f; 
-    //private float lastUltimateTime = -Mathf.Infinity; 
-    //public GameObject ultimatePrefab; 
 
     public float rollDistance = 5f; // Khoảng cách lướt có thể điều chỉnh
     public float rollDuration = 0.3f; // Thời gian lướt
     private bool isRolling = false;
     //track unlock element skill
     private bool[] elementUnlocked = { false, false };
+	private float lastMovement = 0f;
 
 
-    void Start()
+	void Start()
     {
         if (blockFlash != null) blockFlash.SetActive(false);
         if (dust != null) dust.SetActive(false);
@@ -102,18 +100,22 @@ public class Player : MonoBehaviour
 
     private void Move()
     {
-        if ((movement < 0f && facingRight) || (movement > 0f && !facingRight))
+
+		if ((movement < 0f && facingRight) || (movement > 0f && !facingRight))
         {
-            Flip();
+			Flip();
         }
         animator.SetInteger("AnimState", Mathf.Abs(movement) > 0f ? 1 : 0);
-        if (Mathf.Abs(movement) > 0f && isGrounded && !isRolling)
-        {
-            AudioManager.instance.PlayPlayerMoveSound();
-        }
-    }
+		// Chỉ phát âm thanh khi bắt đầu di chuyển
+		if (Mathf.Abs(movement) > 0f && Mathf.Abs(lastMovement) == 0f)
+		{
+			AudioManager.instance.PlayPlayerMoveSound();
+		}
+		lastMovement = movement;
 
-    private void Flip()
+	}
+
+	private void Flip()
     {
         facingRight = !facingRight;
         transform.eulerAngles = new Vector3(0f, facingRight ? 0f : 180f, 0f);
@@ -139,7 +141,6 @@ public class Player : MonoBehaviour
                 Jump();
                 canDoubleJump = false;
             }
-            AudioManager.instance.PlayPlayerJumpSound();
         }
     }
 
@@ -157,19 +158,21 @@ public class Player : MonoBehaviour
 
             if (attackCount == 1)
             {
-                animator.SetTrigger("Attack1");
-                AudioManager.instance.PlayPlayerAttackSound();
+				AudioManager.instance.PlayPlayerAttackSound();
+
+				animator.SetTrigger("Attack1");
             }
             else if (attackCount == 2)
             {
-                animator.SetTrigger("Attack2");
-                AudioManager.instance.PlayPlayerAttackSound();
+				AudioManager.instance.PlayPlayerAttackSound();
+
+				animator.SetTrigger("Attack2");
 
             }
             else if (attackCount >= 3)
             {
-                animator.SetTrigger("Attack3");
-                AudioManager.instance.PlayPlayerAttackSound();
+				AudioManager.instance.PlayPlayerAttackSound();
+				animator.SetTrigger("Attack3");
                 attackCount = 0;
             }
         }
@@ -179,8 +182,9 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.O))
         {
-            currentElementIndex = (currentElementIndex + 1) % elements.Length;
-            AudioManager.instance.PlayChangeElementSound();
+			AudioManager.instance.PlayChangeElementSound();
+
+			currentElementIndex = (currentElementIndex + 1) % elements.Length;
             Debug.Log("Hệ hiện tại: " + elements[currentElementIndex]);
         }
     }
@@ -220,12 +224,14 @@ public class Player : MonoBehaviour
             switch (elements[currentElementIndex])
             {
                 case "Fire":
-                    SpawnSpell(spellFirePrefab, transform.position);
-                    AudioManager.instance.PlayPlayerSpecial1Sound();
+					AudioManager.instance.PlayPlayerSpecial1Sound();
+
+					SpawnSpell(spellFirePrefab, transform.position);
                     break;
 
                 case "Earth":
-                    GameObject nearestEnemy = FindNearestEnemy();
+					AudioManager.instance.PlayPlayerSpecial2Sound();
+					GameObject nearestEnemy = FindNearestEnemy();
                     if (nearestEnemy != null)
                     {
                         spawnPosition = nearestEnemy.transform.position - new Vector3(0, 1f, 0);
@@ -233,7 +239,6 @@ public class Player : MonoBehaviour
                     SpawnSpell(spellEarthPrefab, spawnPosition);
                     SpawnSpell(spellEarth2Prefab, spawnPosition);
                     SpawnSpell(spellEarth3Prefab, spawnPosition);
-                    AudioManager.instance.PlayPlayerSpecial2Sound();
                     break;
             }
 
@@ -364,6 +369,7 @@ public class Player : MonoBehaviour
 
     void Jump()
     {
+        AudioManager.instance.PlayPlayerJumpSound();
         rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, jumpHeight);
         animator.SetBool("Grounded", false);
         animator.SetTrigger("Jump");

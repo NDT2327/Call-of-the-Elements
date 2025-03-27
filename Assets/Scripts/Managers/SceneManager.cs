@@ -5,54 +5,62 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagerCustom : MonoBehaviour
 {
-    public static SceneManagerCustom instance;
+	public static SceneManagerCustom instance;
+	private string lastLoadedScene;
 
-    private void Awake()
-    {
-        if (instance == null) instance = this;
-        else Destroy(gameObject);
-    }
+	private void Awake()
+	{
+		if (instance == null) instance = this;
+		else Destroy(gameObject);
+	}
 
-    private void Start()
-    {
-        LoadAudioForCurrentScene();
-    }
+	private void OnEnable()
+	{
+		SceneManager.sceneLoaded += OnSceneLoaded;
+	}
 
-    public void LoadScene(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
-        PlayAudioForScene(sceneName);
-    }
+	private void OnDisable()
+	{
+		SceneManager.sceneLoaded -= OnSceneLoaded;
+	}
 
-    public void ReloadCurrentScene()
-    {
-        string currentScene = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(currentScene);
-        PlayAudioForScene(currentScene);
-    }
+	private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+	{
+		if (scene.name != lastLoadedScene)
+		{
+			PlayMusicForScene(scene.name);
+			lastLoadedScene = scene.name;
+		}
+	}
 
-    private void PlayAudioForScene(string sceneName)
-    {
-        switch (sceneName)
-        {
+	private void PlayMusicForScene(string sceneName)
+	{
+		switch (sceneName)
+		{
+			case "Lava":
+				AudioManager.instance.PlayBackgroundMusic(GameManager.Map.Lava);
+				break;
+			case "Earth":
+				AudioManager.instance.PlayBackgroundMusic(GameManager.Map.Earth);
+				break;
+			case "Castle":
+				AudioManager.instance.PlayBackgroundMusic(GameManager.Map.Castle);
+				break;
+			default:
+				AudioManager.instance.PlayMainBackgroundMusic();
+				break;
+		}
+	}
 
-            case "Menu":
-                AudioManager.instance.PlayMainBackgroundMusic(); break;
-            case "Earth":
-                AudioManager.instance.PlayBackgroundMusic(GameManager.Map.Earth);
-                break;
-            case "Lava":
-                AudioManager.instance.PlayBackgroundMusic(GameManager.Map.Lava);
-                break;
-            case "Castle":
-                AudioManager.instance.PlayBackgroundMusic(GameManager.Map.Castle);
-                break;
-        }
-    }
+	public void LoadScene(string sceneName)
+	{
+		SceneManager.LoadScene(sceneName);
+	}
 
-    private void LoadAudioForCurrentScene()
-    {
-        string currentScene = SceneManager.GetActiveScene().name;
-        PlayAudioForScene(currentScene);
-    }
+	public void ReloadCurrentScene()
+	{
+		string currentScene = SceneManager.GetActiveScene().name;
+		SceneManager.LoadScene(currentScene);
+	}
+
 }

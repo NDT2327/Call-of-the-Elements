@@ -37,12 +37,6 @@ public class EnemyHP : MonoBehaviour
         currentHP = maxHP;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        if (healthBar == null)
-            Debug.LogError("⚠ Không tìm thấy EnemyHealthBar trong scene!");
-        else if (healthBar.enemyHealthContainer == null)
-            Debug.LogError("⚠ enemyHealthContainer của Boss Golem bị null!");
-        else
-            Debug.Log("✅ EnemyHealthBar đã được tìm thấy!");
     }
     void Awake()
     {

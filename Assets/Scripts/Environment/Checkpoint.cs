@@ -11,11 +11,11 @@ public class Checkpoint : MonoBehaviour
             isActivated = true;
             Debug.Log("Checkpoint activated at position: " + transform.position);
             GameManager.Instance.SetCheckpoint(transform.position);
-            Health playerHealth = collision.GetComponent<Health>();
-            if (playerHealth != null)
+            Player player = collision.GetComponent<Player>();
+            if (player != null)
             {
-                playerHealth.RecoverFullHealth();
-                Debug.Log("Player health fully recovered.");
+				player.RecoverHealthAndStamina(1f);
+                Debug.Log("Player health fully recovered.");        
             }
         }
     }

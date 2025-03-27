@@ -37,40 +37,42 @@ public class UIManager : MonoBehaviour
 
     public void ShowGameOverScreen()
     {
-        gameOverPanel.SetActive
+		AudioManager.instance.PlayGameOverMusic();
+
+		gameOverPanel.SetActive
             (true);
         Time.timeScale = 0f;
-        AudioManager.instance.PlayGameOverMusic();
-
     }
 
     public void TogglePause()
     {
-        isPaused = !isPaused;
+		AudioManager.instance.PlayClickButtonSound();
+
+		isPaused = !isPaused;
         pauseGamePanel.SetActive(isPaused);
         Time.timeScale = isPaused ? 0f : 1f;
-        AudioManager.instance.PlayClickButtonSound();
 
     }
 
     public void RestartGame()
     {
-        Time.timeScale = 1f;
+		AudioManager.instance.PlayClickButtonSound();
+
+		Time.timeScale = 1f;
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null) {
             player.GetComponent<Health>().RestartFromCheckpoint();
             GameManager.Instance.RestartGame();
             gameOverPanel.SetActive (false);
         }
-        AudioManager.instance.PlayClickButtonSound();
 
     }
 
     public void LoadMainMenu()
     {
-        Time.timeScale = 1f;
+		AudioManager.instance.PlayClickButtonSound();
+		Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
-        AudioManager.instance.PlayClickButtonSound();
 
     }
 }

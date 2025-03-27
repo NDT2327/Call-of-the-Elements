@@ -5,8 +5,8 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance { get; private set; }
 
     [Header("Audio Source")]
-    public AudioSource backgroundMusic;
-    public AudioSource sfxSource;
+    [SerializeField] AudioSource backgroundMusic;
+	[SerializeField] AudioSource sfxSource;
 
 
     [Header("Background music")]
@@ -40,31 +40,28 @@ public class AudioManager : MonoBehaviour
     public AudioClip bossDefeatedSound;
     public AudioClip clickButton;
 
-
-    private void Awake()
-    {
-        if (instance == null)
+	private void Awake()
+	{
+        if(instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(this);
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            Destroy(instance);
+            Destroy(gameObject);
         }
+	}
 
-        if (sfxSource == null) sfxSource = gameObject.AddComponent<AudioSource>();
-        if (backgroundMusic == null) backgroundMusic = gameObject.AddComponent<AudioSource>();
+	private void Start()
+	{
+		backgroundMusic.clip = mainBackgroundMusic;
+        backgroundMusic.Play();
+	}
 
-        sfxSource.playOnAwake = false;
-        backgroundMusic.playOnAwake = false;
-        backgroundMusic.loop = true;
-    }
-
-
-
-    public void PlayBackgroundMusic(GameManager.Map map)
+	public void PlayBackgroundMusic(GameManager.Map map)
     {
+        StopBackgroundMusic();
         AudioClip clip = map switch
         {
             GameManager.Map.Earth => earthMusic,
@@ -77,7 +74,6 @@ public class AudioManager : MonoBehaviour
         {
             backgroundMusic.clip = clip;
             backgroundMusic.Play();
-            Debug.Log($"Playing background music for map: {map}");
         }
     }
 
@@ -88,7 +84,6 @@ public class AudioManager : MonoBehaviour
             backgroundMusic.clip = mainBackgroundMusic;
             backgroundMusic.loop = true;
             backgroundMusic.Play();
-            Debug.Log("Playing main background music");
         }
     }
 
@@ -114,7 +109,7 @@ public class AudioManager : MonoBehaviour
 
     private void PlaySFX(AudioClip clip)
     {
-        if (clip != null && !sfxSource.isPlaying) sfxSource.PlayOneShot(clip);
+        if (clip != null) sfxSource.PlayOneShot(clip);
     }
 
     // Player Sound Methods

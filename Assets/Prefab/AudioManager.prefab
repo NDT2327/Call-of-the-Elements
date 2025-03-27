@@ -53,15 +53,15 @@ MonoBehaviour:
   fireMusic: {fileID: 8300000, guid: 457771d0864a67842a71c2fb0a3fdc1a, type: 3}
   castleMusic: {fileID: 8300000, guid: 42473177e27deec47a049056af08c108, type: 3}
   victoryMusic: {fileID: 8300000, guid: 681fde1c519eace408fbe66593ec4c03, type: 3}
-  gameOverMusic: {fileID: 8300000, guid: c6200a6aa5cbd0e4eaeeaa64732566d9, type: 3}
+  gameOverMusic: {fileID: 8300000, guid: 1f6d375493e23d84f9b350e865d351d3, type: 3}
   playerAttackSound: {fileID: 8300000, guid: 7109ec4aa4a136144859100b5fd7c57f, type: 3}
   playerDeathSound: {fileID: 8300000, guid: d73d2ef0064969f48955cec7cb7196ff, type: 3}
   playerHurtSound: {fileID: 8300000, guid: 86e125022b0521d4d8f086cc4ec9e2c6, type: 3}
   playerJumpSound: {fileID: 8300000, guid: f53899e4e0b623f4ebb5b9746082ce6c, type: 3}
-  playerSpecial1: {fileID: 8300000, guid: d74efe4ed4509764685fc80d3454210e, type: 3}
+  playerSpecial1: {fileID: 8300000, guid: 8c518f34c8b78ae46986f4398832a921, type: 3}
   playerSpecial2: {fileID: 8300000, guid: c068f66693f99154bb224957a2c4fd5e, type: 3}
   changeElement: {fileID: 8300000, guid: b09875847513c9945b50a2887bc4bfeb, type: 3}
-  playerMoveSound: {fileID: 8300000, guid: 4abd4cd3c0e84934086bd2583eeeb3d8, type: 3}
+  playerMoveSound: {fileID: 8300000, guid: c595e48d16398524e86ef43bff6d9a03, type: 3}
   enemyAttackSound1: {fileID: 8300000, guid: d631bc5ed874b9045a99175b13342244, type: 3}
   enemyAttackSound2: {fileID: 8300000, guid: d631bc5ed874b9045a99175b13342244, type: 3}
   emyDeathSound: {fileID: 8300000, guid: 0b65456fe8f150a47b7d85c3bdfcc5cc, type: 3}
