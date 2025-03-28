@@ -398,7 +398,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -274.37, y: -85}
+  m_AnchoredPosition: {x: -446, y: -85}
   m_SizeDelta: {x: 160, y: 55.8976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &270818160
@@ -2255,8 +2255,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 98.21393, y: -0.00040436}
-  m_SizeDelta: {x: 545.2921, y: 239.78}
+  m_AnchoredPosition: {x: 93.041, y: 20.7606}
+  m_SizeDelta: {x: 873.64, y: 198.2567}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1400352064
 MonoBehaviour:
@@ -2334,7 +2334,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5708979}
-  m_AnchoredPosition: {x: -274.37, y: 0.00000667572}
+  m_AnchoredPosition: {x: -446, y: 0.00000667572}
   m_SizeDelta: {x: 122.7479, y: 143.6554}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1402652168
@@ -2783,16 +2783,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 1838885380}
   dialogueText: {fileID: 1400352064}
-  dialogue:
-  - 'Knight, Elementia is in danger! '
-  - The Conqueror has seized two elemental gems, disrupting the balance.
-  - "If we don\u2019t stop him, this world will fall!\""
-  - 'You are our last hope. '
-  - Gather the power of Wind and Water, reclaim the lost gems... before it's too
-    late!
-  contButton: {fileID: 1943017046}
+  continueButton: {fileID: 1943017046}
   wordSpeed: 0.06
-  playerIsClose: 0
 --- !u!1 &1793861329
 GameObject:
   m_ObjectHideFlags: 0
@@ -2829,7 +2821,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 196.71191, y: -88}
+  m_AnchoredPosition: {x: 297, y: -119}
   m_SizeDelta: {x: 99.3988, y: 27.3066}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1793861331
@@ -2943,7 +2935,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1838885381
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2965,8 +2957,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -60.711914, y: 842}
-  m_SizeDelta: {x: -1056.8655, y: 239.7816}
+  m_AnchoredPosition: {x: 37.581665, y: 827.1968}
+  m_SizeDelta: {x: -860.2783, y: 269.3881}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1838885382
 MonoBehaviour:
@@ -3129,7 +3121,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 339, y: -86.828}
+  m_AnchoredPosition: {x: 450, y: -118}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1943017048

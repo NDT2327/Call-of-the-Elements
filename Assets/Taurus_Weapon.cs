@@ -47,6 +47,7 @@ public class Taurus_Weapon : MonoBehaviour
 
     private void PerformAttack(int baseDamge, string attackName)
     {
+        AudioManager.instance.PlayEnemyAttackSound1();
         Vector3 pos = transform.position;
         pos += transform.right * attackOffset.x;
         pos += transform.up * attackOffset.y;
