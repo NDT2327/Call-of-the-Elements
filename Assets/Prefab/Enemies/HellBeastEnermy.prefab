@@ -144,7 +144,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 5625334288513634466, guid: 4ed56a4461bcf604487e65eb67cac48a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -287,9 +287,8 @@ MonoBehaviour:
   currentHP: 0
   hitLimit: 5
   invincibleDuration: 3
-  potionPrefab: {fileID: 0}
   dropChance: 0.6
-  isBoss: 0
+  isBoss: 1
   healthPotionPrefab: {fileID: 0}
   manaPotionPrefab: {fileID: 0}
 --- !u!114 &6475181559394701830
@@ -304,6 +303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f309409fee94d3549bfea7d6313019b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSound: {fileID: 8300000, guid: d74efe4ed4509764685fc80d3454210e, type: 3}
+  attackSound2: {fileID: 8300000, guid: 8c518f34c8b78ae46986f4398832a921, type: 3}
   target: {fileID: 0}
   detectionRange: 20
   chaseSpeed: 2

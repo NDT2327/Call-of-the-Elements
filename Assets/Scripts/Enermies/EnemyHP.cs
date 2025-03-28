@@ -133,8 +133,6 @@ public class EnemyHP : MonoBehaviour
 		Debug.Log(gameObject.name + " has died!");
         // Hoặc có thể trigger animation chết
         anim.SetTrigger("die");
-        AudioManager.instance.PlayEnemyDeathSound();
-
         rb.linearVelocity = Vector2.zero;
         if (!isBoss)
         {

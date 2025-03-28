@@ -124,6 +124,7 @@ public class TerribleKnightScript : MonoBehaviour
         //    audioSource.loop = true;
         //    audioSource.Play();
         //}
+        AudioManager.instance.PlayEnemyMoveSound();
         FlipSprite(direction.x);
     }
 
@@ -137,29 +138,28 @@ public class TerribleKnightScript : MonoBehaviour
         // Chọn kiểu tấn công từ 1 đến 5
         currentAttackType = Random.Range(1, 6);
         anim.SetTrigger($"attack{currentAttackType}");
-        //audioSource.PlayOneShot(attackSound);
-        //PlayAttackSound(currentAttackType);
+        PlayAttackSound(currentAttackType);
         Invoke(nameof(ResetToRun), 1f);
     }
 
-    //private void PlayAttackSound(int attackType)
-    //{
-    //    switch (attackType)
-    //    {
-    //        case 1:
-    //        case 2:
-    //        case 5:
-    //            audioSource.PlayOneShot(attackSound);
-    //            break;
-    //        case 3:
-    //        case 4:
-    //            audioSource.PlayOneShot(attackSound2);
-    //            break;
-    //        default:
-    //            Debug.LogWarning("Không có âm thanh cho kiểu tấn công này!");
-    //            break;
-    //    }
-    //}
+    private void PlayAttackSound(int attackType)
+    {
+        switch (attackType)
+        {
+            case 1:
+            case 2:
+            case 5:
+                AudioManager.instance.PlayEnemyAttackSound1();
+                break;
+            case 3:
+            case 4:
+				AudioManager.instance.PlayEnemyAttackSound2();
+				break;
+            default:
+                Debug.LogWarning("Không có âm thanh cho kiểu tấn công này!");
+                break;
+        }
+    }
 
     private void ResetToRun()
     {
@@ -203,8 +203,8 @@ public class TerribleKnightScript : MonoBehaviour
         isJumping = true;
         anim.SetTrigger("jump");
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        //audioSource.PlayOneShot(jumpSound);
-        StartCoroutine(JumpAttackChance());
+		AudioManager.instance.PlayPlayerJumpSound();
+		StartCoroutine(JumpAttackChance());
     }
 
     private IEnumerator JumpAttackChance()

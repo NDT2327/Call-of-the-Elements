@@ -145,7 +145,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 4093529123795720158, guid: 262e014e8eed1b645aebd87b8ef29857, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -254,18 +254,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5f340d8eead55848aa18b6c5c811909, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSound: {fileID: 8300000, guid: d74efe4ed4509764685fc80d3454210e, type: 3}
   pointA: {fileID: 2900189960489806494}
   pointB: {fileID: 144374443231892430}
   patrolSpeed: 2
   target: {fileID: 0}
   chaseSpeed: 4
+  attackRange: 2
   detectionRange: 10
   obstacleMask:
     serializedVersion: 2
     m_Bits: 0
   targetMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 64
 --- !u!114 &3654825304411423513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,11 +338,10 @@ MonoBehaviour:
   currentHP: 0
   hitLimit: 2
   invincibleDuration: 3
-  potionPrefab: {fileID: 0}
   dropChance: 0.6
   isBoss: 0
-  healthPotionPrefab: {fileID: 0}
-  manaPotionPrefab: {fileID: 0}
+  healthPotionPrefab: {fileID: 2477822142919698583, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
+  manaPotionPrefab: {fileID: 2477822142919698583, guid: 347a5cc06f583b54cb4f6aee819c0c3f, type: 3}
 --- !u!1 &7279085947047091299
 GameObject:
   m_ObjectHideFlags: 0
