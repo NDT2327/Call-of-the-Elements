@@ -135,7 +135,12 @@ public class BlackWolfScript : MonoBehaviour
     // ----------------- PATROL -----------------
     void Patrol()
     {
-        if (pointA == null || pointB == null) return;
+		if (audioSource.clip == runSound)
+		{
+			audioSource.Stop();
+		}
+
+		if (pointA == null || pointB == null) return;
 
         // 1) Kiểm tra xem đã đến lúc Idle ngẫu nhiên chưa
         if (Time.time >= nextIdleTime)

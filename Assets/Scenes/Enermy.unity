@@ -1872,6 +1872,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WereWolfEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8158540373446118936, guid: e0de30c2ab199924e910ba35dd1e7e57, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

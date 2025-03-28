@@ -118,8 +118,12 @@ public class GolemEnemyScript : MonoBehaviour
     // ----- PATROL -----
     void Patrol()
     {
-        // Tính hướng di chuyển đến điểm patrol hiện tại
-        Vector2 direction = (currentPatrolTarget.position - transform.position).normalized;
+		if (audioSource.clip == runSound)
+		{
+			audioSource.Stop();
+		}
+		// Tính hướng di chuyển đến điểm patrol hiện tại
+		Vector2 direction = (currentPatrolTarget.position - transform.position).normalized;
 
         // Cập nhật hướng sprite dựa theo hướng di chuyển
         FlipPatrol(-direction);
