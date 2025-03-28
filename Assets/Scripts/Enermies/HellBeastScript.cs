@@ -123,9 +123,11 @@ public class HellBeastScript : MonoBehaviour
 		currentState = State.Attack; // Đặt trạng thái thành Attack
 		anim.SetTrigger("burnAttack");
 		lastAttackTime = Time.time;
-        audioSource.PlayOneShot(attackSound);
-
-        Invoke("ResetToChase", 1f); // Đợi 1 giây rồi reset
+		if (audioSource != null && attackSound != null)
+		{
+			audioSource.PlayOneShot(attackSound);
+		}
+		Invoke("ResetToChase", 1f); // Đợi 1 giây rồi reset
 	}
 
 	// Hàm tấn công xa (thở lửa)
@@ -135,9 +137,12 @@ public class HellBeastScript : MonoBehaviour
 		currentState = State.Attack;
 		anim.SetTrigger("breathAttack");
 		lastAttackTime = Time.time;
-        audioSource.PlayOneShot(attackSound2);
-        // Gọi hàm SpawnFireball để tạo quả cầu lửa
-        Invoke("SpawnFireball", 1.1f); // Delay một chút cho hợp với animation
+		// Phát âm thanh khi tấn công Breath
+		if (audioSource != null && attackSound2 != null)
+		{
+			audioSource.PlayOneShot(attackSound2);
+		}        // Gọi hàm SpawnFireball để tạo quả cầu lửa
+		Invoke("SpawnFireball", 1.1f); // Delay một chút cho hợp với animation
 		Invoke("ResetToChase", 1.5f);
 	}
 

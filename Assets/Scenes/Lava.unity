@@ -100775,6 +100775,10 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.607
       objectReference: {fileID: 0}
+    - target: {fileID: 4128221166958038207, guid: de3b6adc5789bc144877ace06322a455, type: 3}
+      propertyPath: playerDeathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ebad249e252414428ce7562794700bb, type: 3}
     - target: {fileID: 8395334547071328560, guid: de3b6adc5789bc144877ace06322a455, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -100784,17 +100788,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de3b6adc5789bc144877ace06322a455, type: 3}
---- !u!114 &385415262 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4128221166958038207, guid: de3b6adc5789bc144877ace06322a455, type: 3}
-  m_PrefabInstance: {fileID: 385415261}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e5c30d005815f044aec9e080f408998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &392066733 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7039103906111389998, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
@@ -106263,6 +106256,10 @@ PrefabInstance:
       propertyPath: 'bossHealthList.Array.data[0]'
       value: 
       objectReference: {fileID: 1852299495}
+    - target: {fileID: 1027908521065980552, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1203076819419555044, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
       propertyPath: m_LocalPosition.x
       value: 553.98926
@@ -106395,14 +106392,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 154193562310935285, guid: eeefd70c90ac16640b0a89e97e87f331, type: 3}
-      propertyPath: isBoss
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3051600912652141749, guid: eeefd70c90ac16640b0a89e97e87f331, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3800440728941426098, guid: eeefd70c90ac16640b0a89e97e87f331, type: 3}
       propertyPath: m_Name
       value: HellBeastEnermy
@@ -106564,26 +106553,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 649240459}
     m_Modifications:
-    - target: {fileID: 6011829094659411, guid: 2307f550207f3ca4cb67842b4c001162, type: 3}
-      propertyPath: manaPotionPrefab
-      value: 
-      objectReference: {fileID: 2477822142919698583, guid: 347a5cc06f583b54cb4f6aee819c0c3f, type: 3}
-    - target: {fileID: 6011829094659411, guid: 2307f550207f3ca4cb67842b4c001162, type: 3}
-      propertyPath: healthPotionPrefab
-      value: 
-      objectReference: {fileID: 2477822142919698583, guid: f93712033e51ac4438d23c2d085e908c, type: 3}
     - target: {fileID: 1682342861658488375, guid: 2307f550207f3ca4cb67842b4c001162, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 822096802}
-    - target: {fileID: 1682342861658488375, guid: 2307f550207f3ca4cb67842b4c001162, type: 3}
-      propertyPath: targetMask.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
-    - target: {fileID: 4979516178109453817, guid: 2307f550207f3ca4cb67842b4c001162, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 6496072317894149185, guid: 2307f550207f3ca4cb67842b4c001162, type: 3}
       propertyPath: m_LocalPosition.x
       value: 147.41855
@@ -112345,7 +112318,7 @@ GameObject:
   - component: {fileID: 1234633232}
   m_Layer: 0
   m_Name: Checkpoint
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112426,7 +112399,7 @@ Transform:
   m_GameObject: {fileID: 1234633228}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 474.2, y: 0.74, z: 0}
+  m_LocalPosition: {x: 474.35, y: 0.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -135682,8 +135655,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7f9881318d132b46887d6b3888019ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioManager: {fileID: 385415262}
+  lastCheckpoint: {x: 0, y: 0, z: 0}
   currentMap: 1
+  hasEarthItem: 0
+  hasLavaItem: 0
 --- !u!4 &1681712355
 Transform:
   m_ObjectHideFlags: 0

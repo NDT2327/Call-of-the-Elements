@@ -55,6 +55,7 @@ public class FireSkullEnemy : MonoBehaviour
 		{
 			currentState = State.Chase;
 			anim.SetBool("isFight", true);
+			InvokeRepeating(nameof(PlayChaseSound), 0f, 2f);
 		}
 		else
 		{
@@ -63,6 +64,11 @@ public class FireSkullEnemy : MonoBehaviour
 			{
 				currentState = State.Return;
 				anim.SetBool("isFight", false);
+				CancelInvoke(nameof(PlayChaseSound)); // Dừng InvokeRepeating
+				if (audioSource != null && audioSource.isPlaying)
+				{
+					audioSource.Stop(); // Dừng âm thanh đang phát
+				}
 			}
 		}
 
