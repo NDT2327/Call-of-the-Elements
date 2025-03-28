@@ -106357,6 +106357,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
+--- !u!1 &706338070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 322943490965478533, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
+  m_PrefabInstance: {fileID: 706338069}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &822096802 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2219123463786518281, guid: ad7bee9c046638440853e6df3f3808f7, type: 3}
@@ -106493,6 +106498,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7250720184046556139, guid: cf367d844b7cd9e4f9ddc76ed8366c57, type: 3}
+      propertyPath: notification
+      value: 
+      objectReference: {fileID: 706338070}
     - target: {fileID: 7250720184046556139, guid: cf367d844b7cd9e4f9ddc76ed8366c57, type: 3}
       propertyPath: gameOverPanel
       value: 
@@ -112318,7 +112327,7 @@ GameObject:
   - component: {fileID: 1234633232}
   m_Layer: 0
   m_Name: Checkpoint
-  m_TagString: Respawn
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
