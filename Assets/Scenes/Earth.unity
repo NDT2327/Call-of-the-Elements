@@ -1985,6 +1985,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1230018302}
     - target: {fileID: 2675882512837352213, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
+      propertyPath: earthSprite
+      value: 
+      objectReference: {fileID: 5243583006262740181, guid: f59d3b7a68216f649b8f3fb56c9916a8, type: 3}
+    - target: {fileID: 2675882512837352213, guid: 5f9c2e8ab9a711f4397f21c72dbb6877, type: 3}
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 1180352366}
