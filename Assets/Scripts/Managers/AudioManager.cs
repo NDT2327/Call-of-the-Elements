@@ -61,7 +61,6 @@ public class AudioManager : MonoBehaviour
 
 	public void PlayBackgroundMusic(GameManager.Map map)
 	{
-		StopBackgroundMusic();
 		AudioClip clip = map switch
 		{
 			GameManager.Map.Earth => earthMusic,
