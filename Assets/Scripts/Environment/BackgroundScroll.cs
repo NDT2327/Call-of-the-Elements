@@ -1,5 +1,4 @@
-using Unity.VisualScripting;
-using UnityEditor.EditorTools;
+
 using UnityEngine;
 
 public class BackgroundScroll : MonoBehaviour
