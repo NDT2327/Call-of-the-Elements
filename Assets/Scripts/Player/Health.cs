@@ -13,7 +13,6 @@ public class Health : MonoBehaviour
     {
         CurrentHealth = startingHealth;
         anim = GetComponent<Animator>();
-        transform.position = GameManager.Instance.GetCheckpoint();
     }
 
     public void TakeDamage(float _damage)
@@ -35,7 +34,11 @@ public class Health : MonoBehaviour
 
             // Instead of disabling Player, send an event
             Debug.Log("☠ Player has died.");
-        }
+			if (GameManager.Instance != null)
+			{
+				GameManager.Instance.RestartGame();
+			}
+		}
     }
 
     private void Update()

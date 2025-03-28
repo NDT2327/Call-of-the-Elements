@@ -7,12 +7,14 @@ public class GameManager : MonoBehaviour
 	public static GameManager Instance { get; private set; }
 
 
-	public Vector3 lastCheckpoint;
+	public Vector3 lastCheckpoint = Vector3.zero;
 
 	public enum Map { Earth, Lava, Castle }
 	public Map currentMap = Map.Earth;
 
 	private bool bossDefeated = false;
+	private bool taurusDefeated = false; // Cờ cho Taurus trong Castle
+	private bool conquerorDefeated = false; // Cờ cho The Conqueror trong Castle
 	private bool skillCollected = false;
 
 	public bool hasEarthItem = false;
@@ -39,24 +41,38 @@ public class GameManager : MonoBehaviour
 			player.RecoverHealthAndStamina(1f); // Hồi 50% máu và stamina
 		}
 
-		if (completedMap == Map.Castle && bossDefeated)
+		if (completedMap == Map.Castle)
 		{
-			EndGame();
-			return;
-		}
-		switch (completedMap)
-		{
-			case Map.Earth:
-				currentMap = Map.Lava; // Chuyển từ Earth sang Lava
-				break;
-			case Map.Lava:
-				currentMap = Map.Castle; // Chuyển từ Lava sang Castle
-				break;
-			default:
-				Debug.LogWarning("Unknown map completed: " + completedMap);
+			if (taurusDefeated && conquerorDefeated)
+			{
+				Debug.Log("Both Taurus and The Conqueror defeated, ending game.");
+				EndGame();
 				return;
+			}
+			else if (taurusDefeated)
+			{
+				Debug.Log("Taurus defeated, proceed to face The Conqueror.");
+				return; // Không chuyển scene, tiếp tục trong Castle
+			}
 		}
-		StartCoroutine(LoadMapWithSpawn(currentMap.ToString())); // Dùng coroutine để load và đặt spawn 
+
+		// Chuyển map cho Earth và Lava nếu mini-boss bị đánh bại
+		if (bossDefeated)
+		{
+			switch (completedMap)
+			{
+				case Map.Earth:
+					currentMap = Map.Lava;
+					break;
+				case Map.Lava:
+					currentMap = Map.Castle;
+					break;
+				default:
+					Debug.LogWarning("Unknown map completed: " + completedMap);
+					return;
+			}
+			StartCoroutine(LoadMapWithSpawn(currentMap.ToString()));
+		}
 	}
 
 
@@ -76,6 +92,7 @@ public class GameManager : MonoBehaviour
 		{
 			player.transform.position = spawnPoint.transform.position;
 			Debug.Log("Player spawned at: " + spawnPoint.transform.position + " in map: " + sceneName);
+			SetCheckpoint(spawnPoint.transform.position);
 		}
 
 		ResetCondition();
@@ -140,26 +157,41 @@ public class GameManager : MonoBehaviour
 
 	private IEnumerator RestartScene()
 	{
-		AudioManager.instance.PlayBackgroundMusic(currentMap);
+		if (AudioManager.instance != null)
+		{
+			AudioManager.instance.PlayBackgroundMusic(currentMap);
+		}
+
 		string sceneName = SceneManager.GetActiveScene().name;
 		AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
 		yield return new WaitUntil(() => operation.isDone);
 
-		// Sau khi load xong, đặt lại vị trí người chơi
 		GameObject player = GameObject.FindGameObjectWithTag("Player");
 		GameObject spawnPoint = GameObject.FindGameObjectWithTag("Respawn");
-
 
 		if (player != null)
 		{
 			if (lastCheckpoint == Vector3.zero && spawnPoint != null)
 			{
 				player.transform.position = spawnPoint.transform.position;
+				Debug.Log("Player respawned at spawn point: " + spawnPoint.transform.position);
 			}
-			player.transform.position = lastCheckpoint;
+			else if (lastCheckpoint != Vector3.zero)
+			{
+				player.transform.position = lastCheckpoint;
+				Debug.Log("Player respawned at last checkpoint: " + lastCheckpoint);
+			}
+			else
+			{
+				Debug.LogWarning("No valid spawn point or checkpoint found!");
+			}
+		}
+		else
+		{
+			Debug.LogWarning("Player not found in scene!");
 		}
 	}
-
+		
 	private void EndGame()
 	{
 		SceneManager.LoadScene("EndGame");
