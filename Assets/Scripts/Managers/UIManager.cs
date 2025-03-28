@@ -80,7 +80,6 @@ public class UIManager : MonoBehaviour
 		GameObject player = GameObject.FindGameObjectWithTag("Player");
 		if (player != null)
 		{
-			player.GetComponent<Health>().RestartFromCheckpoint();
 			GameManager.Instance.RestartGame();
 			gameOverPanel.SetActive(false);
 		}
