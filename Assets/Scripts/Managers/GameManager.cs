@@ -43,16 +43,11 @@ public class GameManager : MonoBehaviour
 
 		if (completedMap == Map.Castle)
 		{
-			if (taurusDefeated && conquerorDefeated)
+			if (bossDefeated)
 			{
 				Debug.Log("Both Taurus and The Conqueror defeated, ending game.");
 				EndGame();
 				return;
-			}
-			else if (taurusDefeated)
-			{
-				Debug.Log("Taurus defeated, proceed to face The Conqueror.");
-				return; // Không chuyển scene, tiếp tục trong Castle
 			}
 		}
 
@@ -171,19 +166,12 @@ public class GameManager : MonoBehaviour
 
 		if (player != null)
 		{
-			if (lastCheckpoint == Vector3.zero && spawnPoint != null)
-			{
-				player.transform.position = spawnPoint.transform.position;
-				Debug.Log("Player respawned at spawn point: " + spawnPoint.transform.position);
-			}
-			else if (lastCheckpoint != Vector3.zero)
-			{
-				player.transform.position = lastCheckpoint;
-				Debug.Log("Player respawned at last checkpoint: " + lastCheckpoint);
-			}
-			else
-			{
-				Debug.LogWarning("No valid spawn point or checkpoint found!");
+			Health health = player.GetComponent<Health>();
+			// Luôn respawn ở lastCheckpoint (được lưu từ Respawn hoặc checkpoint trong map)
+			player.transform.position = lastCheckpoint;
+			Debug.Log("Player respawned at last checkpoint: " + lastCheckpoint);
+			if (health != null) { 
+				health.RestartFromCheckpoint();
 			}
 		}
 		else
@@ -191,7 +179,7 @@ public class GameManager : MonoBehaviour
 			Debug.LogWarning("Player not found in scene!");
 		}
 	}
-		
+
 	private void EndGame()
 	{
 		SceneManager.LoadScene("EndGame");

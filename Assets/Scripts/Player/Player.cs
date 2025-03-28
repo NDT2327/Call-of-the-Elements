@@ -425,31 +425,49 @@ public class Player : MonoBehaviour
             Debug.Log($"Hồi {percentage * 100}% máu và stamina!");
         }
     }
-    //public bool HasUnlockedSpAttack()
-    //{
-    //    bool unlocked = (elements[currentElementIndex] == "Fire" && currentLevel >= 3) ||
-    //                    (elements[currentElementIndex] == "Earth" && currentLevel >= 2);
 
-    //    if (unlocked && healthBar != null && !healthBar.hasSpAttack)
-    //    {
-    //        healthBar.UnlockSpAttack();
-    //    }
-    //    return unlocked;
-    //}
+	// Thêm phương thức reset trạng thái của Player
+	public void ResetState()
+	{
+		rb2d.linearVelocity = Vector2.zero; // Reset vận tốc
+		rb2d.angularVelocity = 0f;
+		rb2d.constraints = RigidbodyConstraints2D.FreezeRotation; // Đảm bảo không khóa X/Y
+		isGrounded = true;
+		canDoubleJump = false;
+		isRolling = false;
+		attackCount = 0;
+		lastAttackTime = 0f;
+		lastSpecialAttackTime = -Mathf.Infinity;
+		movement = 0f;
+		lastMovement = 0f;
+
+		Debug.Log("Player state reset: Grounded = " + isGrounded + ", Velocity = " + rb2d.linearVelocity);
+	}
+	//public bool HasUnlockedSpAttack()
+	//{
+	//    bool unlocked = (elements[currentElementIndex] == "Fire" && currentLevel >= 3) ||
+	//                    (elements[currentElementIndex] == "Earth" && currentLevel >= 2);
+
+	//    if (unlocked && healthBar != null && !healthBar.hasSpAttack)
+	//    {
+	//        healthBar.UnlockSpAttack();
+	//    }
+	//    return unlocked;
+	//}
 
 
-    //public void UnlockSpecialAttack(GameManager.Map completedMap)
-    //{
-    //    if (completedMap == GameManager.Map.Earth)
-    //    {
-    //        currentLevel = 2; // Mở khóa SpAttack Earth
-    //        Debug.Log("🌱 Đã mở khóa Special Attack Earth!");
-    //    }
-    //    else if (completedMap == GameManager.Map.Lava)
-    //    {
-    //        currentLevel = 3; // Mở khóa SpAttack Fire
-    //        Debug.Log("🔥 Đã mở khóa Special Attack Fire!");
-    //    }
-    //}
+	//public void UnlockSpecialAttack(GameManager.Map completedMap)
+	//{
+	//    if (completedMap == GameManager.Map.Earth)
+	//    {
+	//        currentLevel = 2; // Mở khóa SpAttack Earth
+	//        Debug.Log("🌱 Đã mở khóa Special Attack Earth!");
+	//    }
+	//    else if (completedMap == GameManager.Map.Lava)
+	//    {
+	//        currentLevel = 3; // Mở khóa SpAttack Fire
+	//        Debug.Log("🔥 Đã mở khóa Special Attack Fire!");
+	//    }
+	//}
 
 }

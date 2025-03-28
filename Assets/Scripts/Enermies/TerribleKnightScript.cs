@@ -124,7 +124,6 @@ public class TerribleKnightScript : MonoBehaviour
         //    audioSource.loop = true;
         //    audioSource.Play();
         //}
-        AudioManager.instance.PlayEnemyMoveSound();
         FlipSprite(direction.x);
     }
 
@@ -149,11 +148,9 @@ public class TerribleKnightScript : MonoBehaviour
             case 1:
             case 2:
             case 5:
-                AudioManager.instance.PlayEnemyAttackSound1();
                 break;
             case 3:
             case 4:
-				AudioManager.instance.PlayEnemyAttackSound2();
 				break;
             default:
                 Debug.LogWarning("Không có âm thanh cho kiểu tấn công này!");
@@ -203,7 +200,6 @@ public class TerribleKnightScript : MonoBehaviour
         isJumping = true;
         anim.SetTrigger("jump");
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-		AudioManager.instance.PlayPlayerJumpSound();
 		StartCoroutine(JumpAttackChance());
     }
 
